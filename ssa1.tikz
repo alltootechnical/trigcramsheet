@@ -1,0 +1,25 @@
+\definecolor{zzttqq}{rgb}{0.26666666666666666,0.26666666666666666,0.26666666666666666}
+\definecolor{qqqqff}{rgb}{0.3333333333333333,0.3333333333333333,0.3333333333333333}
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm,scale=0.3]
+\clip(-0.62,-0.92) rectangle (5.96,3.22);
+\fill[color=zzttqq,fill=zzttqq,fill opacity=0.1] (0.,0.) -- (3.84,2.38) -- (5.214093640671301,0.) -- cycle;
+\draw [color=zzttqq] (0.,0.)-- (3.84,2.38);
+\draw [color=zzttqq] (3.84,2.38)-- (5.214093640671301,0.);
+\draw [color=zzttqq] (5.214093640671301,0.)-- (0.,0.);
+\draw [shift={(3.84,2.38)},dotted]  plot[domain=4.188790204786393:5.235987755982986,variable=\t]({1.*2.748187281342615*cos(\t r)+0.*2.748187281342615*sin(\t r)},{0.*2.748187281342615*cos(\t r)+1.*2.748187281342615*sin(\t r)});
+\draw [dash pattern=on 6pt off 6pt] (3.84,2.38)-- (2.465906359328698,0.);
+\draw (3.84,2.38)-- (3.84,0.);
+\begin{scriptsize}
+\draw [fill=qqqqff] (0.,0.) circle (1.5pt);
+\draw[color=qqqqff] (-0.26,-0.1) node {$A$};
+\draw [fill=qqqqff] (3.84,2.38) circle (1.5pt);
+\draw[color=qqqqff] (3.98,2.66) node {$C$};
+\draw [fill=qqqqff] (5.214093640671301,0.) circle (1.5pt);
+\draw[color=qqqqff] (5.46,-0.06) node {$B$};
+\draw[color=zzttqq] (1.9,1.48) node {$b$};
+\draw[color=zzttqq] (4.9,1.38) node {$a$};
+
+\draw[color=black] (3.4,1.02) node {$a$};
+\draw[color=black] (4.,1.1) node {$h$};
+\end{scriptsize}
+\end{tikzpicture}

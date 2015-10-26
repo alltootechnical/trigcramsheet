@@ -1,0 +1,24 @@
+\definecolor{zzttqq}{rgb}{0.26666666666666666,0.26666666666666666,0.26666666666666666}
+\definecolor{qqqqff}{rgb}{0.3333333333333333,0.3333333333333333,0.3333333333333333}
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm,scale=0.3]
+\clip(-0.9731260392000056,-2.898767158200003) rectangle (7.6012292007999935,5.461229200799995);
+\fill[color=zzttqq,fill=zzttqq,fill opacity=0.1] (0.86,-0.12) -- (6.12,-0.76) -- (2.88,4.24) -- cycle;
+\draw [color=zzttqq] (0.86,-0.12)-- (6.12,-0.76);
+\draw [color=zzttqq] (6.12,-0.76)-- (2.88,4.24);
+\draw [color=zzttqq] (2.88,4.24)-- (0.86,-0.12);
+\draw(3.691501832711423,1.2160931875970016) circle (3.1309020480671803cm);
+\draw (0.86,-0.12)-- (3.691501832711423,1.2160931875970016);
+\begin{scriptsize}
+\draw [fill=qqqqff] (0.86,-0.12) circle (1.5pt);
+\draw[color=qqqqff] (0.39877079919999425,-0.540819467200004) node {$\alpha$};
+\draw [fill=qqqqff] (6.12,-0.76) circle (1.5pt);
+\draw[color=qqqqff] (7.001024333999994,-1.0552807816000038) node {$\beta$};
+\draw [fill=qqqqff] (2.88,4.24) circle (1.5pt);
+\draw[color=qqqqff] (3.314051580799994,4.946767886399995) node {$\gamma$};
+\draw[color=zzttqq] (3.4426669093999944,-0.9695372292000037) node {$c$};
+\draw[color=zzttqq] (4.986050852599994,2.2029742095999953) node {$a$};
+\draw[color=zzttqq] (1.2133345469999943,2.160102433399995) node {$b$};
+\draw [fill=zzttqq] (3.691501832711423,1.2160931875970016) circle (1.5pt);
+\draw[color=black] (2.6709749377999943,0.2737442805999959) node {$R$};
+\end{scriptsize}
+\end{tikzpicture}

@@ -1,0 +1,582 @@
+%% LyX 2.1.3 created this file.  For more info, see http://www.lyx.org/.
+%% Do not edit unless you really know what you are doing.
+\documentclass[english]{article}
+\usepackage[latin9]{inputenc}
+\usepackage[a4paper]{geometry}
+\geometry{verbose,tmargin=1in,bmargin=1in,lmargin=0.5in,rmargin=0.5in}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\setlength{\parskip}{\smallskipamount}
+\setlength{\parindent}{0pt}
+\usepackage{units}
+\usepackage{amsmath}
+
+\makeatletter
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% LyX specific LaTeX commands.
+%% Because html converters don't know tabularnewline
+\providecommand{\tabularnewline}{\\}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Textclass specific LaTeX commands.
+\newenvironment{lyxlist}[1]
+{\begin{list}{}
+{\settowidth{\labelwidth}{#1}
+ \setlength{\leftmargin}{\labelwidth}
+ \addtolength{\leftmargin}{\labelsep}
+ \renewcommand{\makelabel}[1]{##1\hfil}}}
+{\end{list}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% User specified LaTeX commands.
+\usepackage{pgf,tikz}
+\usepackage{mathrsfs}
+\usetikzlibrary{arrows}
+\usepackage{multicol}
+\usepackage{array}
+\usepackage{pgfplots}
+
+\makeatother
+
+\usepackage{babel}
+\begin{document}
+
+\lhead{\textsf{\textbf{Trigonometry Cram Sheet}}}
+
+
+\rhead{\textsf{alltootechnical.tk}}
+
+\begin{multicols}{2}
+
+\tableofcontents{}
+
+\end{multicols}\newpage{}
+
+\begin{multicols}{2}
+
+
+\section{Definition}
+
+Triangle $ABC$ has a right angle at $C$ and sides of length $a$,
+$b$, $c$. The trigonometric functions of angle $A$ are defined
+as follows:
+\begin{enumerate}
+\item ${\displaystyle \sin A=\frac{a}{c}=\frac{\mathrm{opposite}}{\mathrm{hypotenuse}}}$
+\item ${\displaystyle \cos A=\frac{b}{c}=\frac{\mathrm{adjacent}}{\mathrm{hypotenuse}}}$
+\item ${\displaystyle \tan A=\frac{a}{b}=\frac{\mathrm{opposite}}{\mathrm{adjacent}}}$
+\item ${\displaystyle \csc A=\frac{b}{a}=\frac{\mathrm{hypotenuse}}{\mathrm{opposite}}}$
+\item ${\displaystyle \sec A=\frac{c}{a}=\frac{\mathrm{hypotenuse}}{\mathrm{adjacent}}}$
+\item ${\displaystyle \cot A=\frac{b}{a}=\frac{\mathrm{adjacent}}{\mathrm{opposite}}}$
+\end{enumerate}
+
+\subsection{Degrees and Radians}
+
+A \emph{radian} is that angle $\theta$ subtended at center $O$ of
+a circle by an arc $MN$ equal to the radius $r$. Since $\unit[2\pi]{radians}=360\textdegree$
+we have:
+\begin{lyxlist}{00.00.0000}
+\item [{$\unit[1]{radian}=180\textdegree/\pi=57.29577951308232\dots\textdegree$}]~
+\item [{$1\textdegree=\unit[\pi/180]{radians}=\unit[0.017453292519943\dots]{radians}$}]~
+\end{lyxlist}
+
+\subsection{Signs and Variations}
+
+\begin{tabular}{|c|c|c|c|}
+\hline 
+Quadrant & $\sin A$ & $\cos A$ & $\tan A$\tabularnewline
+\hline 
+\hline 
+I & $\begin{array}{c}
++\\
+\left(0,1\right)
+\end{array}$ & $\begin{array}{c}
++\\
+\left(1,0\right)
+\end{array}$ & $\begin{array}{c}
++\\
+\left(0,\infty\right)
+\end{array}$\tabularnewline
+\hline 
+II & $\begin{array}{c}
++\\
+\left(1,0\right)
+\end{array}$ & $\begin{array}{c}
+-\\
+\left(0,-1\right)
+\end{array}$ & $\begin{array}{c}
+-\\
+\left(-\infty,0\right)
+\end{array}$\tabularnewline
+\hline 
+III & $\begin{array}{c}
+-\\
+\left(0,-1\right)
+\end{array}$ & $\begin{array}{c}
+-\\
+\left(-1,0\right)
+\end{array}$ & $\begin{array}{c}
++\\
+\left(0,\infty\right)
+\end{array}$\tabularnewline
+\hline 
+IV & $\begin{array}{c}
+-\\
+\left(-1,0\right)
+\end{array}$ & $\begin{array}{c}
++\\
+\left(0,1\right)
+\end{array}$ & $\begin{array}{c}
+-\\
+\left(-\infty,0\right)
+\end{array}$\tabularnewline
+\hline 
+\end{tabular}
+
+\begin{tabular}{|c|c|c|c|}
+\hline 
+Quadrant & $\cot A$ & $\sec A$ & $\csc A$\tabularnewline
+\hline 
+\hline 
+I & $\begin{array}{c}
++\\
+\left(\infty,0\right)
+\end{array}$ & $\begin{array}{c}
++\\
+\left(1,\infty\right)
+\end{array}$ & $\begin{array}{c}
++\\
+\left(\infty,1\right)
+\end{array}$\tabularnewline
+\hline 
+II & $\begin{array}{c}
+-\\
+\left(0,-\infty\right)
+\end{array}$ & $\begin{array}{c}
+-\\
+\left(\infty,-1\right)
+\end{array}$ & $\begin{array}{c}
++\\
+\left(1,\infty\right)
+\end{array}$\tabularnewline
+\hline 
+III & $\begin{array}{c}
++\\
+\left(\infty,0\right)
+\end{array}$ & $\begin{array}{c}
+-\\
+\left(-1,\infty\right)
+\end{array}$ & $\begin{array}{c}
+-\\
+\left(\infty,-1\right)
+\end{array}$\tabularnewline
+\hline 
+IV & $\begin{array}{c}
+-\\
+\left(0,-\infty\right)
+\end{array}$ & $\begin{array}{c}
++\\
+\left(\infty,1\right)
+\end{array}$ & $\begin{array}{c}
+-\\
+\left(-1,\infty\right)
+\end{array}$\tabularnewline
+\hline 
+\end{tabular}
+
+
+\section{Identities}
+
+
+\subsection{Basic Identities}
+
+
+\subsubsection{Reciprocal Identities}
+\begin{lyxlist}{00.00.0000}
+\item [{${\displaystyle \csc\theta=\frac{1}{\sin\theta}}$;}] ${\displaystyle \sin\theta=\frac{1}{\csc\theta}}$
+\item [{${\displaystyle \sec\theta=\frac{1}{\cos\theta}}$;}] ${\displaystyle \cos\theta=\frac{1}{\sec\theta}}$
+\item [{${\displaystyle \cot\theta=\frac{1}{\tan\theta}}$;}] ${\displaystyle \tan\theta=\frac{1}{\cot\theta}}$
+\item [{${\displaystyle \sin\theta\csc\theta=\cos\theta\sec\theta=\tan\theta\cot\theta=1}$}]~
+\end{lyxlist}
+
+\subsubsection{Ratio Identities}
+\begin{lyxlist}{00.00.0000}
+\item [{${\displaystyle \tan\theta=\frac{\sin\theta}{\cos\theta}}$;}] ${\displaystyle \cos\theta=\frac{\sin\theta}{\tan\theta}}$;
+${\displaystyle \sin\theta=\cos\theta\tan\theta}$
+\item [{${\displaystyle \cot\theta=\frac{\cos\theta}{\sin\theta}}$;}] ${\displaystyle \sin\theta=\frac{\cos\theta}{\cot\theta}}$;
+$\cos\theta=\sin\theta\cot\theta$
+\end{lyxlist}
+
+\subsubsection{Pythagorean Identities}
+\begin{lyxlist}{00.00.0000}
+\item [{${\displaystyle \sin^{2}\theta+\cos^{2}\theta=1}$;}] ${\displaystyle \sin^{2}\theta=1-\cos^{2}\theta}$;
+${\displaystyle \cos^{2}\theta=1-\sin^{2}\theta}$
+\item [{${\displaystyle \tan^{2}\theta+1=\sec^{2}\theta}$;}] ${\displaystyle \tan^{2}\theta=\sec^{2}\theta-1}$;
+${\displaystyle \sec^{2}\theta-\tan^{2}\theta=1}$
+\item [{${\displaystyle \cot^{2}\theta+1=\csc^{2}\theta}$;}] ${\displaystyle \cot^{2}\theta=\csc^{2}\theta-1}$;
+${\displaystyle \csc^{2}\theta-\cot^{2}\theta=1}$
+\end{lyxlist}
+
+\subsubsection{Co-function Identities}
+\begin{lyxlist}{00.00.0000}
+\item [{${\displaystyle \sin\left(\frac{\pi}{2}-\theta\right)=-\sin\theta}$}]~
+\item [{${\displaystyle \cos\left(\frac{\pi}{2}-\theta\right)=\cos\theta}$}]~
+\item [{${\displaystyle \tan\left(\frac{\pi}{2}-\theta\right)=-\tan\theta}$}]~
+\item [{${\displaystyle \csc\left(\frac{\pi}{2}-\theta\right)=-\csc\theta}$}]~
+\item [{${\displaystyle \sec\left(\frac{\pi}{2}-\theta\right)=\sec\theta}$}]~
+\item [{${\displaystyle \cot\left(\frac{\pi}{2}-\theta\right)=-\cot\theta}$}]~
+\end{lyxlist}
+
+\subsubsection{Parity Identities}
+\begin{lyxlist}{00.00.0000}
+\item [{$\sin\left(-A\right)=-\sin A$}]~
+\item [{$\cos\left(-A\right)=\cos A$}]~
+\item [{$\tan\left(-A\right)=-\tan A$}]~
+\item [{$\csc\left(-A\right)=-\csc A$}]~
+\item [{$\sec\left(-A\right)=\sec A$}]~
+\item [{$\cot\left(-A\right)=-\cot A$}]~
+\end{lyxlist}
+
+\subsection{Sum and Difference}
+\begin{lyxlist}{00.00.0000}
+\item [{${\displaystyle \sin\left(\alpha\pm\beta\right)=\sin\alpha\cos\beta\pm\cos\alpha\sin\beta}$}]~
+\item [{${\displaystyle \cos\left(\alpha\pm\beta\right)=\cos\alpha\cos\beta\mp\sin\alpha\sin\beta}$}]~
+\item [{${\displaystyle \tan\left(\alpha\pm\beta\right)=\frac{\tan\alpha\pm\tan\beta}{1\mp\tan\alpha\tan\beta}}$}]~
+\item [{${\displaystyle \cot\left(\alpha\pm\beta\right)=\frac{\cot\alpha\cot\beta\mp1}{\cot\beta\pm\cot\alpha}}$}]~
+\end{lyxlist}
+
+\subsection{Double Angle}
+\begin{lyxlist}{00.00.0000}
+\item [{${\displaystyle \sin2\alpha=2\sin\alpha\cos\alpha}$}]~
+\item [{$\cos2\alpha=\cos^{2}\alpha-\sin^{2}\alpha=1-2\sin^{2}\alpha=2\cos^{2}\alpha-1$}]~
+\item [{${\displaystyle \tan2\alpha=\frac{2\tan\alpha}{1-\tan^{2}\alpha}}$}]~
+\end{lyxlist}
+
+\subsection{Half Angle}
+
+Let $\mathcal{Q}_{n}$, where $n\in\left\{ 1,2,3,4\right\} $, denote
+the set of all points within the $n$th quadrant of the Cartesian
+plane.
+\begin{lyxlist}{00.00.0000}
+\item [{${\displaystyle \sin\frac{\alpha}{2}=\begin{cases}
+\sqrt{\frac{1-\cos\alpha}{2}} & \frac{\alpha}{2}\in\left(\mathcal{Q}_{1}\cup\mathcal{Q}_{2}\right)\\
+-\sqrt{\frac{1-\cos\alpha}{2}} & \frac{\alpha}{2}\in\left(\mathcal{Q}_{3}\cup\mathcal{Q}_{4}\right)
+\end{cases}}$}]~
+\item [{${\displaystyle \cos\frac{\alpha}{2}=\begin{cases}
+\sqrt{\frac{1+\cos\alpha}{2}} & \frac{\alpha}{2}\in\left(\mathcal{Q}_{1}\cup\mathcal{Q}_{4}\right)\\
+-\sqrt{\frac{1+\cos\alpha}{2}} & \frac{\alpha}{2}\in\left(\mathcal{Q}_{2}\cup\mathcal{Q}_{3}\right)
+\end{cases}}$}]~
+\item [{${\displaystyle \tan\frac{\alpha}{2}=\frac{\sin\alpha}{1+\cos\alpha}=\frac{1-\cos\alpha}{\sin\alpha}=\csc\alpha-\cot\alpha}$}]~
+\end{lyxlist}
+
+\subsection{Multiple Angle}
+\begin{lyxlist}{00.00.0000}
+\item [{$\sin3\alpha=3\sin\alpha-4\sin^{3}\alpha$}]~
+\item [{$\cos3\alpha=4\cos^{3}\alpha-3\cos\alpha$}]~
+\item [{${\displaystyle \tan3\alpha=\frac{3\tan\alpha-\tan^{3}\alpha}{1-3\tan^{2}\alpha}}$}]~
+\item [{${\displaystyle \sin4\alpha=4\sin\alpha\cos\alpha-8\sin^{3}\alpha\cos\alpha}$}]~
+\item [{${\displaystyle \cos4\alpha=8\cos^{4}\alpha-8\cos^{2}\alpha+1}$}]~
+\item [{${\displaystyle \tan4\alpha=\frac{4\tan\alpha-4\tan^{3}\alpha}{1-6\tan^{2}\alpha+\tan^{4}\alpha}}$}]~
+\end{lyxlist}
+
+\subsection{Powers}
+\begin{lyxlist}{00.00.0000}
+\item [{${\displaystyle \sin^{2}\theta=\frac{1-\cos2\theta}{2}}$}]~
+\item [{${\displaystyle \cos^{2}\theta=\frac{1+\cos2\theta}{2}}$}]~
+\item [{${\displaystyle \tan^{2}\theta=\frac{1-\cos2\theta}{1+\cos2\theta}}$}]~
+\item [{${\displaystyle \sin^{3}\theta=\frac{3\sin\theta-\sin3\theta}{4}}$}]~
+\item [{${\displaystyle \cos^{3}\theta=\frac{3\cos\theta+\cos3\theta}{4}}$}]~
+\item [{${\displaystyle \sin^{4}\theta=\frac{3-4\cos2\theta+\cos4\theta}{8}}$}]~
+\item [{${\displaystyle \cos^{4}\theta=\frac{3+4\cos2\theta+\cos4\theta}{8}}$}]~
+\item [{${\displaystyle \sin^{5}\theta=\frac{10\sin\theta-5\sin3\theta+\sin5\theta}{16}}$}]~
+\item [{${\displaystyle \cos^{5}\theta=\frac{10\cos\theta+5\cos3\theta+\cos5\theta}{16}}$}]~
+\end{lyxlist}
+
+\subsection{Product to Sum}
+\begin{lyxlist}{00.00.0000}
+\item [{${\displaystyle \sin\alpha\cos\beta=\frac{1}{2}\left[\sin\left(\alpha+\beta\right)+\sin\left(\alpha-\beta\right)\right]}$}]~
+\item [{${\displaystyle \cos\alpha\sin\beta=\frac{1}{2}\left[\sin\left(\alpha+\beta\right)-\sin\left(\alpha-\beta\right)\right]}$}]~
+\item [{${\displaystyle \cos\alpha\cos\beta=\frac{1}{2}\left[\cos\left(\alpha+\beta\right)+\cos\left(\alpha-\beta\right)\right]}$}]~
+\item [{${\displaystyle \sin\alpha\sin\beta=\frac{1}{2}\left[\cos\left(\alpha+\beta\right)-\cos\left(\alpha-\beta\right)\right]}$}]~
+\end{lyxlist}
+
+\subsection{Sum to Product}
+\begin{lyxlist}{00.00.0000}
+\item [{${\displaystyle \sin\theta\pm\sin\varphi=2\sin\frac{\theta\pm\varphi}{2}\cos\frac{\theta\mp\varphi}{2}}$}]~
+\item [{${\displaystyle \cos\theta\pm\cos\varphi=\pm2\sin\frac{\theta+\varphi}{2}\cos\frac{\theta-\varphi}{2}}$}]~
+\end{lyxlist}
+\end{multicols}
+
+
+\section{Exact Values of Trigonometric Functions}
+
+\renewcommand{\arraystretch}{2}
+
+\begin{tabular}{|c|c|c|c|c|c|c|c|}
+\hline 
+$A\textdegree$ & $A$ rad & $\sin A$ & $\cos A$ & $\tan A$ & $\cot A$ & $\sec A$ & $\csc A$\tabularnewline
+\hline 
+\hline 
+$0\textdegree$ & $0$ & $0$ & $1$ & $0$ & $\infty$ & $1$ & $\infty$\tabularnewline
+$15\textdegree$ & $\pi/12$ & $\frac{1}{4}\left(\sqrt{6}-\sqrt{2}\right)$ & $\frac{1}{4}\left(\sqrt{6}+\sqrt{2}\right)$ & $2-\sqrt{3}$ & $2+\sqrt{3}$ & $\sqrt{6}-\sqrt{2}$ & $\sqrt{6}+\sqrt{2}$\tabularnewline
+$30\textdegree$ & $\pi/6$ & $\frac{1}{2}$ & $\frac{1}{2}\sqrt{3}$ & $\frac{1}{3}\sqrt{3}$ & $\sqrt{3}$ & $\frac{2}{3}\sqrt{3}$ & $2$\tabularnewline
+$45\textdegree$ & $\pi/4$ & $\frac{1}{2}\sqrt{2}$ & $\frac{1}{2}\sqrt{2}$ & $1$ & $1$ & $\sqrt{2}$ & $\sqrt{2}$\tabularnewline
+$60\textdegree$ & $\pi/3$ & $\frac{1}{2}\sqrt{3}$ & $\frac{1}{2}$ & $\sqrt{3}$ & $\frac{1}{3}\sqrt{3}$ & $2$ & $\frac{2}{3}\sqrt{3}$\tabularnewline
+$75\textdegree$ & $5\pi/12$ & $\frac{1}{4}\left(\sqrt{6}+\sqrt{2}\right)$ & $\frac{1}{4}\left(\sqrt{6}-\sqrt{2}\right)$ & $2+\sqrt{3}$ & $2-\sqrt{3}$ & $\sqrt{6}+\sqrt{2}$ & $\sqrt{6}-\sqrt{2}$\tabularnewline
+$90\textdegree$ & $\pi/2$ & $1$ & $0$ & $\pm\infty$ & $0$ & $\pm\infty$ & $1$\tabularnewline
+$105\textdegree$ & $7\pi/12$ & $\frac{1}{4}\left(\sqrt{6}+\sqrt{2}\right)$ & $-\frac{1}{4}\left(\sqrt{6}-\sqrt{2}\right)$ & $-\left(2+\sqrt{3}\right)$ & $-\left(2-\sqrt{3}\right)$ & $-\left(\sqrt{6}+\sqrt{2}\right)$ & $\sqrt{6}-\sqrt{2}$\tabularnewline
+$120\textdegree$ & $2\pi/3$ & $\frac{1}{2}\sqrt{3}$ & $\frac{1}{2}$ & $-\sqrt{3}$ & $-\frac{1}{3}\sqrt{3}$ & $-2$ & $\frac{2}{3}\sqrt{3}$\tabularnewline
+$135\textdegree$ & $3\pi/4$ & $\frac{1}{2}\sqrt{2}$ & -$\frac{1}{2}\sqrt{2}$ & $-1$ & $-1$ & $-\sqrt{2}$ & $\sqrt{2}$\tabularnewline
+$150\textdegree$ & $5\pi/6$ & $\frac{1}{2}$ & $-\frac{1}{2}\sqrt{3}$ & $-\frac{1}{3}\sqrt{3}$ & $-\sqrt{3}$ & $-\frac{2}{3}\sqrt{3}$ & $2$\tabularnewline
+$165\textdegree$ & $11\pi/12$ & $\frac{1}{4}\left(\sqrt{6}-\sqrt{2}\right)$ & $-\frac{1}{4}\left(\sqrt{6}+\sqrt{2}\right)$ & $-\left(2-\sqrt{3}\right)$ & $-\left(2+\sqrt{3}\right)$ & $-\left(\sqrt{6}-\sqrt{2}\right)$ & $\sqrt{6}+\sqrt{2}$\tabularnewline
+$180\textdegree$ & $\pi$ & $0$ & $-1$ & $0$ & $\mp\infty$ & $-1$ & $\pm\infty$\tabularnewline
+$195\textdegree$ & $13\pi/12$ & $-\frac{1}{4}\left(\sqrt{6}-\sqrt{2}\right)$ & $-\frac{1}{4}\left(\sqrt{6}+\sqrt{2}\right)$ & $2-\sqrt{3}$ & $2+\sqrt{3}$ & $-\left(\sqrt{6}-\sqrt{2}\right)$ & $-\left(\sqrt{6}+\sqrt{2}\right)$\tabularnewline
+$210\textdegree$ & $7\pi/6$ & $\frac{1}{2}$ & $-\frac{1}{2}\sqrt{3}$ & $\frac{1}{3}\sqrt{3}$ & $\sqrt{3}$ & $-\frac{2}{3}\sqrt{3}$ & $-2$\tabularnewline
+$225\textdegree$ & $5\pi/4$ & $-\frac{1}{2}\sqrt{2}$ & $-\frac{1}{2}\sqrt{2}$ & $1$ & $1$ & $-\sqrt{2}$ & $-\sqrt{2}$\tabularnewline
+$240\textdegree$ & $4\pi/3$ & $-\frac{1}{2}\sqrt{3}$ & $-\frac{1}{2}$ & $\sqrt{3}$ & $\frac{1}{3}\sqrt{3}$ & $-2$ & $-\frac{2}{3}\sqrt{3}$\tabularnewline
+$255\textdegree$ & $17\pi/12$ & $-\frac{1}{4}\left(\sqrt{6}+\sqrt{2}\right)$ & $-\frac{1}{4}\left(\sqrt{6}-\sqrt{2}\right)$ & $2+\sqrt{3}$ & $2-\sqrt{3}$ & $-\left(\sqrt{6}+\sqrt{2}\right)$ & $-\left(\sqrt{6}-\sqrt{2}\right)$\tabularnewline
+$270\textdegree$ & $3\pi/2$ & $-1$ & $0$ & $\pm\infty$ & $0$ & $\mp\infty$ & $-1$\tabularnewline
+$285\textdegree$ & $19\pi/12$ & $-\frac{1}{4}\left(\sqrt{6}+\sqrt{2}\right)$ & $\frac{1}{4}\left(\sqrt{6}-\sqrt{2}\right)$ & $-\left(2+\sqrt{3}\right)$ & $-\left(2-\sqrt{3}\right)$ & $\sqrt{6}+\sqrt{2}$ & $-\left(\sqrt{6}-\sqrt{2}\right)$\tabularnewline
+$300\textdegree$ & $5\pi/3$ & $-\frac{1}{2}\sqrt{3}$ & $\frac{1}{2}$ & $-\sqrt{3}$ & $-\frac{1}{3}\sqrt{3}$ & $2$ & $-\frac{2}{3}\sqrt{3}$\tabularnewline
+$315\textdegree$ & $7\pi/4$ & $-\frac{1}{2}\sqrt{2}$ & $\frac{1}{2}\sqrt{2}$ & $-1$ & $-1$ & $\sqrt{2}$ & $-\sqrt{2}$\tabularnewline
+$330\textdegree$ & $11\pi/6$ & $-\frac{1}{2}$ & $\frac{1}{2}\sqrt{3}$ & $-\frac{1}{3}\sqrt{3}$ & $-\sqrt{3}$ & $\frac{2}{3}\sqrt{3}$ & $-2$\tabularnewline
+$345\textdegree$ & $23\pi/12$ & $-\frac{1}{4}\left(\sqrt{6}-\sqrt{2}\right)$ & $\frac{1}{4}\left(\sqrt{6}+\sqrt{2}\right)$ & $-\left(2+\sqrt{3}\right)$ & $-\left(2+\sqrt{3}\right)$ & $\sqrt{6}-\sqrt{2}$ & $-\left(\sqrt{6}+\sqrt{2}\right)$\tabularnewline
+$360\textdegree$ & $2\pi$ & $0$ & $1$ & $0$ & $\mp\infty$ & $1$ & $\mp\infty$\tabularnewline
+\hline 
+\end{tabular}
+
+\newpage{}
+
+
+\section{Graphs}
+
+\definecolor{ffvvqq}{rgb}{0.44313725490196076,0.44313725490196076,0.44313725490196076} \definecolor{qqqqff}{rgb}{0.3333333333333333,0.3333333333333333,0.3333333333333333} \definecolor{ccqqqq}{rgb}{0.26666666666666666,0.26666666666666666,0.26666666666666666} \definecolor{qqwuqq}{rgb}{0.12941176470588237,0.12941176470588237,0.12941176470588237} 
+
+
+\subsection{$y=\sin x$}
+
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm] \draw[->,color=black] (-3.14,0) -- (3.14,0); \foreach \x in {-3,-2,-1,1,2,3} \draw[shift={(\x,0)},color=black] (0pt,2pt) -- (0pt,-2pt) node[below] {\footnotesize $\x$}; \draw[->,color=black] (0,-2) -- (0,2); \foreach \y in {-2,-1,1} \draw[shift={(0,\y)},color=black] (2pt,0pt) -- (-2pt,0pt) node[left] {\footnotesize $\y$}; \draw[color=black] (0pt,-10pt) node[right] {\footnotesize $0$}; \clip(-3.14,-2) rectangle (3.14,2); \draw[line width=1.2pt,color=qqwuqq,smooth,samples=100,domain=-3.14:3.14] plot(\x,{sin(((\x))*180/pi)}); \begin{scriptsize} \draw[color=qqwuqq] (-5.48,0.54) node {$y=\sin$}; \end{scriptsize} \end{tikzpicture}
+
+
+\subsection{$y=\cos x$}
+
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm] \draw[->,color=black] (-3.14,0) -- (3.14,0); \foreach \x in {-3,-2,-1,1,2,3} \draw[shift={(\x,0)},color=black] (0pt,2pt) -- (0pt,-2pt) node[below] {\footnotesize $\x$}; \draw[->,color=black] (0,-2) -- (0,2); \foreach \y in {-2,-1,1} \draw[shift={(0,\y)},color=black] (2pt,0pt) -- (-2pt,0pt) node[left] {\footnotesize $\y$}; \draw[color=black] (0pt,-10pt) node[right] {\footnotesize $0$}; \clip(-3.14,-2) rectangle (3.14,2); \draw[line width=1.2pt,color=qqwuqq,smooth,samples=100,domain=-3.14:3.14] plot(\x,{cos(((\x))*180/pi)}); \begin{scriptsize} \draw[color=qqwuqq] (-5.48,0.54) node {$y=\sin$}; \end{scriptsize} \end{tikzpicture}
+
+
+\subsection{$y=\tan x$}
+
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm] \draw[->,color=black] (-3.14,0) -- (3.14,0); \foreach \x in {-3,-2,-1,1,2,3} \draw[shift={(\x,0)},color=black] (0pt,2pt) -- (0pt,-2pt) node[below] {\footnotesize $\x$}; \draw[->,color=black] (0,-2) -- (0,2); \foreach \y in {-2,-1,1} \draw[shift={(0,\y)},color=black] (2pt,0pt) -- (-2pt,0pt) node[left] {\footnotesize $\y$}; \draw[color=black] (0pt,-10pt) node[right] {\footnotesize $0$}; \clip(-3.14,-2) rectangle (3.14,2); \draw[line width=1.2pt,color=qqwuqq,smooth,samples=100,domain=-3.14:3.14] plot(\x,{tan(((\x))*180/pi)}); \begin{scriptsize} \draw[color=qqwuqq] (-5.48,0.54) node {$y=\sin$}; \end{scriptsize} \end{tikzpicture}
+
+
+\subsection{$y=\csc x$}
+
+\newpage{}
+
+\begin{multicols*}{2}
+
+
+\section{Inverse Trigonometric Functions}
+
+If $x=\sin y$, then $y=\sin^{-1}x$, i.e. the angle whose sine is
+$x$ or inverse sine of $x$, is a multiple-valued function of $x$
+which is a collection of single-valued functions called \emph{branches}.
+Similarly, the other inverse trigonometric functions are multiple-valued.
+
+For many purposes, a particular branch is required. This is called
+the \emph{principal branch} and the values for this branch are called
+\emph{principal values}.
+
+
+\subsection{Principal Values}
+
+\renewcommand{\arraystretch}{1.5}
+
+\begin{tabular}{|c|c|}
+\hline 
+Principal values for $x\ge0$ & Principal values for $x<0$\tabularnewline
+\hline 
+\hline 
+$0\le\sin^{-1}x\le\frac{\pi}{2}$ & $-\frac{\pi}{2}\le\sin^{-1}x<0$\tabularnewline
+\hline 
+$0\le\cos^{-1}x\le\frac{\pi}{2}$ & $\frac{\pi}{2}<\cos^{-1}x\le\pi$\tabularnewline
+\hline 
+$0\le\tan^{-1}x<\frac{\pi}{2}$ & $-\frac{\pi}{2}<\tan^{-1}x<0$\tabularnewline
+\hline 
+$0<\cot^{-1}x\le\frac{\pi}{2}$ & $\frac{\pi}{2}<\cot^{-1}x<\pi$\tabularnewline
+\hline 
+$0\le\sec^{-1}x<\frac{\pi}{2}$ & $\frac{\pi}{2}<\sec^{-1}x\le\pi$\tabularnewline
+\hline 
+$0<\csc^{-1}x\le\frac{\pi}{2}$ & $-\frac{\pi}{2}\le\csc^{-1}x<0$\tabularnewline
+\hline 
+\end{tabular}
+
+
+\subsection{Identities}
+
+In all cases it is assumed that principal values are used.
+
+
+\subsubsection{Reciprocal Identities}
+\begin{lyxlist}{00.00.0000}
+\item [{${\displaystyle \csc^{-1}x=\sin^{-1}\left(\frac{1}{x}\right)}$}]~
+\item [{${\displaystyle \sec^{-1}x=\cos^{-1}\left(\frac{1}{x}\right)}$}]~
+\item [{${\displaystyle \cot^{-1}x=\tan^{-1}\left(\frac{1}{x}\right)}$}]~
+\end{lyxlist}
+
+\subsubsection{Parity Identities}
+\begin{lyxlist}{00.00.0000}
+\item [{${\displaystyle \sin^{-1}\left(-x\right)=-\sin^{-1}x}$}]~
+\item [{${\displaystyle \cos^{-1}\left(-x\right)=\pi-\cos^{-1}x}$}]~
+\item [{${\displaystyle \tan^{-1}\left(-x\right)=-\tan^{-1}x}$}]~
+\item [{${\displaystyle \csc^{-1}\left(-x\right)=-\csc^{-1}x}$}]~
+\item [{${\displaystyle \sec^{-1}\left(-x\right)=\pi-\sec^{-1}x}$}]~
+\item [{${\displaystyle \cot^{-1}\left(-x\right)=\pi-\cot^{-1}x}$}]~
+\end{lyxlist}
+
+\subsubsection{Pythagorean Identities (sort of)}
+\begin{lyxlist}{00.00.0000}
+\item [{${\displaystyle \sin^{-1}x+\cos^{-1}x=\frac{\pi}{2}}$}]~
+\item [{${\displaystyle \tan^{-1}x+\cot^{-1}x=\frac{\pi}{2}}$}]~
+\item [{${\displaystyle \sec^{-1}x+\csc^{-1}x=\frac{\pi}{2}}$}]~
+\end{lyxlist}
+
+\subsubsection{Sum and Difference}
+
+${\displaystyle \sin^{-1}\alpha\pm\sin^{-1}\beta=\sin^{-1}\left(\alpha\sqrt{1-\beta^{2}}\pm\beta\sqrt{1-\alpha^{2}}\right)}$
+
+${\displaystyle \cos^{-1}\alpha\pm\cos^{-1}\beta=\cos^{-1}\left(\alpha\beta\mp\sqrt{\left(1-\alpha^{2}\right)\left(1-\beta^{2}\right)}\right)}$
+
+${\displaystyle \tan^{-1}\alpha\pm\tan^{-1}\beta=\tan^{-1}\left(\frac{\alpha\pm\beta}{1\mp\alpha\beta}\right)}$
+
+
+\section{Relationships Between Sides and Angles}
+
+
+\subsection{Law of Sines}
+
+${\displaystyle \frac{a}{\sin\alpha}=\frac{b}{\sin\beta}=\frac{c}{\sin\gamma}}$
+
+
+\paragraph*{Extended Law of Sines}
+
+\noindent \begin{center}
+\input{fig1.tikz}
+\par\end{center}
+
+${\displaystyle \frac{a}{\sin\alpha}=\frac{b}{\sin\beta}=\frac{c}{\sin\gamma}=2R}$,
+
+where $R$ is the circumradius of the triangle.
+
+
+\subsection{Law of Cosines}
+\begin{lyxlist}{00.00.0000}
+\item [{${\displaystyle \cos\alpha=\frac{b^{2}+c^{2}-a^{2}}{2bc}}$;}] ${\displaystyle a=\sqrt{b^{2}+c^{2}-2bc\cos\alpha}}$
+\item [{${\displaystyle \cos\beta=\frac{a^{2}+c^{2}-b^{2}}{2ac}}$;}] ${\displaystyle b=\sqrt{a^{2}+c^{2}-2ac\cos\beta}}$
+\item [{${\displaystyle \cos\gamma=\frac{a^{2}+b^{2}-c^{2}}{2ab}}$;}] ${\displaystyle c=\sqrt{a^{2}+b^{2}-2ab\cos\gamma}}$
+\end{lyxlist}
+
+\subsection{Law of Tangents}
+\begin{lyxlist}{00.00.0000}
+\item [{${\displaystyle \frac{a-b}{a+b}=\frac{\tan\frac{1}{2}\left(\alpha-\beta\right)}{\tan\frac{1}{2}\left(\alpha+\beta\right)}}$}]~
+\item [{${\displaystyle \frac{b-c}{b+c}=\frac{\tan\frac{1}{2}\left(\beta-\gamma\right)}{\tan\frac{1}{2}\left(\beta+\gamma\right)}}$}]~
+\item [{${\displaystyle \frac{c-a}{c+a}=\frac{\tan\frac{1}{2}\left(\gamma-\alpha\right)}{\tan\frac{1}{2}\left(\gamma+\alpha\right)}}$}]~
+\end{lyxlist}
+
+\subsection{Law of Cotangents}
+
+Let $s$ be the semi-perimeter, that is, $s=\frac{(a+b+c)}{2}$, and
+$r$ be the radius of the inscribed circle, then
+
+\noindent \begin{center}
+${\displaystyle \frac{\cot(\alpha/2)}{s-a}=\frac{\cot(\beta/2)}{s-b}=\frac{\cot(\gamma/2)}{s-c}=\frac{1}{r}}$
+\par\end{center}
+
+and furthermore that the inradius is given by $r=\sqrt{\frac{(s-a)(s-b)(s-c)}{s}}$.
+
+
+\subsection{Mollweide's Formula}
+
+Each of these identities uses all six parts of the triangle\textemdash the
+three angles and the lengths of the three sides.
+\begin{lyxlist}{00.00.0000}
+\item [{${\displaystyle \frac{a+b}{c}=\frac{\cos\left(\frac{\alpha-\beta}{2}\right)}{\sin\left(\frac{\gamma}{2}\right)}}$}]~
+\item [{${\displaystyle \frac{a-b}{c}=\frac{\sin\left(\frac{\alpha-\beta}{2}\right)}{\cos\left(\frac{\gamma}{2}\right)}}$}]~
+\end{lyxlist}
+
+\subsection{Stewart's Theorem}
+
+\noindent \begin{center}
+\input{fig2.tikz}
+\par\end{center}
+
+Let $D$ be a point in $\overline{BC}$ of $\triangle ABC$. If $\left|BD\right|=m$,
+$\left|CD\right|=n$, and $\left|AD\right|=d$, then ${\displaystyle b^{2}m+c^{2}n=a\left(d^{2}+mn\right)}$.
+
+
+\section{Solving Triangles}
+
+
+\subsection{AAA Triangle}
+\begin{enumerate}
+\item Write ``no solution'' as your answer.
+\end{enumerate}
+
+\subsection{AAS Triangle}
+\begin{enumerate}
+\item Solve for the missing angle.
+\item Use the Law of Sines twice for the other two sides.
+\end{enumerate}
+
+\subsection{ASA Triangle}
+\begin{enumerate}
+\item Solve for the missing angle.
+\item Use the Law of Sines twice for the other two sides.
+\end{enumerate}
+
+\subsection{SAS Triangle}
+\begin{enumerate}
+\item Use the Law of Cosines for the other non-included angle.
+\item Use the Law of Sines for the missing side.
+\item Solve for the missing angle.
+\end{enumerate}
+
+\subsection{SSS Triangle}
+\begin{enumerate}
+\item Use the Law of Cosines twice for the two angles.
+\item Solve for the missing angle.
+\end{enumerate}
+
+\subsection{SSA Triangle}
+
+When $\alpha$ is acute
+
+\begin{tabular}{|c|c|c|c|}
+\hline 
+$0<a<h$ & $a=h$ & $a>b$ & $h<a<b$\tabularnewline
+\hline 
+\hline 
+ & \input{ssa3.tikz} & \input{ssa2.tikz} & \input{ssa1.tikz}\tabularnewline
+\hline 
+0 & 1 & 1 & 2\tabularnewline
+\hline 
+\end{tabular}
+
+When $\alpha$ is obtuse
+
+\begin{tabular}{|c|c|}
+\hline 
+$0<a\le b$ & $a>b$\tabularnewline
+\hline 
+\hline 
+ & \tabularnewline
+\hline 
+0 & 1\tabularnewline
+\hline 
+\end{tabular}
+
+
+\section{Identities without Variables}
+\begin{lyxlist}{00.00.0000}
+\item [{${\displaystyle \cos20\textdegree\cdot\cos40\textdegree\cdot\cos80\textdegree=\frac{1}{8}}$}]~
+\item [{${\displaystyle \sin20\textdegree\cdot\sin40\textdegree\cdot\sin80\textdegree=\frac{\sqrt{3}}{8}}$}]~
+\item [{${\displaystyle \cos24^{\circ}+\cos48^{\circ}+\cos96^{\circ}+\cos168^{\circ}=\frac{1}{2}}$}]~
+\end{lyxlist}
+\end{multicols*}
+\end{document}

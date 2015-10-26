@@ -1,0 +1,21 @@
+\definecolor{zzttqq}{rgb}{0.26666666666666666,0.26666666666666666,0.26666666666666666}
+\definecolor{qqqqff}{rgb}{0.3333333333333333,0.3333333333333333,0.3333333333333333}
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm,scale=0.3]
+\clip(-4.3,1.96) rectangle (1.52,6.3);
+\fill[color=zzttqq,fill=zzttqq,fill opacity=0.1] (-2.74,3.04) -- (-0.25991935614988515,3.04) -- (-0.25991935614988515,5.520080643850115) -- cycle;
+\draw [color=zzttqq] (-2.74,3.04)-- (-0.25991935614988515,3.04);
+\draw [color=zzttqq] (-0.25991935614988515,3.04)-- (-0.25991935614988515,5.520080643850115);
+\draw [color=zzttqq] (-0.25991935614988515,5.520080643850115)-- (-2.74,3.04);
+\draw (-0.25991935614988515,5.520080643850115)-- (-0.25991935614988515,3.04);
+\begin{scriptsize}
+\draw [fill=qqqqff] (-2.74,3.04) circle (1.5pt);
+\draw[color=qqqqff] (-3.04,2.94) node {$A$};
+\draw [fill=qqqqff] (-0.25991935614988515,3.04) circle (1.5pt);
+\draw[color=qqqqff] (-0.02,2.92) node {$B$};
+\draw [fill=qqqqff] (-0.25991935614988515,5.520080643850115) circle (1.5pt);
+\draw[color=qqqqff] (-0.12,5.88) node {$C$};
+\draw[color=zzttqq] (0.12,4.46) node {$a$};
+\draw[color=zzttqq] (-1.68,4.68) node {$b$};
+\draw[color=black] (-0.52,4.42) node {$h$};
+\end{scriptsize}
+\end{tikzpicture}
