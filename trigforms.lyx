@@ -137,7 +137,7 @@ status open
 
 
 \backslash
-begin{multicols*}{2}
+begin{multicols}{2}
 \end_layout
 
 \end_inset
@@ -162,7 +162,7 @@ status open
 
 
 \backslash
-end{multicols*}
+end{multicols}
 \end_layout
 
 \end_inset
@@ -1052,17 +1052,53 @@ IV
 \end_layout
 
 \begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{multicols}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset Newpage newpage
 \end_inset
 
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{multicols}{2}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
-Properties
+Properties and General Forms
 \end_layout
 
 \begin_layout Subsection
+Properties
+\end_layout
+
+\begin_layout Subsubsection
 \begin_inset Formula $\sin x$
 \end_inset
 
@@ -1124,7 +1160,7 @@ VA: none
 Parity: odd
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Subsubsection
 \begin_inset Formula $\cos x$
 \end_inset
 
@@ -1186,7 +1222,7 @@ VA: none
 Parity: even
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Subsubsection
 \begin_inset Formula $\tan x$
 \end_inset
 
@@ -1248,7 +1284,7 @@ VA:
 Parity: odd
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Subsubsection
 \begin_inset Formula $\csc x$
 \end_inset
 
@@ -1261,7 +1297,7 @@ Domain:
 \end_inset
 
 or 
-\begin_inset Formula $\bigcup_{k\in\mathbb{Z}}\left(\frac{k\pi}{2},\frac{\left(k+2\right)\pi}{2}\right)$
+\begin_inset Formula $\bigcup_{k\in\mathbb{Z}}\left(k\pi,\left(k+1\right)\pi\right)$
 \end_inset
 
 
@@ -1310,7 +1346,7 @@ VA:
 Parity: odd
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Subsubsection
 \begin_inset Formula $\sec x$
 \end_inset
 
@@ -1372,7 +1408,7 @@ VA:
 Parity: even
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Subsubsection
 \begin_inset Formula $\cot x$
 \end_inset
 
@@ -1385,7 +1421,7 @@ Domain:
 \end_inset
 
  or 
-\begin_inset Formula $\bigcup_{k\in\mathbb{Z}}\left(\frac{k\pi}{2},\frac{\left(k+2\right)\pi}{2}\right)$
+\begin_inset Formula $\bigcup_{k\in\mathbb{Z}}\left(k\pi,\left(k+1\right)\pi\right)$
 \end_inset
 
 
@@ -1432,6 +1468,519 @@ VA:
 
 \begin_layout Description
 Parity: odd
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{multicols}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+General Forms of Trigonometric Functions
+\end_layout
+
+\begin_layout Standard
+Given some trigonometric function 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+, its general form is represented as 
+\begin_inset Formula $y=Af\left(B\left(x-C\right)\right)+D$
+\end_inset
+
+, where its amplitude is 
+\begin_inset Formula $\left|A\right|$
+\end_inset
+
+, its period is 
+\begin_inset Formula $\frac{2\pi}{\left|B\right|}$
+\end_inset
+
+ or 
+\begin_inset Formula $\frac{\pi}{\left|B\right|}$
+\end_inset
+
+ (for tangent and cotangent), its phase shift is 
+\begin_inset Formula $C$
+\end_inset
+
+, and its vertical translation is 
+\begin_inset Formula $D$
+\end_inset
+
+ units upward (if 
+\begin_inset Formula $D>0$
+\end_inset
+
+) or 
+\begin_inset Formula $D$
+\end_inset
+
+ units downward (if 
+\begin_inset Formula $D<0$
+\end_inset
+
+).
+ The maximum and minimum value for 
+\begin_inset Formula $\sin x$
+\end_inset
+
+ and 
+\begin_inset Formula $\cos x$
+\end_inset
+
+ is 
+\begin_inset Formula $A+D$
+\end_inset
+
+ and 
+\begin_inset Formula $-A+D$
+\end_inset
+
+ respectively.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace vfill
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+renewcommand{
+\backslash
+arraystretch}{1.5}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="4">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+amplitude
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+period
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+phase shift
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+vertical translation
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+definecolor{yqyqyq}{rgb}{0.5019607843137255,0.5019607843137255,0.5019607843137255}
+ 
+\backslash
+begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=0.75cm,y=0.75cm]
+ 
+\backslash
+draw[->,color=black] (-1,0) -- (4,0); 
+\backslash
+foreach 
+\backslash
+x in {-1,1,2,3} 
+\backslash
+draw[shift={(
+\backslash
+x,0)},color=black] (0pt,2pt) -- (0pt,-2pt) node[below] {
+\backslash
+footnotesize $
+\backslash
+x$}; 
+\backslash
+draw[->,color=black] (0,-2) -- (0,2); 
+\backslash
+foreach 
+\backslash
+y in {-2,-1,1} 
+\backslash
+draw[shift={(0,
+\backslash
+y)},color=black] (2pt,0pt) -- (-2pt,0pt) node[left] {
+\backslash
+footnotesize $
+\backslash
+y$}; 
+\backslash
+draw[color=black] (0pt,-10pt) node[right] {
+\backslash
+footnotesize $0$}; 
+\backslash
+clip(-1,-2) rectangle (4,2); 
+\backslash
+draw[line width=1.2pt,dash pattern=on 1pt off 1pt,color=yqyqyq,smooth,samples=100
+,domain=-1.0:4.0] plot(
+\backslash
+x,{sin(((
+\backslash
+x))*180/pi)}); 
+\backslash
+draw[line width=1.6pt,smooth,samples=100,domain=-1.0:4.0] plot(
+\backslash
+x,{1.75*sin(((
+\backslash
+x))*180/pi)}); 
+\backslash
+begin{scriptsize} 
+\backslash
+draw[color=yqyqyq] (-5.64,0.42) node {$f$}; 
+\backslash
+draw[color=black] (-5.64,-0.98) node {$a$}; 
+\backslash
+end{scriptsize} 
+\backslash
+end{tikzpicture} 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+definecolor{yqyqyq}{rgb}{0.5019607843137255,0.5019607843137255,0.5019607843137255}
+ 
+\backslash
+begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=0.75cm,y=0.75cm]
+ 
+\backslash
+draw[->,color=black] (-1,0) -- (4,0); 
+\backslash
+foreach 
+\backslash
+x in {-1,1,2,3} 
+\backslash
+draw[shift={(
+\backslash
+x,0)},color=black] (0pt,2pt) -- (0pt,-2pt) node[below] {
+\backslash
+footnotesize $
+\backslash
+x$}; 
+\backslash
+draw[->,color=black] (0,-2) -- (0,2); 
+\backslash
+foreach 
+\backslash
+y in {-2,-1,1} 
+\backslash
+draw[shift={(0,
+\backslash
+y)},color=black] (2pt,0pt) -- (-2pt,0pt) node[left] {
+\backslash
+footnotesize $
+\backslash
+y$}; 
+\backslash
+draw[color=black] (0pt,-10pt) node[right] {
+\backslash
+footnotesize $0$}; 
+\backslash
+clip(-1,-2) rectangle (4,2); 
+\backslash
+draw[line width=1.2pt,dash pattern=on 1pt off 1pt,color=yqyqyq,smooth,samples=100
+,domain=-1.0:4.0] plot(
+\backslash
+x,{sin(((
+\backslash
+x))*180/pi)}); 
+\backslash
+draw[line width=1.6pt,smooth,samples=100,domain=-1.0:4.0] plot(
+\backslash
+x,{sin((2.0*(
+\backslash
+x))*180/pi)}); 
+\backslash
+begin{scriptsize} 
+\backslash
+draw[color=yqyqyq] (-5.64,0.42) node {$f$}; 
+\backslash
+draw[color=black] (-5.64,-0.98) node {$a$}; 
+\backslash
+end{scriptsize} 
+\backslash
+end{tikzpicture}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+definecolor{yqyqyq}{rgb}{0.5019607843137255,0.5019607843137255,0.5019607843137255}
+ 
+\backslash
+begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=0.75cm,y=0.75cm]
+ 
+\backslash
+draw[->,color=black] (-1,0) -- (4,0); 
+\backslash
+foreach 
+\backslash
+x in {-1,1,2,3} 
+\backslash
+draw[shift={(
+\backslash
+x,0)},color=black] (0pt,2pt) -- (0pt,-2pt) node[below] {
+\backslash
+footnotesize $
+\backslash
+x$}; 
+\backslash
+draw[->,color=black] (0,-2) -- (0,2); 
+\backslash
+foreach 
+\backslash
+y in {-2,-1,1} 
+\backslash
+draw[shift={(0,
+\backslash
+y)},color=black] (2pt,0pt) -- (-2pt,0pt) node[left] {
+\backslash
+footnotesize $
+\backslash
+y$}; 
+\backslash
+draw[color=black] (0pt,-10pt) node[right] {
+\backslash
+footnotesize $0$}; 
+\backslash
+clip(-1,-2) rectangle (4,2); 
+\backslash
+draw[line width=1.2pt,dash pattern=on 1pt off 1pt,color=yqyqyq,smooth,samples=100
+,domain=-1.0:4.0] plot(
+\backslash
+x,{sin(((
+\backslash
+x))*180/pi)}); 
+\backslash
+draw[line width=1.6pt,smooth,samples=100,domain=-1.0:4.0] plot(
+\backslash
+x,{sin(((
+\backslash
+x)-3.1415926535/2.0)*180/pi)}); 
+\backslash
+begin{scriptsize} 
+\backslash
+draw[color=yqyqyq] (-5.64,0.42) node {$f$}; 
+\backslash
+draw[color=black] (-5.64,-0.98) node {$a$}; 
+\backslash
+end{scriptsize} 
+\backslash
+end{tikzpicture}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+definecolor{yqyqyq}{rgb}{0.5019607843137255,0.5019607843137255,0.5019607843137255}
+ 
+\backslash
+begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=0.75cm,y=0.75cm]
+ 
+\backslash
+draw[->,color=black] (-1,0) -- (4,0); 
+\backslash
+foreach 
+\backslash
+x in {-1,1,2,3} 
+\backslash
+draw[shift={(
+\backslash
+x,0)},color=black] (0pt,2pt) -- (0pt,-2pt) node[below] {
+\backslash
+footnotesize $
+\backslash
+x$}; 
+\backslash
+draw[->,color=black] (0,-2) -- (0,2); 
+\backslash
+foreach 
+\backslash
+y in {-2,-1,1} 
+\backslash
+draw[shift={(0,
+\backslash
+y)},color=black] (2pt,0pt) -- (-2pt,0pt) node[left] {
+\backslash
+footnotesize $
+\backslash
+y$}; 
+\backslash
+draw[color=black] (0pt,-10pt) node[right] {
+\backslash
+footnotesize $0$}; 
+\backslash
+clip(-1,-2) rectangle (4,2); 
+\backslash
+draw[line width=1.2pt,dash pattern=on 1pt off 1pt,color=yqyqyq,smooth,samples=100
+,domain=-1.0:4.0] plot(
+\backslash
+x,{sin(((
+\backslash
+x))*180/pi)}); 
+\backslash
+draw[line width=1.6pt,smooth,samples=100,domain=-1.0:4.0] plot(
+\backslash
+x,{sin(((
+\backslash
+x))*180/pi)-1}); 
+\backslash
+begin{scriptsize} 
+\backslash
+draw[color=yqyqyq] (-5.64,0.42) node {$f$}; 
+\backslash
+draw[color=black] (-5.64,-0.98) node {$a$}; 
+\backslash
+end{scriptsize} 
+\backslash
+end{tikzpicture} 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{multicols*}{2}
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
@@ -1759,11 +2308,20 @@ Let
 \begin_inset Formula $n\in\left\{ 1,2,3,4\right\} $
 \end_inset
 
-, denote the set of all points within the 
+, denote the set of all angles within the 
 \begin_inset Formula $n$
 \end_inset
 
-th quadrant of the Cartesian plane.
+
+\begin_inset script superscript
+
+\begin_layout Plain Layout
+th
+\end_layout
+
+\end_inset
+
+ quadrant of the Cartesian plane.
 \end_layout
 
 \begin_layout Labeling
@@ -1990,7 +2548,15 @@ Sum to Product
 
 \begin_layout Labeling
 \labelwidthstring 00.00.0000
-\begin_inset Formula ${\displaystyle \cos\theta\pm\cos\varphi=\pm2\sin\frac{\theta+\varphi}{2}\cos\frac{\theta-\varphi}{2}}$
+\begin_inset Formula ${\displaystyle \cos\theta+\cos\varphi=2\cos\frac{\theta+\varphi}{2}\cos\frac{\theta-\varphi}{2}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula ${\displaystyle \cos\theta-\cos\varphi=-2\sin\frac{\theta+\varphi}{2}\sin\frac{\theta-\varphi}{2}}$
 \end_inset
 
 
@@ -2046,29 +2612,106 @@ Triple Cotangent Identity.
 .
 \end_layout
 
+\begin_layout Itemize
+
+\emph on
+Ptolemy's Theorem.
+
+\emph default
+ If 
+\begin_inset Formula $w+x+y+z=\pi$
+\end_inset
+
+, then 
+\begin_inset Formula $\sin\left(w+x\right)\sin\left(x+y\right)=\sin w\sin y+\sin x\sin z$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\cot x\cot y+\cot y\cot z+\cot z\cot x=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\tan x+\sec x=\tan\left(\frac{x}{2}+\frac{\pi}{4}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula ${\displaystyle \sum_{i=0}^{n}\sin\left(\varphi+i\alpha\right)=\frac{\sin\frac{\left(n+1\right)\alpha}{2}\sin\left(\varphi+\frac{n\alpha}{2}\right)}{\sin\frac{\alpha}{2}}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula ${\displaystyle \sum_{i=0}^{n}\cos\left(\varphi+i\alpha\right)=\frac{\sin\frac{\left(n+1\right)\alpha}{2}\cos\left(\varphi+\frac{n\alpha}{2}\right)}{\sin\frac{\alpha}{2}}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula ${\displaystyle \sum_{n=1}^{\infty}\prod_{m=1}^{n}\cos\frac{m\pi}{2n+1}=1}$
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
 Identities without Variables
 \end_layout
 
-\begin_layout Labeling
-\labelwidthstring 00.00.0000
+\begin_layout Itemize
 \begin_inset Formula ${\displaystyle \cos20\textdegree\cdot\cos40\textdegree\cdot\cos80\textdegree=\frac{1}{8}}$
 \end_inset
 
 
 \end_layout
 
-\begin_layout Labeling
-\labelwidthstring 00.00.0000
+\begin_layout Itemize
 \begin_inset Formula ${\displaystyle \sin20\textdegree\cdot\sin40\textdegree\cdot\sin80\textdegree=\frac{\sqrt{3}}{8}}$
 \end_inset
 
 
 \end_layout
 
-\begin_layout Labeling
-\labelwidthstring 00.00.0000
+\begin_layout Itemize
 \begin_inset Formula ${\displaystyle \cos24^{\circ}+\cos48^{\circ}+\cos96^{\circ}+\cos168^{\circ}=\frac{1}{2}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\cos\frac{2\pi}{21}+\cos\left(2\cdot\frac{2\pi}{21}\right)+\cos\left(4\cdot\frac{2\pi}{21}\right)+\cos\left(5\cdot\frac{2\pi}{21}\right)+\cos\left(8\cdot\frac{2\pi}{21}\right)+\cos\left(10\cdot\frac{2\pi}{21}\right)=\frac{1}{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula ${\displaystyle \cos\frac{\pi}{5}=\cos36^{\circ}=\tfrac{1}{4}(\sqrt{5}+1)=\tfrac{1}{2}\varphi}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula ${\displaystyle \sin\frac{\pi}{10}=\sin18^{\circ}=\tfrac{1}{4}(\sqrt{5}-1)=\tfrac{1}{2}\varphi^{-1}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\sin^{2}18^{\circ}+\sin^{2}30^{\circ}=\sin^{2}36^{\circ}$
 \end_inset
 
 
@@ -2082,7 +2725,7 @@ status open
 
 
 \backslash
-end{multicols}
+end{multicols*}
 \end_layout
 
 \end_inset
@@ -4704,7 +5347,7 @@ status open
 \backslash
 renewcommand{
 \backslash
-arraystretch}{3}
+arraystretch}{2.5}
 \end_layout
 
 \end_inset
@@ -6248,6 +6891,13 @@ Use the Law of Cosines twice for the two angles.
 Solve for the missing angle.
 \end_layout
 
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
 SSA Triangle
 \end_layout
@@ -6329,6 +6979,68 @@ When
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+definecolor{qqqqff}{rgb}{0.3333333333333333,0.3333333333333333,0.3333333333333333}
+ 
+\backslash
+definecolor{xdxdff}{rgb}{0.6588235294117647,0.6588235294117647,0.6588235294117647}
+ 
+\backslash
+definecolor{uuuuuu}{rgb}{0.26666666666666666,0.26666666666666666,0.2666666666666666
+6} 
+\backslash
+begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm,sc
+ale=0.25] 
+\backslash
+clip(-1.4108232491791761,-1.6585019652159858) rectangle (5.662326768433716,3.7807688
+24782209); 
+\backslash
+draw (0.,0.)-- (4.537620935244387,0.); 
+\backslash
+draw (0.,0.)-- (3.4163664926017203,2.601018310969815); 
+\backslash
+draw (3.4163664926017203,2.601018310969815)-- (4.225202648247351,1.2846651060844072)
+; 
+\backslash
+draw [dash pattern=on 3pt off 3pt] (3.4163664926017203,2.601018310969815)--
+ (3.4163664926017203,0.); 
+\backslash
+begin{scriptsize} 
+\backslash
+draw [fill=uuuuuu] (0.,0.) circle (1.5pt); 
+\backslash
+draw[color=uuuuuu] (-0.19864029563067692,-0.1310355104904654) node {$A$};
+ 
+\backslash
+draw [fill=xdxdff] (4.537620935244387,0.) circle (1.5pt); 
+\backslash
+draw[color=xdxdff] (4.700078444482846,-0.14345393695164854) node {$B$}; 
+\backslash
+draw [fill=qqqqff] (3.4163664926017203,2.601018310969815) circle (1.5pt); 
+\backslash
+draw[color=qqqqff] (3.500392222414228,2.774876281426378) node {$C$}; 
+\backslash
+draw[color=black] (1.5009151856331984,1.6820547528422662) node {$b$}; 
+\backslash
+draw [fill=qqqqff] (4.225202648247351,1.2846651060844072) circle (1.5pt); 
+\backslash
+draw[color=black] (4.125228796408299,2.054607546677759) node {$a$}; 
+\backslash
+draw[color=black] (3.212967398376955,1.259828253162041) node {$h$}; 
+\backslash
+end{scriptsize} 
+\backslash
+end{tikzpicture}
+\end_layout
+
+\end_inset
+
 
 \end_layout
 

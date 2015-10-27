@@ -58,11 +58,11 @@
 \date{\textsf{October 27, 2015}}
 
 \maketitle
-\begin{multicols*}{2}
+\begin{multicols}{2}
 
 \tableofcontents{}
 
-\end{multicols*}\newpage{}
+\end{multicols}\newpage{}
 
 \begin{multicols}{2}
 
@@ -221,13 +221,20 @@ IV & $\begin{array}{c}
 \hline 
 \end{tabular}
 
+\end{multicols}
+
 \newpage{}
 
+\begin{multicols}{2}
 
-\section{Properties}
+
+\section{Properties and General Forms}
 
 
-\subsection{$\sin x$}
+\subsection{Properties}
+
+
+\subsubsection{$\sin x$}
 \begin{description}
 \item [{Domain:}] $\left\{ x|x\in\mathbb{R}\right\} $ or $\left(-\infty,+\infty\right)$
 \item [{Range:}] $\left\{ y|-1\le y\le1\right\} $ or $\left[-1,1\right]$
@@ -237,7 +244,7 @@ IV & $\begin{array}{c}
 \item [{Parity:}] odd
 \end{description}
 
-\subsection{$\cos x$}
+\subsubsection{$\cos x$}
 \begin{description}
 \item [{Domain:}] $\left\{ x|x\in\mathbb{R}\right\} $ or $\left(-\infty,+\infty\right)$
 \item [{Range:}] $\left\{ y|-1\le y\le1\right\} $ or $\left[-1,1\right]$
@@ -247,7 +254,7 @@ IV & $\begin{array}{c}
 \item [{Parity:}] even
 \end{description}
 
-\subsection{$\tan x$}
+\subsubsection{$\tan x$}
 \begin{description}
 \item [{Domain:}] $\left\{ x|x\ne\frac{\pi}{2}+k\pi,k\in\mathbb{Z}\right\} $
 or $\bigcup_{k\in\mathbb{Z}}\left(\frac{\left(k-1\right)\pi}{2},\frac{\left(k+1\right)\pi}{2}\right)$
@@ -258,9 +265,9 @@ or $\bigcup_{k\in\mathbb{Z}}\left(\frac{\left(k-1\right)\pi}{2},\frac{\left(k+1\
 \item [{Parity:}] odd
 \end{description}
 
-\subsection{$\csc x$}
+\subsubsection{$\csc x$}
 \begin{description}
-\item [{Domain:}] $\left\{ x|x\ne k\pi,k\in\mathbb{Z}\right\} $or $\bigcup_{k\in\mathbb{Z}}\left(\frac{k\pi}{2},\frac{\left(k+2\right)\pi}{2}\right)$
+\item [{Domain:}] $\left\{ x|x\ne k\pi,k\in\mathbb{Z}\right\} $or $\bigcup_{k\in\mathbb{Z}}\left(k\pi,\left(k+1\right)\pi\right)$
 \item [{Range:}] $\left\{ y|y\le1\cup y\ge1\right\} $ or $\left(-\infty,-1\right]\cup\left[1,+\infty\right)$
 \item [{Period:}] $2\pi$
 \item [{VA:}] $x=k\pi$ where $k\in\mathbb{Z}$
@@ -268,7 +275,7 @@ or $\bigcup_{k\in\mathbb{Z}}\left(\frac{\left(k-1\right)\pi}{2},\frac{\left(k+1\
 \item [{Parity:}] odd
 \end{description}
 
-\subsection{$\sec x$}
+\subsubsection{$\sec x$}
 \begin{description}
 \item [{Domain:}] $\left\{ x|x\ne\frac{\pi}{2}+k\pi,k\in\mathbb{Z}\right\} $
 or $\bigcup_{k\in\mathbb{Z}}\left(\frac{\left(k-1\right)\pi}{2},\frac{\left(k+1\right)\pi}{2}\right)$
@@ -279,15 +286,45 @@ or $\bigcup_{k\in\mathbb{Z}}\left(\frac{\left(k-1\right)\pi}{2},\frac{\left(k+1\
 \item [{Parity:}] even
 \end{description}
 
-\subsection{$\cot x$}
+\subsubsection{$\cot x$}
 \begin{description}
-\item [{Domain:}] $\left\{ x|x\ne k\pi,k\in\mathbb{Z}\right\} $ or $\bigcup_{k\in\mathbb{Z}}\left(\frac{k\pi}{2},\frac{\left(k+2\right)\pi}{2}\right)$
+\item [{Domain:}] $\left\{ x|x\ne k\pi,k\in\mathbb{Z}\right\} $ or $\bigcup_{k\in\mathbb{Z}}\left(k\pi,\left(k+1\right)\pi\right)$
 \item [{Range:}] $\left\{ y|y\in\mathbb{R}\right\} $ or $\left(-\infty,+\infty\right)$
 \item [{Period:}] $\pi$
 \item [{VA:}] $x=k\pi$ where $k\in\mathbb{Z}$
 \item [{$x$-intercepts:}] midway between asymptotes
 \item [{Parity:}] odd
 \end{description}
+\end{multicols}
+
+
+\subsection{General Forms of Trigonometric Functions}
+
+Given some trigonometric function $f\left(x\right)$, its general
+form is represented as $y=Af\left(B\left(x-C\right)\right)+D$, where
+its amplitude is $\left|A\right|$, its period is $\frac{2\pi}{\left|B\right|}$
+or $\frac{\pi}{\left|B\right|}$ (for tangent and cotangent), its
+phase shift is $C$, and its vertical translation is $D$ units upward
+(if $D>0$) or $D$ units downward (if $D<0$). The maximum and minimum
+value for $\sin x$ and $\cos x$ is $A+D$ and $-A+D$ respectively. 
+
+\vfill{}
+
+
+\renewcommand{\arraystretch}{1.5}
+
+\begin{tabular}{|c|c|c|c|}
+\hline 
+amplitude & period & phase shift & vertical translation\tabularnewline
+\hline 
+\definecolor{yqyqyq}{rgb}{0.5019607843137255,0.5019607843137255,0.5019607843137255} \begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=0.75cm,y=0.75cm] \draw[->,color=black] (-1,0) -- (4,0); \foreach \x in {-1,1,2,3} \draw[shift={(\x,0)},color=black] (0pt,2pt) -- (0pt,-2pt) node[below] {\footnotesize $\x$}; \draw[->,color=black] (0,-2) -- (0,2); \foreach \y in {-2,-1,1} \draw[shift={(0,\y)},color=black] (2pt,0pt) -- (-2pt,0pt) node[left] {\footnotesize $\y$}; \draw[color=black] (0pt,-10pt) node[right] {\footnotesize $0$}; \clip(-1,-2) rectangle (4,2); \draw[line width=1.2pt,dash pattern=on 1pt off 1pt,color=yqyqyq,smooth,samples=100,domain=-1.0:4.0] plot(\x,{sin(((\x))*180/pi)}); \draw[line width=1.6pt,smooth,samples=100,domain=-1.0:4.0] plot(\x,{1.75*sin(((\x))*180/pi)}); \begin{scriptsize} \draw[color=yqyqyq] (-5.64,0.42) node {$f$}; \draw[color=black] (-5.64,-0.98) node {$a$}; \end{scriptsize} \end{tikzpicture}  & \definecolor{yqyqyq}{rgb}{0.5019607843137255,0.5019607843137255,0.5019607843137255} \begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=0.75cm,y=0.75cm] \draw[->,color=black] (-1,0) -- (4,0); \foreach \x in {-1,1,2,3} \draw[shift={(\x,0)},color=black] (0pt,2pt) -- (0pt,-2pt) node[below] {\footnotesize $\x$}; \draw[->,color=black] (0,-2) -- (0,2); \foreach \y in {-2,-1,1} \draw[shift={(0,\y)},color=black] (2pt,0pt) -- (-2pt,0pt) node[left] {\footnotesize $\y$}; \draw[color=black] (0pt,-10pt) node[right] {\footnotesize $0$}; \clip(-1,-2) rectangle (4,2); \draw[line width=1.2pt,dash pattern=on 1pt off 1pt,color=yqyqyq,smooth,samples=100,domain=-1.0:4.0] plot(\x,{sin(((\x))*180/pi)}); \draw[line width=1.6pt,smooth,samples=100,domain=-1.0:4.0] plot(\x,{sin((2.0*(\x))*180/pi)}); \begin{scriptsize} \draw[color=yqyqyq] (-5.64,0.42) node {$f$}; \draw[color=black] (-5.64,-0.98) node {$a$}; \end{scriptsize} \end{tikzpicture} & \definecolor{yqyqyq}{rgb}{0.5019607843137255,0.5019607843137255,0.5019607843137255} \begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=0.75cm,y=0.75cm] \draw[->,color=black] (-1,0) -- (4,0); \foreach \x in {-1,1,2,3} \draw[shift={(\x,0)},color=black] (0pt,2pt) -- (0pt,-2pt) node[below] {\footnotesize $\x$}; \draw[->,color=black] (0,-2) -- (0,2); \foreach \y in {-2,-1,1} \draw[shift={(0,\y)},color=black] (2pt,0pt) -- (-2pt,0pt) node[left] {\footnotesize $\y$}; \draw[color=black] (0pt,-10pt) node[right] {\footnotesize $0$}; \clip(-1,-2) rectangle (4,2); \draw[line width=1.2pt,dash pattern=on 1pt off 1pt,color=yqyqyq,smooth,samples=100,domain=-1.0:4.0] plot(\x,{sin(((\x))*180/pi)}); \draw[line width=1.6pt,smooth,samples=100,domain=-1.0:4.0] plot(\x,{sin(((\x)-3.1415926535/2.0)*180/pi)}); \begin{scriptsize} \draw[color=yqyqyq] (-5.64,0.42) node {$f$}; \draw[color=black] (-5.64,-0.98) node {$a$}; \end{scriptsize} \end{tikzpicture} & \definecolor{yqyqyq}{rgb}{0.5019607843137255,0.5019607843137255,0.5019607843137255} \begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=0.75cm,y=0.75cm] \draw[->,color=black] (-1,0) -- (4,0); \foreach \x in {-1,1,2,3} \draw[shift={(\x,0)},color=black] (0pt,2pt) -- (0pt,-2pt) node[below] {\footnotesize $\x$}; \draw[->,color=black] (0,-2) -- (0,2); \foreach \y in {-2,-1,1} \draw[shift={(0,\y)},color=black] (2pt,0pt) -- (-2pt,0pt) node[left] {\footnotesize $\y$}; \draw[color=black] (0pt,-10pt) node[right] {\footnotesize $0$}; \clip(-1,-2) rectangle (4,2); \draw[line width=1.2pt,dash pattern=on 1pt off 1pt,color=yqyqyq,smooth,samples=100,domain=-1.0:4.0] plot(\x,{sin(((\x))*180/pi)}); \draw[line width=1.6pt,smooth,samples=100,domain=-1.0:4.0] plot(\x,{sin(((\x))*180/pi)-1}); \begin{scriptsize} \draw[color=yqyqyq] (-5.64,0.42) node {$f$}; \draw[color=black] (-5.64,-0.98) node {$a$}; \end{scriptsize} \end{tikzpicture} \tabularnewline
+\hline 
+\end{tabular}
+
+\newpage{}
+
+\begin{multicols*}{2}
+
 
 \section{Identities}
 
@@ -359,8 +396,8 @@ ${\displaystyle \csc^{2}\theta-\cot^{2}\theta=1}$
 \subsection{Half Angle}
 
 Let $\mathcal{Q}_{n}$, where $n\in\left\{ 1,2,3,4\right\} $, denote
-the set of all points within the $n$th quadrant of the Cartesian
-plane.
+the set of all angles within the $n$\textsuperscript{th} quadrant
+of the Cartesian plane.
 \begin{lyxlist}{00.00.0000}
 \item [{${\displaystyle \sin\frac{\alpha}{2}=\begin{cases}
 \sqrt{\frac{1-\cos\alpha}{2}} & \frac{\alpha}{2}\in\left(\mathcal{Q}_{1}\cup\mathcal{Q}_{2}\right)\\
@@ -409,7 +446,8 @@ plane.
 \subsection{Sum to Product}
 \begin{lyxlist}{00.00.0000}
 \item [{${\displaystyle \sin\theta\pm\sin\varphi=2\sin\frac{\theta\pm\varphi}{2}\cos\frac{\theta\mp\varphi}{2}}$}]~
-\item [{${\displaystyle \cos\theta\pm\cos\varphi=\pm2\sin\frac{\theta+\varphi}{2}\cos\frac{\theta-\varphi}{2}}$}]~
+\item [{${\displaystyle \cos\theta+\cos\varphi=2\cos\frac{\theta+\varphi}{2}\cos\frac{\theta-\varphi}{2}}$}]~
+\item [{${\displaystyle \cos\theta-\cos\varphi=-2\sin\frac{\theta+\varphi}{2}\sin\frac{\theta-\varphi}{2}}$}]~
 \end{lyxlist}
 
 \subsection{Other Related Identities}
@@ -418,15 +456,25 @@ plane.
 \item \emph{Triple Tangent Identity.} If $x+y+z=\pi$, then $\tan x+\tan y+\tan z=\tan x\tan y\tan z$.
 \item \emph{Triple Cotangent Identity.} If $x+y+z=\frac{\pi}{2}$, then
 $\cot x+\cot y+\cot z=\cot x\cot y\cot z$.
+\item \emph{Ptolemy's Theorem.} If $w+x+y+z=\pi$, then $\sin\left(w+x\right)\sin\left(x+y\right)=\sin w\sin y+\sin x\sin z$.
+\item $\cot x\cot y+\cot y\cot z+\cot z\cot x=1$
+\item $\tan x+\sec x=\tan\left(\frac{x}{2}+\frac{\pi}{4}\right)$
+\item ${\displaystyle \sum_{i=0}^{n}\sin\left(\varphi+i\alpha\right)=\frac{\sin\frac{\left(n+1\right)\alpha}{2}\sin\left(\varphi+\frac{n\alpha}{2}\right)}{\sin\frac{\alpha}{2}}}$
+\item ${\displaystyle \sum_{i=0}^{n}\cos\left(\varphi+i\alpha\right)=\frac{\sin\frac{\left(n+1\right)\alpha}{2}\cos\left(\varphi+\frac{n\alpha}{2}\right)}{\sin\frac{\alpha}{2}}}$
+\item ${\displaystyle \sum_{n=1}^{\infty}\prod_{m=1}^{n}\cos\frac{m\pi}{2n+1}=1}$
 \end{itemize}
 
 \subsection{Identities without Variables}
-\begin{lyxlist}{00.00.0000}
-\item [{${\displaystyle \cos20\textdegree\cdot\cos40\textdegree\cdot\cos80\textdegree=\frac{1}{8}}$}]~
-\item [{${\displaystyle \sin20\textdegree\cdot\sin40\textdegree\cdot\sin80\textdegree=\frac{\sqrt{3}}{8}}$}]~
-\item [{${\displaystyle \cos24^{\circ}+\cos48^{\circ}+\cos96^{\circ}+\cos168^{\circ}=\frac{1}{2}}$}]~
-\end{lyxlist}
-\end{multicols}
+\begin{itemize}
+\item ${\displaystyle \cos20\textdegree\cdot\cos40\textdegree\cdot\cos80\textdegree=\frac{1}{8}}$
+\item ${\displaystyle \sin20\textdegree\cdot\sin40\textdegree\cdot\sin80\textdegree=\frac{\sqrt{3}}{8}}$
+\item ${\displaystyle \cos24^{\circ}+\cos48^{\circ}+\cos96^{\circ}+\cos168^{\circ}=\frac{1}{2}}$
+\item $\cos\frac{2\pi}{21}+\cos\left(2\cdot\frac{2\pi}{21}\right)+\cos\left(4\cdot\frac{2\pi}{21}\right)+\cos\left(5\cdot\frac{2\pi}{21}\right)+\cos\left(8\cdot\frac{2\pi}{21}\right)+\cos\left(10\cdot\frac{2\pi}{21}\right)=\frac{1}{2}$
+\item ${\displaystyle \cos\frac{\pi}{5}=\cos36^{\circ}=\tfrac{1}{4}(\sqrt{5}+1)=\tfrac{1}{2}\varphi}$
+\item ${\displaystyle \sin\frac{\pi}{10}=\sin18^{\circ}=\tfrac{1}{4}(\sqrt{5}-1)=\tfrac{1}{2}\varphi^{-1}}$
+\item $\sin^{2}18^{\circ}+\sin^{2}30^{\circ}=\sin^{2}36^{\circ}$
+\end{itemize}
+\end{multicols*}
 
 
 \section{Tables }
@@ -474,7 +522,7 @@ $360\textdegree$ & $2\pi$ & $0$ & $1$ & $0$ & $\mp\infty$ & $1$ & $\mp\infty$\ta
 
 \subsection{Relations Between Trig Functions}
 
-\renewcommand{\arraystretch}{3}
+\renewcommand{\arraystretch}{2.5}
 
 \begin{tabular}{|c||c|c|c|c|c|c|}
 \hline 
@@ -677,6 +725,8 @@ $\left|CD\right|=n$, and $\left|AD\right|=d$, then ${\displaystyle b^{2}m+c^{2}n
 \item Use the Law of Cosines twice for the two angles.
 \item Solve for the missing angle.
 \end{enumerate}
+\newpage{}
+
 
 \subsection{SSA Triangle}
 
@@ -690,7 +740,7 @@ When $\alpha$ is acute
 $0<a<h$ & $a=h$ & $a>b$ & $h<a<b$\tabularnewline
 \hline 
 \hline 
- & \input{ssa3.tikz} & \input{ssa2.tikz} & \input{ssa1.tikz}\tabularnewline
+\definecolor{qqqqff}{rgb}{0.3333333333333333,0.3333333333333333,0.3333333333333333} \definecolor{xdxdff}{rgb}{0.6588235294117647,0.6588235294117647,0.6588235294117647} \definecolor{uuuuuu}{rgb}{0.26666666666666666,0.26666666666666666,0.26666666666666666} \begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm,scale=0.25] \clip(-1.4108232491791761,-1.6585019652159858) rectangle (5.662326768433716,3.780768824782209); \draw (0.,0.)-- (4.537620935244387,0.); \draw (0.,0.)-- (3.4163664926017203,2.601018310969815); \draw (3.4163664926017203,2.601018310969815)-- (4.225202648247351,1.2846651060844072); \draw [dash pattern=on 3pt off 3pt] (3.4163664926017203,2.601018310969815)-- (3.4163664926017203,0.); \begin{scriptsize} \draw [fill=uuuuuu] (0.,0.) circle (1.5pt); \draw[color=uuuuuu] (-0.19864029563067692,-0.1310355104904654) node {$A$}; \draw [fill=xdxdff] (4.537620935244387,0.) circle (1.5pt); \draw[color=xdxdff] (4.700078444482846,-0.14345393695164854) node {$B$}; \draw [fill=qqqqff] (3.4163664926017203,2.601018310969815) circle (1.5pt); \draw[color=qqqqff] (3.500392222414228,2.774876281426378) node {$C$}; \draw[color=black] (1.5009151856331984,1.6820547528422662) node {$b$}; \draw [fill=qqqqff] (4.225202648247351,1.2846651060844072) circle (1.5pt); \draw[color=black] (4.125228796408299,2.054607546677759) node {$a$}; \draw[color=black] (3.212967398376955,1.259828253162041) node {$h$}; \end{scriptsize} \end{tikzpicture} & \input{ssa3.tikz} & \input{ssa2.tikz} & \input{ssa1.tikz}\tabularnewline
 \hline 
 0 & 1 & 1 & 2\tabularnewline
 \hline 
