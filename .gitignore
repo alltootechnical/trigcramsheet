@@ -16,6 +16,7 @@ local.properties
 .settings/
 .loadpath
 *.lyx~
+*.lyx#
 
 # External tool builders
 .externalToolBuilders/
