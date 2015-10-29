@@ -58,11 +58,11 @@
 \date{\textsf{October 27, 2015}}
 
 \maketitle
-\begin{multicols}{2}
+\begin{multicols*}{2}
 
 \tableofcontents{}
 
-\end{multicols}\newpage{}
+\end{multicols*}\newpage{}
 
 \begin{multicols}{2}
 
@@ -76,8 +76,8 @@ as follows:
 \item ${\displaystyle \sin A=\frac{a}{c}=\frac{\mathrm{opposite}}{\mathrm{hypotenuse}}}$
 \item ${\displaystyle \cos A=\frac{b}{c}=\frac{\mathrm{adjacent}}{\mathrm{hypotenuse}}}$
 \item ${\displaystyle \tan A=\frac{a}{b}=\frac{\mathrm{opposite}}{\mathrm{adjacent}}}$
-\item ${\displaystyle \csc A=\frac{b}{a}=\frac{\mathrm{hypotenuse}}{\mathrm{opposite}}}$
-\item ${\displaystyle \sec A=\frac{c}{a}=\frac{\mathrm{hypotenuse}}{\mathrm{adjacent}}}$
+\item ${\displaystyle \csc A=\frac{c}{a}=\frac{\mathrm{hypotenuse}}{\mathrm{opposite}}}$
+\item ${\displaystyle \sec A=\frac{c}{b}=\frac{\mathrm{hypotenuse}}{\mathrm{adjacent}}}$
 \item ${\displaystyle \cot A=\frac{b}{a}=\frac{\mathrm{adjacent}}{\mathrm{opposite}}}$
 \end{enumerate}
 
@@ -360,12 +360,12 @@ ${\displaystyle \csc^{2}\theta-\cot^{2}\theta=1}$
 
 \subsubsection{Co-function Identities}
 \begin{lyxlist}{00.00.0000}
-\item [{${\displaystyle \sin\left(\frac{\pi}{2}-\theta\right)=-\sin\theta}$}]~
-\item [{${\displaystyle \cos\left(\frac{\pi}{2}-\theta\right)=\cos\theta}$}]~
-\item [{${\displaystyle \tan\left(\frac{\pi}{2}-\theta\right)=-\tan\theta}$}]~
-\item [{${\displaystyle \csc\left(\frac{\pi}{2}-\theta\right)=-\csc\theta}$}]~
-\item [{${\displaystyle \sec\left(\frac{\pi}{2}-\theta\right)=\sec\theta}$}]~
-\item [{${\displaystyle \cot\left(\frac{\pi}{2}-\theta\right)=-\cot\theta}$}]~
+\item [{${\displaystyle \sin\left(\frac{\pi}{2}-\theta\right)=\cos\theta}$}]~
+\item [{${\displaystyle \cos\left(\frac{\pi}{2}-\theta\right)=\sin\theta}$}]~
+\item [{${\displaystyle \tan\left(\frac{\pi}{2}-\theta\right)=\cot\theta}$}]~
+\item [{${\displaystyle \csc\left(\frac{\pi}{2}-\theta\right)=\sec\theta}$}]~
+\item [{${\displaystyle \sec\left(\frac{\pi}{2}-\theta\right)=\csc\theta}$}]~
+\item [{${\displaystyle \cot\left(\frac{\pi}{2}-\theta\right)=\tan\theta}$}]~
 \end{lyxlist}
 
 \subsubsection{Parity Identities}
@@ -449,6 +449,55 @@ of the Cartesian plane.
 \item [{${\displaystyle \cos\theta+\cos\varphi=2\cos\frac{\theta+\varphi}{2}\cos\frac{\theta-\varphi}{2}}$}]~
 \item [{${\displaystyle \cos\theta-\cos\varphi=-2\sin\frac{\theta+\varphi}{2}\sin\frac{\theta-\varphi}{2}}$}]~
 \end{lyxlist}
+
+\subsection{Linear Combinations}
+
+For some purposes it is important to know that any linear combination
+of sine waves of the same period or frequency but different phase
+shifts is also a sine wave with the same period or frequency, but
+a different phase shift.
+
+The two-argument form of the arctangent function, denoted by $\tan^{-1}\left(y,x\right)$
+gathers information on the signs of the inputs in order to return
+the appropriate quadrant of the computed angle. Thus, it is defined
+as:
+
+$\tan^{-1}(y,x)=\begin{cases}
+\tan^{-1}\left(\frac{y}{x}\right) & \text{if }x>0,\\
+\tan^{-1}\left(\frac{y}{x}\right)+\pi & \text{if }x<0\text{ and }y\ge0,\\
+\tan^{-1}\left(\frac{y}{x}\right)-\pi & \text{if }x<0\text{ and }y<0,\\
++\frac{\pi}{2} & \text{if }x=0\text{ and }y>0,\\
+-\frac{\pi}{2} & \text{if }x=0\text{ and }y<0,\\
+\text{undefined} & \text{if }x=0\text{ and }y=0.
+\end{cases}$
+
+
+\subsubsection{Sine and Cosine}
+
+In the case of a non-zero linear combination of a sine and cosine
+wave (which is just a sine wave with a phase shift of $\frac{\pi}{2}$),
+we have:
+
+\noindent \begin{center}
+${\displaystyle a\sin x+b\cos x=c\sin\left(x+\theta\right)}$
+\par\end{center}
+
+where $c=\pm\sqrt{a^{2}+b^{2}}$ and $\theta$ satisfies the equations
+$c\cos\theta=a$ and $c\sin\theta=b$.
+
+
+\subsubsection{Arbitrary Phase Shift}
+
+More generally, for an arbitrary phase shift, we have:
+
+\noindent \begin{center}
+${\displaystyle a\sin x+b\sin\left(x+\theta\right)=c\sin\left(x+\varphi\right)}$
+\par\end{center}
+
+where $c=\sqrt{a^{2}+b^{2}+2ab\cos\theta}$, and $\varphi$ satisfies
+$c\sin\left(x+\theta\right)=a+b\cos\theta$ and $c\sin x=b\sin\theta$
+or $\varphi=\tan^{-1}\left(b\sin\theta,a+b\cos\theta\right)$.
+
 
 \subsection{Other Related Identities}
 \begin{itemize}
@@ -566,8 +615,8 @@ $\cot\theta$ & ${\displaystyle \frac{\sqrt{1-u^{2}}}{u}}$ & ${\displaystyle \fra
 \section{Inverse Trigonometric Functions}
 
 If $x=\sin y$, then $y=\sin^{-1}x$, i.e. the angle whose sine is
-$x$ or inverse sine of $x$, is a multiple-valued function of $x$
-which is a collection of single-valued functions called \emph{branches}.
+$x$ or arcsine of $x$, is a multiple-valued function of $x$ which
+is a collection of single-valued functions called \emph{branches}.
 Similarly, the other inverse trigonometric functions are multiple-valued.
 
 For many purposes, a particular branch is required. This is called

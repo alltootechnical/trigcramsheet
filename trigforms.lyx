@@ -137,7 +137,7 @@ status open
 
 
 \backslash
-begin{multicols}{2}
+begin{multicols*}{2}
 \end_layout
 
 \end_inset
@@ -162,7 +162,7 @@ status open
 
 
 \backslash
-end{multicols}
+end{multicols*}
 \end_layout
 
 \end_inset
@@ -245,14 +245,14 @@ Triangle
 \end_layout
 
 \begin_layout Enumerate
-\begin_inset Formula ${\displaystyle \csc A=\frac{b}{a}=\frac{\mathrm{hypotenuse}}{\mathrm{opposite}}}$
+\begin_inset Formula ${\displaystyle \csc A=\frac{c}{a}=\frac{\mathrm{hypotenuse}}{\mathrm{opposite}}}$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Enumerate
-\begin_inset Formula ${\displaystyle \sec A=\frac{c}{a}=\frac{\mathrm{hypotenuse}}{\mathrm{adjacent}}}$
+\begin_inset Formula ${\displaystyle \sec A=\frac{c}{b}=\frac{\mathrm{hypotenuse}}{\mathrm{adjacent}}}$
 \end_inset
 
 
@@ -2133,7 +2133,7 @@ Co-function Identities
 
 \begin_layout Labeling
 \labelwidthstring 00.00.0000
-\begin_inset Formula ${\displaystyle \sin\left(\frac{\pi}{2}-\theta\right)=-\sin\theta}$
+\begin_inset Formula ${\displaystyle \sin\left(\frac{\pi}{2}-\theta\right)=\cos\theta}$
 \end_inset
 
 
@@ -2141,7 +2141,7 @@ Co-function Identities
 
 \begin_layout Labeling
 \labelwidthstring 00.00.0000
-\begin_inset Formula ${\displaystyle \cos\left(\frac{\pi}{2}-\theta\right)=\cos\theta}$
+\begin_inset Formula ${\displaystyle \cos\left(\frac{\pi}{2}-\theta\right)=\sin\theta}$
 \end_inset
 
 
@@ -2149,7 +2149,7 @@ Co-function Identities
 
 \begin_layout Labeling
 \labelwidthstring 00.00.0000
-\begin_inset Formula ${\displaystyle \tan\left(\frac{\pi}{2}-\theta\right)=-\tan\theta}$
+\begin_inset Formula ${\displaystyle \tan\left(\frac{\pi}{2}-\theta\right)=\cot\theta}$
 \end_inset
 
 
@@ -2157,7 +2157,7 @@ Co-function Identities
 
 \begin_layout Labeling
 \labelwidthstring 00.00.0000
-\begin_inset Formula ${\displaystyle \csc\left(\frac{\pi}{2}-\theta\right)=-\csc\theta}$
+\begin_inset Formula ${\displaystyle \csc\left(\frac{\pi}{2}-\theta\right)=\sec\theta}$
 \end_inset
 
 
@@ -2165,7 +2165,7 @@ Co-function Identities
 
 \begin_layout Labeling
 \labelwidthstring 00.00.0000
-\begin_inset Formula ${\displaystyle \sec\left(\frac{\pi}{2}-\theta\right)=\sec\theta}$
+\begin_inset Formula ${\displaystyle \sec\left(\frac{\pi}{2}-\theta\right)=\csc\theta}$
 \end_inset
 
 
@@ -2173,7 +2173,7 @@ Co-function Identities
 
 \begin_layout Labeling
 \labelwidthstring 00.00.0000
-\begin_inset Formula ${\displaystyle \cot\left(\frac{\pi}{2}-\theta\right)=-\cot\theta}$
+\begin_inset Formula ${\displaystyle \cot\left(\frac{\pi}{2}-\theta\right)=\tan\theta}$
 \end_inset
 
 
@@ -2560,6 +2560,124 @@ Sum to Product
 \end_inset
 
 
+\end_layout
+
+\begin_layout Subsection
+Linear Combinations
+\end_layout
+
+\begin_layout Standard
+For some purposes it is important to know that any linear combination of
+ sine waves of the same period or frequency but different phase shifts is
+ also a sine wave with the same period or frequency, but a different phase
+ shift.
+\end_layout
+
+\begin_layout Standard
+The two-argument form of the arctangent function, denoted by 
+\begin_inset Formula $\tan^{-1}\left(y,x\right)$
+\end_inset
+
+ gathers information on the signs of the inputs in order to return the appropria
+te quadrant of the computed angle.
+ Thus, it is defined as:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\tan^{-1}(y,x)=\begin{cases}
+\tan^{-1}\left(\frac{y}{x}\right) & \text{if }x>0,\\
+\tan^{-1}\left(\frac{y}{x}\right)+\pi & \text{if }x<0\text{ and }y\ge0,\\
+\tan^{-1}\left(\frac{y}{x}\right)-\pi & \text{if }x<0\text{ and }y<0,\\
++\frac{\pi}{2} & \text{if }x=0\text{ and }y>0,\\
+-\frac{\pi}{2} & \text{if }x=0\text{ and }y<0,\\
+\text{undefined} & \text{if }x=0\text{ and }y=0.
+\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Sine and Cosine
+\end_layout
+
+\begin_layout Standard
+In the case of a non-zero linear combination of a sine and cosine wave (which
+ is just a sine wave with a phase shift of 
+\begin_inset Formula $\frac{π}{2}$
+\end_inset
+
+), we have:
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Formula ${\displaystyle a\sin x+b\cos x=c\sin\left(x+\theta\right)}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where 
+\begin_inset Formula $c=\pm\sqrt{a^{2}+b^{2}}$
+\end_inset
+
+ and 
+\begin_inset Formula $\theta$
+\end_inset
+
+ satisfies the equations 
+\begin_inset Formula $c\cos\theta=a$
+\end_inset
+
+ and 
+\begin_inset Formula $c\sin\theta=b$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection
+Arbitrary Phase Shift
+\end_layout
+
+\begin_layout Standard
+More generally, for an arbitrary phase shift, we have:
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Formula ${\displaystyle a\sin x+b\sin\left(x+\theta\right)=c\sin\left(x+\varphi\right)}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where 
+\begin_inset Formula $c=\sqrt{a^{2}+b^{2}+2ab\cos\theta}$
+\end_inset
+
+, and 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ satisfies 
+\begin_inset Formula $c\sin\left(x+\theta\right)=a+b\cos\theta$
+\end_inset
+
+ and 
+\begin_inset Formula $c\sin x=b\sin\theta$
+\end_inset
+
+ or 
+\begin_inset Formula $\varphi=\tan^{-1}\left(b\sin\theta,a+b\cos\theta\right)$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Subsection
@@ -6206,7 +6324,7 @@ If
 \begin_inset Formula $x$
 \end_inset
 
- or inverse sine of 
+ or arcsine of 
 \begin_inset Formula $x$
 \end_inset
 
