@@ -126,7 +126,19 @@ Trigonometry Cram Sheet
 \begin_layout Date
 
 \family sans
-October 27, 2015
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+today{}
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -1277,7 +1289,15 @@ VA:
 \begin_inset Formula $x$
 \end_inset
 
--intercepts: midway between asymptotes
+-intercepts: 
+\begin_inset Formula $k\pi$
+\end_inset
+
+ where 
+\begin_inset Formula $k\in\mathbb{Z}$
+\end_inset
+
+
 \end_layout
 
 \begin_layout Description
@@ -1463,7 +1483,15 @@ VA:
 \begin_inset Formula $x$
 \end_inset
 
--intercepts: midway between asymptotes
+-intercepts: 
+\begin_inset Formula $\frac{\pi}{2}+k\pi$
+\end_inset
+
+ where 
+\begin_inset Formula $k\in\mathbb{Z}$
+\end_inset
+
+
 \end_layout
 
 \begin_layout Description
@@ -1975,7 +2003,7 @@ status open
 
 
 \backslash
-begin{multicols*}{2}
+begin{multicols}{2}
 \end_layout
 
 \end_inset
@@ -2000,8 +2028,8 @@ Reciprocal Identities
 \begin_inset Formula ${\displaystyle \csc\theta=\frac{1}{\sin\theta}}$
 \end_inset
 
-; 
-\begin_inset Formula ${\displaystyle \sin\theta=\frac{1}{\csc\theta}}$
+;
+\begin_inset Formula $\quad{\displaystyle \sin\theta=\frac{1}{\csc\theta}}$
 \end_inset
 
 
@@ -2012,8 +2040,8 @@ Reciprocal Identities
 \begin_inset Formula ${\displaystyle \sec\theta=\frac{1}{\cos\theta}}$
 \end_inset
 
-; 
-\begin_inset Formula ${\displaystyle \cos\theta=\frac{1}{\sec\theta}}$
+;
+\begin_inset Formula $\quad{\displaystyle \cos\theta=\frac{1}{\sec\theta}}$
 \end_inset
 
 
@@ -2024,8 +2052,8 @@ Reciprocal Identities
 \begin_inset Formula ${\displaystyle \cot\theta=\frac{1}{\tan\theta}}$
 \end_inset
 
-; 
-\begin_inset Formula ${\displaystyle \tan\theta=\frac{1}{\cot\theta}}$
+;
+\begin_inset Formula $\quad{\displaystyle \tan\theta=\frac{1}{\cot\theta}}$
 \end_inset
 
 
@@ -2048,12 +2076,12 @@ Ratio Identities
 \begin_inset Formula ${\displaystyle \tan\theta=\frac{\sin\theta}{\cos\theta}}$
 \end_inset
 
-; 
-\begin_inset Formula ${\displaystyle \cos\theta=\frac{\sin\theta}{\tan\theta}}$
+;
+\begin_inset Formula $\quad{\displaystyle \cos\theta=\frac{\sin\theta}{\tan\theta}}$
 \end_inset
 
-; 
-\begin_inset Formula ${\displaystyle \sin\theta=\cos\theta\tan\theta}$
+;
+\begin_inset Formula $\quad{\displaystyle \sin\theta=\cos\theta\tan\theta}$
 \end_inset
 
 
@@ -2064,12 +2092,12 @@ Ratio Identities
 \begin_inset Formula ${\displaystyle \cot\theta=\frac{\cos\theta}{\sin\theta}}$
 \end_inset
 
-; 
-\begin_inset Formula ${\displaystyle \sin\theta=\frac{\cos\theta}{\cot\theta}}$
+;
+\begin_inset Formula $\quad{\displaystyle \sin\theta=\frac{\cos\theta}{\cot\theta}}$
 \end_inset
 
-; 
-\begin_inset Formula $\cos\theta=\sin\theta\cot\theta$
+;
+\begin_inset Formula $\quad\cos\theta=\sin\theta\cot\theta$
 \end_inset
 
 
@@ -2327,8 +2355,8 @@ th
 \begin_layout Labeling
 \labelwidthstring 00.00.0000
 \begin_inset Formula ${\displaystyle \sin\frac{\alpha}{2}=\begin{cases}
-\sqrt{\frac{1-\cos\alpha}{2}} & \frac{\alpha}{2}\in\left(\mathcal{Q}_{1}\cup\mathcal{Q}_{2}\right)\\
--\sqrt{\frac{1-\cos\alpha}{2}} & \frac{\alpha}{2}\in\left(\mathcal{Q}_{3}\cup\mathcal{Q}_{4}\right)
+\sqrt{\frac{1-\cos\alpha}{2}} & \text{if }\frac{\alpha}{2}\in\left(\mathcal{Q}_{1}\cup\mathcal{Q}_{2}\right)\\
+-\sqrt{\frac{1-\cos\alpha}{2}} & \text{if }\frac{\alpha}{2}\in\left(\mathcal{Q}_{3}\cup\mathcal{Q}_{4}\right)
 \end{cases}}$
 \end_inset
 
@@ -2338,8 +2366,8 @@ th
 \begin_layout Labeling
 \labelwidthstring 00.00.0000
 \begin_inset Formula ${\displaystyle \cos\frac{\alpha}{2}=\begin{cases}
-\sqrt{\frac{1+\cos\alpha}{2}} & \frac{\alpha}{2}\in\left(\mathcal{Q}_{1}\cup\mathcal{Q}_{4}\right)\\
--\sqrt{\frac{1+\cos\alpha}{2}} & \frac{\alpha}{2}\in\left(\mathcal{Q}_{2}\cup\mathcal{Q}_{3}\right)
+\sqrt{\frac{1+\cos\alpha}{2}} & \text{if }\frac{\alpha}{2}\in\left(\mathcal{Q}_{1}\cup\mathcal{Q}_{4}\right)\\
+-\sqrt{\frac{1+\cos\alpha}{2}} & \text{if }\frac{\alpha}{2}\in\left(\mathcal{Q}_{2}\cup\mathcal{Q}_{3}\right)
 \end{cases}}$
 \end_inset
 
@@ -2573,6 +2601,10 @@ For some purposes it is important to know that any linear combination of
  shift.
 \end_layout
 
+\begin_layout Subsubsection*
+Definition
+\end_layout
+
 \begin_layout Standard
 The two-argument form of the arctangent function, denoted by 
 \begin_inset Formula $\tan^{-1}\left(y,x\right)$
@@ -2636,6 +2668,10 @@ where
 \begin_inset Formula $c\sin\theta=b$
 \end_inset
 
+, or 
+\begin_inset Formula $\theta=\tan^{-1}\left(y,x\right)$
+\end_inset
+
 .
 \end_layout
 
@@ -2665,7 +2701,7 @@ where
 \begin_inset Formula $\varphi$
 \end_inset
 
- satisfies 
+ satisfies the equations 
 \begin_inset Formula $c\sin\left(x+\theta\right)=a+b\cos\theta$
 \end_inset
 
@@ -2755,6 +2791,26 @@ Ptolemy's Theorem.
 \end_layout
 
 \begin_layout Itemize
+\begin_inset Formula $a\cos x+b\sin x=\sqrt{a^{2}+b^{2}}\cos\left(x-\tan^{-1}\left(b,a\right)\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+Tangent of an Average.
+
+\emph default
+ 
+\begin_inset Formula $\tan\left(\frac{\alpha+\beta}{2}\right)=\frac{\sin\alpha+\sin\beta}{\cos\alpha+\cos\beta}=-\frac{\cos\alpha-\cos\beta}{\sin\alpha-\sin\beta}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
 \begin_inset Formula $\tan x+\sec x=\tan\left(\frac{x}{2}+\frac{\pi}{4}\right)$
 \end_inset
 
@@ -2787,6 +2843,12 @@ Identities without Variables
 \end_layout
 
 \begin_layout Itemize
+
+\emph on
+Morrie's Law.
+
+\emph default
+ 
 \begin_inset Formula ${\displaystyle \cos20\textdegree\cdot\cos40\textdegree\cdot\cos80\textdegree=\frac{1}{8}}$
 \end_inset
 
@@ -2843,9 +2905,206 @@ status open
 
 
 \backslash
-end{multicols*}
+end{multicols}
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Graphs
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pgfkeys{/pgfplots/Axis Style/.style={ width=13.5cm, height=5cm, axis x line=center
+, axis y line=middle, samples=100, ymin=-1.5, ymax=1.5, xmin=-7.0, xmax=7.0,
+ domain=-2*pi:2*pi }}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+\begin_inset Formula $y=\sin x$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tikzpicture} 
+\backslash
+begin{axis}[ Axis Style, xtick={ -6.28318, -4.7123889, -3.14159, -1.5708, 1.5708,
+ 3.14159, 4.7123889, 6.28318 }, xticklabels={ $-2
+\backslash
+pi$, $-
+\backslash
+frac{3
+\backslash
+pi}{2}$, $-
+\backslash
+pi$, $
+\backslash
+frac{
+\backslash
+pi}{2}$, $
+\backslash
+frac{
+\backslash
+pi}{2}$, $
+\backslash
+pi$, $
+\backslash
+frac{3
+\backslash
+pi}{2}$, $2
+\backslash
+pi$ } ] 
+\backslash
+addplot [mark=none, ultra thick, blue] {sin(deg(x))}; 
+\backslash
+end{axis} 
+\backslash
+end{tikzpicture}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+\begin_inset Formula $y=\cos x$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tikzpicture} 
+\backslash
+begin{axis}[ Axis Style, xtick={ -6.28318, -4.7123889, -3.14159, -1.5708, 1.5708,
+ 3.14159, 4.7123889, 6.28318 }, xticklabels={ $-2
+\backslash
+pi$, $-
+\backslash
+frac{3
+\backslash
+pi}{2}$, $-
+\backslash
+pi$, $
+\backslash
+frac{
+\backslash
+pi}{2}$, $
+\backslash
+frac{
+\backslash
+pi}{2}$, $
+\backslash
+pi$, $
+\backslash
+frac{3
+\backslash
+pi}{2}$, $2
+\backslash
+pi$ } ] 
+\backslash
+addplot [mark=none, ultra thick, blue] {cos(deg(x))}; 
+\backslash
+end{axis} 
+\backslash
+end{tikzpicture}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+\begin_inset Formula $y=\tan x$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tikzpicture} 
+\backslash
+begin{axis}[ Axis Style, xtick={ -6.28318, -4.7123889, -3.14159, -1.5708, 1.5708,
+ 3.14159, 4.7123889, 6.28318 }, xticklabels={ $-2
+\backslash
+pi$, $-
+\backslash
+frac{3
+\backslash
+pi}{2}$, $-
+\backslash
+pi$, $
+\backslash
+frac{
+\backslash
+pi}{2}$, $
+\backslash
+frac{
+\backslash
+pi}{2}$, $
+\backslash
+pi$, $
+\backslash
+frac{3
+\backslash
+pi}{2}$, $2
+\backslash
+pi$ } ] 
+\backslash
+addplot [mark=none, ultra thick, blue] {tan(deg(x))}; 
+\backslash
+end{axis} 
+\backslash
+end{tikzpicture}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
 \end_inset
 
 
@@ -2878,6 +3137,8 @@ arraystretch}{2}
 \end_layout
 
 \begin_layout Standard
+\noindent
+\align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="26" columns="8">
 <features rotate="0" tabularvalignment="middle">
@@ -5474,6 +5735,8 @@ arraystretch}{2.5}
 \end_layout
 
 \begin_layout Standard
+\noindent
+\align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="7" columns="7">
 <features rotate="0" tabularvalignment="middle">
@@ -6090,201 +6353,8 @@ arraystretch}{2.5}
 
 \end_layout
 
-\begin_layout Section
-Graphs
-\end_layout
-
 \begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-pgfkeys{/pgfplots/Axis Style/.style={     width=13.5cm, height=5cm,     axis
- x line=center,      axis y line=middle,      samples=100,     ymin=-1.5,
- ymax=1.5,     xmin=-7.0, xmax=7.0,     domain=-2*pi:2*pi }}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsection
-\begin_inset Formula $y=\sin x$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-begin{tikzpicture} 
-\backslash
-begin{axis}[     Axis Style,     xtick={         -6.28318, -4.7123889, -3.14159,
- -1.5708,         1.5708, 3.14159, 4.7123889, 6.28318     },     xticklabels={
-         $-2
-\backslash
-pi$, $-
-\backslash
-frac{3
-\backslash
-pi}{2}$, $-
-\backslash
-pi$, $
-\backslash
-frac{
-\backslash
-pi}{2}$,         $
-\backslash
-frac{
-\backslash
-pi}{2}$, $
-\backslash
-pi$, $
-\backslash
-frac{3
-\backslash
-pi}{2}$, $2
-\backslash
-pi$     } ] 
-\backslash
-addplot [mark=none, ultra thick, blue] {sin(deg(x))}; 
-\backslash
-end{axis} 
-\backslash
-end{tikzpicture}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsection
-\begin_inset Formula $y=\cos x$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-begin{tikzpicture} 
-\backslash
-begin{axis}[     Axis Style,     xtick={         -6.28318, -4.7123889, -3.14159,
- -1.5708,         1.5708, 3.14159, 4.7123889, 6.28318     },     xticklabels={
-         $-2
-\backslash
-pi$, $-
-\backslash
-frac{3
-\backslash
-pi}{2}$, $-
-\backslash
-pi$, $
-\backslash
-frac{
-\backslash
-pi}{2}$,         $
-\backslash
-frac{
-\backslash
-pi}{2}$, $
-\backslash
-pi$, $
-\backslash
-frac{3
-\backslash
-pi}{2}$, $2
-\backslash
-pi$     } ] 
-\backslash
-addplot [mark=none, ultra thick, blue] {cos(deg(x))}; 
-\backslash
-end{axis} 
-\backslash
-end{tikzpicture}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsection
-\begin_inset Formula $y=\tan x$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-begin{tikzpicture} 
-\backslash
-begin{axis}[     Axis Style,     xtick={         -6.28318, -4.7123889, -3.14159,
- -1.5708,         1.5708, 3.14159, 4.7123889, 6.28318     },     xticklabels={
-         $-2
-\backslash
-pi$, $-
-\backslash
-frac{3
-\backslash
-pi}{2}$, $-
-\backslash
-pi$, $
-\backslash
-frac{
-\backslash
-pi}{2}$,         $
-\backslash
-frac{
-\backslash
-pi}{2}$, $
-\backslash
-pi$, $
-\backslash
-frac{3
-\backslash
-pi}{2}$, $2
-\backslash
-pi$     } ] 
-\backslash
-addplot [mark=none, ultra thick, blue] {tan(deg(x))}; 
-\backslash
-end{axis} 
-\backslash
-end{tikzpicture}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Newpage newpage
+\begin_inset VSpace bigskip
 \end_inset
 
 
@@ -6355,6 +6425,13 @@ principal values
 
 \begin_layout Subsection
 Principal Values
+\end_layout
+
+\begin_layout Standard
+Since none of the six trigonometric functions are one-to-one, they are restricte
+d in order to have inverse functions.
+ Therefore the ranges of the inverse functions are proper subsets of the
+ domains of the original functions.
 \end_layout
 
 \begin_layout Standard
@@ -6586,7 +6663,7 @@ Reciprocal Identities
 
 \begin_layout Labeling
 \labelwidthstring 00.00.0000
-\begin_inset Formula ${\displaystyle \csc^{-1}x=\sin^{-1}\left(\frac{1}{x}\right)}$
+\begin_inset Formula ${\displaystyle \sin^{-1}\frac{1}{x}=\csc^{-1}x}$
 \end_inset
 
 
@@ -6594,7 +6671,7 @@ Reciprocal Identities
 
 \begin_layout Labeling
 \labelwidthstring 00.00.0000
-\begin_inset Formula ${\displaystyle \sec^{-1}x=\cos^{-1}\left(\frac{1}{x}\right)}$
+\begin_inset Formula ${\displaystyle \cos^{-1}\frac{1}{x}=\sec^{-1}x}$
 \end_inset
 
 
@@ -6602,14 +6679,44 @@ Reciprocal Identities
 
 \begin_layout Labeling
 \labelwidthstring 00.00.0000
-\begin_inset Formula ${\displaystyle \cot^{-1}x=\tan^{-1}\left(\frac{1}{x}\right)}$
+\begin_inset Formula ${\displaystyle \csc^{-1}\frac{1}{x}=\sin^{-1}x}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula ${\displaystyle \sec^{-1}\frac{1}{x}=\cos^{-1}x}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula ${\displaystyle \tan^{-1}\frac{1}{x}=\begin{cases}
+\frac{\pi}{2}-\tan^{-1}x=\cot^{-1}x & \text{if }x>0\\
+-\frac{\pi}{2}-\tan^{-1}x=\cot^{-1}x-\pi & \text{if }x<0
+\end{cases}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula ${\displaystyle \cot^{-1}\frac{1}{x}=\begin{cases}
+\frac{\pi}{2}-\cot^{-1}x=\tan^{-1}x & \text{if }x>0\\
+\frac{3\pi}{2}-\cot^{-1}x=\pi+\tan^{-1}x & \text{if }x<0
+\end{cases}}$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Subsubsection
-Parity Identities
+Negative Identities
 \end_layout
 
 \begin_layout Labeling
@@ -6661,7 +6768,7 @@ Parity Identities
 \end_layout
 
 \begin_layout Subsubsection
-Pythagorean Identities (sort of)
+Complementary Identities
 \end_layout
 
 \begin_layout Labeling
@@ -6722,6 +6829,8 @@ Law of Sines
 \end_layout
 
 \begin_layout Standard
+\noindent
+\align center
 \begin_inset Formula ${\displaystyle \frac{a}{\sin\alpha}=\frac{b}{\sin\beta}=\frac{c}{\sin\gamma}}$
 \end_inset
 
@@ -6751,6 +6860,8 @@ input{fig1.tikz}
 \end_layout
 
 \begin_layout Standard
+\noindent
+\align center
 \begin_inset Formula ${\displaystyle \frac{a}{\sin\alpha}=\frac{b}{\sin\beta}=\frac{c}{\sin\gamma}=2R}$
 \end_inset
 
@@ -6774,8 +6885,8 @@ Law of Cosines
 \begin_inset Formula ${\displaystyle \cos\alpha=\frac{b^{2}+c^{2}-a^{2}}{2bc}}$
 \end_inset
 
-; 
-\begin_inset Formula ${\displaystyle a=\sqrt{b^{2}+c^{2}-2bc\cos\alpha}}$
+;
+\begin_inset Formula $\quad{\displaystyle a=\sqrt{b^{2}+c^{2}-2bc\cos\alpha}}$
 \end_inset
 
 
@@ -6786,8 +6897,8 @@ Law of Cosines
 \begin_inset Formula ${\displaystyle \cos\beta=\frac{a^{2}+c^{2}-b^{2}}{2ac}}$
 \end_inset
 
-; 
-\begin_inset Formula ${\displaystyle b=\sqrt{a^{2}+c^{2}-2ac\cos\beta}}$
+;
+\begin_inset Formula $\quad{\displaystyle b=\sqrt{a^{2}+c^{2}-2ac\cos\beta}}$
 \end_inset
 
 
@@ -6795,11 +6906,12 @@ Law of Cosines
 
 \begin_layout Labeling
 \labelwidthstring 00.00.0000
+\noindent
 \begin_inset Formula ${\displaystyle \cos\gamma=\frac{a^{2}+b^{2}-c^{2}}{2ab}}$
 \end_inset
 
-; 
-\begin_inset Formula ${\displaystyle c=\sqrt{a^{2}+b^{2}-2ab\cos\gamma}}$
+;
+\begin_inset Formula ${\displaystyle \quad c=\sqrt{a^{2}+b^{2}-2ab\cos\gamma}}$
 \end_inset
 
 
@@ -6811,6 +6923,7 @@ Law of Tangents
 
 \begin_layout Labeling
 \labelwidthstring 00.00.0000
+\noindent
 \begin_inset Formula ${\displaystyle \frac{a-b}{a+b}=\frac{\tan\frac{1}{2}\left(\alpha-\beta\right)}{\tan\frac{1}{2}\left(\alpha+\beta\right)}}$
 \end_inset
 
@@ -6819,6 +6932,7 @@ Law of Tangents
 
 \begin_layout Labeling
 \labelwidthstring 00.00.0000
+\noindent
 \begin_inset Formula ${\displaystyle \frac{b-c}{b+c}=\frac{\tan\frac{1}{2}\left(\beta-\gamma\right)}{\tan\frac{1}{2}\left(\beta+\gamma\right)}}$
 \end_inset
 
@@ -6827,6 +6941,7 @@ Law of Tangents
 
 \begin_layout Labeling
 \labelwidthstring 00.00.0000
+\noindent
 \begin_inset Formula ${\displaystyle \frac{c-a}{c+a}=\frac{\tan\frac{1}{2}\left(\gamma-\alpha\right)}{\tan\frac{1}{2}\left(\gamma+\alpha\right)}}$
 \end_inset
 
@@ -6843,30 +6958,36 @@ Let
 \end_inset
 
  be the semi-perimeter, that is, 
-\begin_inset Formula $s=\frac{(a+b+c)}{2}$
+\begin_inset Formula $s=\frac{a+b+c}{2}$
 \end_inset
 
 , and 
 \begin_inset Formula $r$
 \end_inset
 
- be the radius of the inscribed circle, then
+ be the radius of the inscribed circle, then:
 \end_layout
 
 \begin_layout Standard
 \noindent
-\begin_inset Formula ${\displaystyle \frac{\cot\left(\frac{\alpha}{2}\right)}{s-a}=\frac{\cot\left(\frac{\beta}{2}\right)}{s-b}=\frac{\cot\left(\frac{\gamma}{2}\right)}{s-c}=\frac{1}{r}}$
+\align center
+\begin_inset Formula ${\displaystyle \frac{\cot\frac{\alpha}{2}}{s-a}=\frac{\cot\frac{\beta}{2}}{s-b}=\frac{\cot\frac{\gamma}{2}}{s-c}=\frac{1}{r}}$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-and furthermore that the inradius is given by 
-\begin_inset Formula $r=\sqrt{\frac{(s-a)(s-b)(s-c)}{s}}$
+and furthermore that the inradius is given by:
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Formula $r{\displaystyle =\sqrt{\frac{(s-a)(s-b)(s-c)}{s}}}$
 \end_inset
 
-.
+
 \end_layout
 
 \begin_layout Subsection
@@ -6880,7 +7001,7 @@ Each of these identities uses all six parts of the triangle—the three angles
 
 \begin_layout Labeling
 \labelwidthstring 00.00.0000
-\begin_inset Formula ${\displaystyle \frac{a+b}{c}=\frac{\cos\left(\frac{\alpha-\beta}{2}\right)}{\sin\left(\frac{\gamma}{2}\right)}}$
+\begin_inset Formula ${\displaystyle \frac{a+b}{c}=\frac{\cos\frac{\alpha-\beta}{2}}{\sin\frac{\gamma}{2}}}$
 \end_inset
 
 
@@ -6888,7 +7009,7 @@ Each of these identities uses all six parts of the triangle—the three angles
 
 \begin_layout Labeling
 \labelwidthstring 00.00.0000
-\begin_inset Formula ${\displaystyle \frac{a-b}{c}=\frac{\sin\left(\frac{\alpha-\beta}{2}\right)}{\cos\left(\frac{\gamma}{2}\right)}}$
+\begin_inset Formula ${\displaystyle \frac{a-b}{c}=\frac{\sin\frac{\alpha-\beta}{2}}{\cos\frac{\gamma}{2}}}$
 \end_inset
 
 
@@ -6949,64 +7070,40 @@ Let
 .
 \end_layout
 
-\begin_layout Section
-Solving Triangles
-\end_layout
-
 \begin_layout Subsection
-AAA Triangle
+Angles in Terms of Sides
 \end_layout
 
-\begin_layout Enumerate
-Write 
-\begin_inset Quotes eld
+\begin_layout Standard
+Let 
+\begin_inset Formula $s=\frac{a+b+c}{2}$
 \end_inset
 
-no solution
-\begin_inset Quotes erd
+ be the semiperimeter of the triangle, then:
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula ${\displaystyle \alpha=\sin^{-1}\left(\frac{2}{bc}\sqrt{s\left(s-a\right)\left(s-b\right)\left(s-c\right)}\right)}$
 \end_inset
 
- as your answer.
+
 \end_layout
 
-\begin_layout Subsection
-AAS/ASA Triangle
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula ${\displaystyle \beta=\sin^{-1}\left(\frac{2}{ac}\sqrt{s\left(s-a\right)\left(s-b\right)\left(s-c\right)}\right)}$
+\end_inset
+
+
 \end_layout
 
-\begin_layout Enumerate
-Solve for the missing angle.
-\end_layout
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula ${\displaystyle \gamma=\sin^{-1}\left(\frac{2}{ab}\sqrt{s\left(s-a\right)\left(s-b\right)\left(s-c\right)}\right)}$
+\end_inset
 
-\begin_layout Enumerate
-Use the Law of Sines twice for the other two sides.
-\end_layout
 
-\begin_layout Subsection
-SAS Triangle
-\end_layout
-
-\begin_layout Enumerate
-Use the Law of Cosines for the other non-included angle.
-\end_layout
-
-\begin_layout Enumerate
-Use the Law of Sines for the missing side.
-\end_layout
-
-\begin_layout Enumerate
-Solve for the missing angle.
-\end_layout
-
-\begin_layout Subsection
-SSS Triangle
-\end_layout
-
-\begin_layout Enumerate
-Use the Law of Cosines twice for the two angles.
-\end_layout
-
-\begin_layout Enumerate
-Solve for the missing angle.
 \end_layout
 
 \begin_layout Standard
@@ -7016,257 +7113,288 @@ Solve for the missing angle.
 
 \end_layout
 
+\begin_layout Section
+Solving Triangles
+\end_layout
+
+\begin_layout Standard
+A general form triangle has six main characteristics: three linear (side
+ lengths 
+\begin_inset Formula $a,b,c$
+\end_inset
+
+) and three angular (
+\begin_inset Formula $\alpha,\beta,\gamma$
+\end_inset
+
+).
+ The classical plane trigonometry problem is to specify three of the six
+ characteristics and determine the other three.
+ A triangle can be uniquely determined in this sense when given any of the
+ following:
+\end_layout
+
+\begin_layout Itemize
+Three sides (SSS)
+\end_layout
+
+\begin_layout Itemize
+Two sides and the included angle (SAS)
+\end_layout
+
+\begin_layout Itemize
+Two sides and an angle not included between them (SSA), if the side length
+ adjacent to the angle is shorter than the other side length.
+ 
+\end_layout
+
+\begin_layout Itemize
+A side and the two angles adjacent to it (ASA)
+\end_layout
+
+\begin_layout Itemize
+A side, the angle opposite to it and an angle adjacent to it (AAS).
+\end_layout
+
+\begin_layout Standard
+For all cases in the plane, at least one of the side lengths must be specified.
+ If only the angles are given, the side lengths cannot be determined, because
+ any similar triangle is a solution.
+\end_layout
+
+\begin_layout Subsubsection*
+Notes
+\end_layout
+
+\begin_layout Itemize
+To find an unknown angle, the law of cosines is safer than the law of sines.
+ The reason is that the value of sine for the angle of the triangle does
+ not uniquely determine this angle.
+ For example, if 
+\begin_inset Formula $\sin\beta=0.5$
+\end_inset
+
+, the angle 
+\begin_inset Formula $\beta$
+\end_inset
+
+ can be equal either 
+\begin_inset Formula $30^{\circ}$
+\end_inset
+
+ or 
+\begin_inset Formula $150^{\circ}$
+\end_inset
+
+.
+ Using the law of cosines avoids this problem: within the interval from
+ 
+\begin_inset Formula $0^{\circ}$
+\end_inset
+
+ to 
+\begin_inset Formula $180^{\circ}$
+\end_inset
+
+ the cosine value unambiguously determines its angle.
+ On the other hand, if the angle is small (or close to 
+\begin_inset Formula $180°$
+\end_inset
+
+), then it is more robust numerically to determine it from its sine than
+ its cosine because the arc-cosine function has a divergent derivative at
+ 
+\begin_inset Formula $1$
+\end_inset
+
+ (or 
+\begin_inset Formula $−1$
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Itemize
+We assume that the relative position of specified characteristics is known.
+ If not, the mirror reflection of the triangle will also be a solution.
+ For example, three side lengths uniquely define either a triangle or its
+ reflection.
+ 
+\end_layout
+
+\begin_layout Subsection
+AAS/ASA Triangle
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Graphics
+	filename Resolve_triangle_with_c_alpha_beta.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The known characteristics are the side c and the angles 
+\begin_inset Formula $\alpha,\beta$
+\end_inset
+
+.
+ The third angle 
+\begin_inset Formula $\gamma=180^{\circ}-\alpha-\beta$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\noindent
+Two unknown side can be calculated from the law of sines:
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Formula ${\displaystyle a=\frac{c\sin\alpha}{\sin\gamma}}$
+\end_inset
+
+; 
+\begin_inset Formula ${\displaystyle \quad b=\frac{c\sin\beta}{\sin\gamma}}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+The procedure for solving an AAS triangle is same as that for an ASA triangle:
+ First, find the third angle by using the angle sum property of a triangle,
+ then find the other two sides using the law of sines.
+\end_layout
+
+\begin_layout Subsection
+SAS Triangle
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Graphics
+	filename Resolve_triangle_with_a_b_gamma.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Here the lengths of sides 
+\begin_inset Formula $a,b$
+\end_inset
+
+ and the angle 
+\begin_inset Formula $\gamma$
+\end_inset
+
+ between these sides are known.
+ The third side can be determined from the law of cosines:
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Formula $c=\sqrt{a^{2}+b^{2}-2ab\cos\gamma}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Now we use law of cosines to find the second angle:
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Formula ${\displaystyle \alpha=\cos^{-1}\frac{b^{2}+c^{2}-a^{2}}{2bc}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Finally, 
+\begin_inset Formula $\beta=180^{\circ}-\alpha-\gamma.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+SSS Triangle
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Graphics
+	filename Resolve_triangle_with_a_b_c.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Let three side lengths 
+\begin_inset Formula $a,b,c$
+\end_inset
+
+ be specified.
+ To find the angles 
+\begin_inset Formula $\alpha,\beta$
+\end_inset
+
+, the law of cosines can be used:
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Formula ${\displaystyle \alpha=\cos^{-1}\frac{b^{2}+c^{2}-a^{2}}{2bc}}$
+\end_inset
+
+;
+\begin_inset Formula ${\displaystyle \quad\beta=\cos^{-1}\frac{a^{2}+c^{2}-b^{2}}{2ac}}.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Then angle 
+\begin_inset Formula $\gamma=180^{\circ}-\alpha-\beta$
+\end_inset
+
+.
+\end_layout
+
 \begin_layout Subsection
 SSA Triangle
 \end_layout
 
 \begin_layout Standard
-This is the ambiguous case.
- There could be either only one solution, two solutions, or even none at
- all.
-\end_layout
-
-\begin_layout Standard
-When 
-\begin_inset Formula $\alpha$
-\end_inset
-
- is acute
-\end_layout
-
-\begin_layout Standard
-\begin_inset Tabular
-<lyxtabular version="3" rows="3" columns="4">
-<features rotate="0" tabularvalignment="middle">
-<column alignment="center" valignment="top">
-<column alignment="center" valignment="top">
-<column alignment="center" valignment="top">
-<column alignment="center" valignment="top">
-<row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $0<a<h$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $a=h$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $a>b$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $h<a<b$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-definecolor{qqqqff}{rgb}{0.3333333333333333,0.3333333333333333,0.3333333333333333}
- 
-\backslash
-definecolor{xdxdff}{rgb}{0.6588235294117647,0.6588235294117647,0.6588235294117647}
- 
-\backslash
-definecolor{uuuuuu}{rgb}{0.26666666666666666,0.26666666666666666,0.2666666666666666
-6} 
-\backslash
-begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm,sc
-ale=0.25] 
-\backslash
-clip(-1.4108232491791761,-1.6585019652159858) rectangle (5.662326768433716,3.7807688
-24782209); 
-\backslash
-draw (0.,0.)-- (4.537620935244387,0.); 
-\backslash
-draw (0.,0.)-- (3.4163664926017203,2.601018310969815); 
-\backslash
-draw (3.4163664926017203,2.601018310969815)-- (4.225202648247351,1.2846651060844072)
-; 
-\backslash
-draw [dash pattern=on 3pt off 3pt] (3.4163664926017203,2.601018310969815)--
- (3.4163664926017203,0.); 
-\backslash
-begin{scriptsize} 
-\backslash
-draw [fill=uuuuuu] (0.,0.) circle (1.5pt); 
-\backslash
-draw[color=uuuuuu] (-0.19864029563067692,-0.1310355104904654) node {$A$};
- 
-\backslash
-draw [fill=xdxdff] (4.537620935244387,0.) circle (1.5pt); 
-\backslash
-draw[color=xdxdff] (4.700078444482846,-0.14345393695164854) node {$B$}; 
-\backslash
-draw [fill=qqqqff] (3.4163664926017203,2.601018310969815) circle (1.5pt); 
-\backslash
-draw[color=qqqqff] (3.500392222414228,2.774876281426378) node {$C$}; 
-\backslash
-draw[color=black] (1.5009151856331984,1.6820547528422662) node {$b$}; 
-\backslash
-draw [fill=qqqqff] (4.225202648247351,1.2846651060844072) circle (1.5pt); 
-\backslash
-draw[color=black] (4.125228796408299,2.054607546677759) node {$a$}; 
-\backslash
-draw[color=black] (3.212967398376955,1.259828253162041) node {$h$}; 
-\backslash
-end{scriptsize} 
-\backslash
-end{tikzpicture}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-input{ssa3.tikz}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-input{ssa2.tikz}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-input{ssa1.tikz}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-0
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-1
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-1
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-2
-\end_layout
-
-\end_inset
-</cell>
-</row>
-</lyxtabular>
+\noindent
+\align center
+\begin_inset Graphics
+	filename Resolve_triangle_with_b_c_beta.png
+	scale 50
 
 \end_inset
 
@@ -7274,87 +7402,191 @@ input{ssa1.tikz}
 \end_layout
 
 \begin_layout Standard
-When 
-\begin_inset Formula $\alpha$
+This case is not solvable in all cases; a solution is guaranteed to be unique
+ only if the side length adjacent to the angle is shorter than the other
+ side length.
+ Assume that two sides 
+\begin_inset Formula $b$
 \end_inset
 
- is obtuse
+, 
+\begin_inset Formula $c$
+\end_inset
+
+ and the angle 
+\begin_inset Formula $\beta$
+\end_inset
+
+ are known.
+ The equation for the angle 
+\begin_inset Formula $\gamma$
+\end_inset
+
+ can be implied from the law of sines:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Tabular
-<lyxtabular version="3" rows="3" columns="2">
-<features rotate="0" tabularvalignment="middle">
-<column alignment="center" valignment="top">
-<column alignment="center" valignment="top">
-<row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $0<a\le b$
+\noindent
+\align center
+\begin_inset Formula ${\displaystyle \sin\gamma=\frac{c\sin\beta}{b}}$
 \end_inset
 
 
 \end_layout
 
+\begin_layout Standard
+We denote further 
+\begin_inset Formula $D=\frac{c\sin\beta}{b}$
 \end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
 
-\begin_layout Plain Layout
-\begin_inset Formula $a>b$
+ (equation's right side).
+ There are four possible cases:
+\end_layout
+
+\begin_layout Enumerate
+If 
+\begin_inset Formula $D>1$
+\end_inset
+
+, no such triangle exists because the side 
+\begin_inset Formula $b$
+\end_inset
+
+ does not reach line 
+\begin_inset Formula $BC$
+\end_inset
+
+.
+ For the same reason a solution does not exist if the angle 
+\begin_inset Formula $\beta\ge90^{\circ}$
+\end_inset
+
+ and 
+\begin_inset Formula $b\le c$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+If 
+\begin_inset Formula $D=1$
+\end_inset
+
+, a unique solution exists: 
+\begin_inset Formula $\gamma=90^{\circ}$
+\end_inset
+
+, i.e., the triangle is right-angled.
+\end_layout
+
+\begin_layout Enumerate
+If 
+\begin_inset Formula $D<1$
+\end_inset
+
+, two alternatives are possible.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Graphics
+	filename Resolve_triangle_with_b_c_beta_2_solutions.png
+	scale 75
+
 \end_inset
 
 
 \end_layout
 
+\begin_deeper
+\begin_layout Enumerate
+If 
+\begin_inset Formula $b<c$
 \end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
 
-\begin_layout Plain Layout
+, the angle 
+\begin_inset Formula $\gamma$
+\end_inset
 
+ may be acute: 
+\begin_inset Formula $\gamma=\sin^{-1}D$
+\end_inset
+
+ or obtuse: 
+\begin_inset Formula $\gamma'=180^{\circ}-\gamma$
+\end_inset
+
+.
+ The picture above shows the point 
+\begin_inset Formula $C$
+\end_inset
+
+, the side 
+\begin_inset Formula $b$
+\end_inset
+
+ and the angle 
+\begin_inset Formula $\gamma$
+\end_inset
+
+ as the first solution, and the point 
+\begin_inset Formula $C'$
+\end_inset
+
+, side 
+\begin_inset Formula $b'$
+\end_inset
+
+ and the angle 
+\begin_inset Formula $\gamma'$
+\end_inset
+
+ as the second solution.
 \end_layout
 
+\begin_layout Enumerate
+If 
+\begin_inset Formula $b\ge c$
 \end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
 
-\begin_layout Plain Layout
+ then 
+\begin_inset Formula $\beta\ge\gamma$
+\end_inset
 
+ (the larger side corresponds to a larger angle).
+ Since no triangle can have two obtuse angles, 
+\begin_inset Formula $\gamma$
+\end_inset
+
+ is acute angle and the solution 
+\begin_inset Formula $\gamma=\sin^{-1}D$
+\end_inset
+
+ is unique.
 \end_layout
 
+\end_deeper
+\begin_layout Standard
+Once 
+\begin_inset Formula $\gamma$
 \end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
 
-\begin_layout Plain Layout
-0
+ is obtained, the third angle 
+\begin_inset Formula $\alpha=180^{\circ}-\beta-\gamma$
+\end_inset
+
+ .
 \end_layout
 
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-1
+\begin_layout Standard
+The third side can then be found from the law of sines:
 \end_layout
 
-\end_inset
-</cell>
-</row>
-</lyxtabular>
-
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Formula ${\displaystyle a=\frac{b\sin\alpha}{\sin\beta}}$
 \end_inset
 
 

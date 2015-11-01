@@ -12,6 +12,7 @@
 \usepackage{units}
 \usepackage{amsmath}
 \usepackage{amssymb}
+\usepackage{graphicx}
 \usepackage[unicode=true,
  bookmarks=true,bookmarksnumbered=false,bookmarksopen=false,
  breaklinks=false,pdfborder={0 0 0},backref=false,colorlinks=false]
@@ -55,7 +56,7 @@
 \title{\textsf{\textbf{Trigonometry Cram Sheet}}}
 
 
-\date{\textsf{October 27, 2015}}
+\date{\textsf{\today{}}}
 
 \maketitle
 \begin{multicols*}{2}
@@ -261,7 +262,7 @@ or $\bigcup_{k\in\mathbb{Z}}\left(\frac{\left(k-1\right)\pi}{2},\frac{\left(k+1\
 \item [{Range:}] $\left\{ y|y\in\mathbb{R}\right\} $ or $\left(-\infty,+\infty\right)$
 \item [{Period:}] $\pi$
 \item [{VA:}] $x=\frac{\pi}{2}+k\pi$ where $k\in\mathbb{Z}$
-\item [{$x$-intercepts:}] midway between asymptotes
+\item [{$x$-intercepts:}] $k\pi$ where $k\in\mathbb{Z}$
 \item [{Parity:}] odd
 \end{description}
 
@@ -292,7 +293,7 @@ or $\bigcup_{k\in\mathbb{Z}}\left(\frac{\left(k-1\right)\pi}{2},\frac{\left(k+1\
 \item [{Range:}] $\left\{ y|y\in\mathbb{R}\right\} $ or $\left(-\infty,+\infty\right)$
 \item [{Period:}] $\pi$
 \item [{VA:}] $x=k\pi$ where $k\in\mathbb{Z}$
-\item [{$x$-intercepts:}] midway between asymptotes
+\item [{$x$-intercepts:}] $\frac{\pi}{2}+k\pi$ where $k\in\mathbb{Z}$
 \item [{Parity:}] odd
 \end{description}
 \end{multicols}
@@ -323,7 +324,7 @@ amplitude & period & phase shift & vertical translation\tabularnewline
 
 \newpage{}
 
-\begin{multicols*}{2}
+\begin{multicols}{2}
 
 
 \section{Identities}
@@ -334,18 +335,16 @@ amplitude & period & phase shift & vertical translation\tabularnewline
 
 \subsubsection{Reciprocal Identities}
 \begin{lyxlist}{00.00.0000}
-\item [{${\displaystyle \csc\theta=\frac{1}{\sin\theta}}$;}] ${\displaystyle \sin\theta=\frac{1}{\csc\theta}}$
-\item [{${\displaystyle \sec\theta=\frac{1}{\cos\theta}}$;}] ${\displaystyle \cos\theta=\frac{1}{\sec\theta}}$
-\item [{${\displaystyle \cot\theta=\frac{1}{\tan\theta}}$;}] ${\displaystyle \tan\theta=\frac{1}{\cot\theta}}$
+\item [{${\displaystyle \csc\theta=\frac{1}{\sin\theta}}$;$\quad{\displaystyle \sin\theta=\frac{1}{\csc\theta}}$}]~
+\item [{${\displaystyle \sec\theta=\frac{1}{\cos\theta}}$;$\quad{\displaystyle \cos\theta=\frac{1}{\sec\theta}}$}]~
+\item [{${\displaystyle \cot\theta=\frac{1}{\tan\theta}}$;$\quad{\displaystyle \tan\theta=\frac{1}{\cot\theta}}$}]~
 \item [{${\displaystyle \sin\theta\csc\theta=\cos\theta\sec\theta=\tan\theta\cot\theta=1}$}]~
 \end{lyxlist}
 
 \subsubsection{Ratio Identities}
 \begin{lyxlist}{00.00.0000}
-\item [{${\displaystyle \tan\theta=\frac{\sin\theta}{\cos\theta}}$;}] ${\displaystyle \cos\theta=\frac{\sin\theta}{\tan\theta}}$;
-${\displaystyle \sin\theta=\cos\theta\tan\theta}$
-\item [{${\displaystyle \cot\theta=\frac{\cos\theta}{\sin\theta}}$;}] ${\displaystyle \sin\theta=\frac{\cos\theta}{\cot\theta}}$;
-$\cos\theta=\sin\theta\cot\theta$
+\item [{${\displaystyle \tan\theta=\frac{\sin\theta}{\cos\theta}}$;$\quad{\displaystyle \cos\theta=\frac{\sin\theta}{\tan\theta}}$;$\quad{\displaystyle \sin\theta=\cos\theta\tan\theta}$}]~
+\item [{${\displaystyle \cot\theta=\frac{\cos\theta}{\sin\theta}}$;$\quad{\displaystyle \sin\theta=\frac{\cos\theta}{\cot\theta}}$;$\quad\cos\theta=\sin\theta\cot\theta$}]~
 \end{lyxlist}
 
 \subsubsection{Pythagorean Identities}
@@ -400,12 +399,12 @@ the set of all angles within the $n$\textsuperscript{th} quadrant
 of the Cartesian plane.
 \begin{lyxlist}{00.00.0000}
 \item [{${\displaystyle \sin\frac{\alpha}{2}=\begin{cases}
-\sqrt{\frac{1-\cos\alpha}{2}} & \frac{\alpha}{2}\in\left(\mathcal{Q}_{1}\cup\mathcal{Q}_{2}\right)\\
--\sqrt{\frac{1-\cos\alpha}{2}} & \frac{\alpha}{2}\in\left(\mathcal{Q}_{3}\cup\mathcal{Q}_{4}\right)
+\sqrt{\frac{1-\cos\alpha}{2}} & \text{if }\frac{\alpha}{2}\in\left(\mathcal{Q}_{1}\cup\mathcal{Q}_{2}\right)\\
+-\sqrt{\frac{1-\cos\alpha}{2}} & \text{if }\frac{\alpha}{2}\in\left(\mathcal{Q}_{3}\cup\mathcal{Q}_{4}\right)
 \end{cases}}$}]~
 \item [{${\displaystyle \cos\frac{\alpha}{2}=\begin{cases}
-\sqrt{\frac{1+\cos\alpha}{2}} & \frac{\alpha}{2}\in\left(\mathcal{Q}_{1}\cup\mathcal{Q}_{4}\right)\\
--\sqrt{\frac{1+\cos\alpha}{2}} & \frac{\alpha}{2}\in\left(\mathcal{Q}_{2}\cup\mathcal{Q}_{3}\right)
+\sqrt{\frac{1+\cos\alpha}{2}} & \text{if }\frac{\alpha}{2}\in\left(\mathcal{Q}_{1}\cup\mathcal{Q}_{4}\right)\\
+-\sqrt{\frac{1+\cos\alpha}{2}} & \text{if }\frac{\alpha}{2}\in\left(\mathcal{Q}_{2}\cup\mathcal{Q}_{3}\right)
 \end{cases}}$}]~
 \item [{${\displaystyle \tan\frac{\alpha}{2}=\frac{\sin\alpha}{1+\cos\alpha}=\frac{1-\cos\alpha}{\sin\alpha}=\csc\alpha-\cot\alpha}$}]~
 \end{lyxlist}
@@ -457,6 +456,9 @@ of sine waves of the same period or frequency but different phase
 shifts is also a sine wave with the same period or frequency, but
 a different phase shift.
 
+
+\subsubsection*{Definition}
+
 The two-argument form of the arctangent function, denoted by $\tan^{-1}\left(y,x\right)$
 gathers information on the signs of the inputs in order to return
 the appropriate quadrant of the computed angle. Thus, it is defined
@@ -483,7 +485,7 @@ ${\displaystyle a\sin x+b\cos x=c\sin\left(x+\theta\right)}$
 \par\end{center}
 
 where $c=\pm\sqrt{a^{2}+b^{2}}$ and $\theta$ satisfies the equations
-$c\cos\theta=a$ and $c\sin\theta=b$.
+$c\cos\theta=a$ and $c\sin\theta=b$, or $\theta=\tan^{-1}\left(y,x\right)$.
 
 
 \subsubsection{Arbitrary Phase Shift}
@@ -495,7 +497,7 @@ ${\displaystyle a\sin x+b\sin\left(x+\theta\right)=c\sin\left(x+\varphi\right)}$
 \par\end{center}
 
 where $c=\sqrt{a^{2}+b^{2}+2ab\cos\theta}$, and $\varphi$ satisfies
-$c\sin\left(x+\theta\right)=a+b\cos\theta$ and $c\sin x=b\sin\theta$
+the equations $c\sin\left(x+\theta\right)=a+b\cos\theta$ and $c\sin x=b\sin\theta$
 or $\varphi=\tan^{-1}\left(b\sin\theta,a+b\cos\theta\right)$.
 
 
@@ -507,6 +509,8 @@ or $\varphi=\tan^{-1}\left(b\sin\theta,a+b\cos\theta\right)$.
 $\cot x+\cot y+\cot z=\cot x\cot y\cot z$.
 \item \emph{Ptolemy's Theorem.} If $w+x+y+z=\pi$, then $\sin\left(w+x\right)\sin\left(x+y\right)=\sin w\sin y+\sin x\sin z$.
 \item $\cot x\cot y+\cot y\cot z+\cot z\cot x=1$
+\item $a\cos x+b\sin x=\sqrt{a^{2}+b^{2}}\cos\left(x-\tan^{-1}\left(b,a\right)\right)$
+\item \emph{Tangent of an Average.} $\tan\left(\frac{\alpha+\beta}{2}\right)=\frac{\sin\alpha+\sin\beta}{\cos\alpha+\cos\beta}=-\frac{\cos\alpha-\cos\beta}{\sin\alpha-\sin\beta}$
 \item $\tan x+\sec x=\tan\left(\frac{x}{2}+\frac{\pi}{4}\right)$
 \item ${\displaystyle \sum_{i=0}^{n}\sin\left(\varphi+i\alpha\right)=\frac{\sin\frac{\left(n+1\right)\alpha}{2}\sin\left(\varphi+\frac{n\alpha}{2}\right)}{\sin\frac{\alpha}{2}}}$
 \item ${\displaystyle \sum_{i=0}^{n}\cos\left(\varphi+i\alpha\right)=\frac{\sin\frac{\left(n+1\right)\alpha}{2}\cos\left(\varphi+\frac{n\alpha}{2}\right)}{\sin\frac{\alpha}{2}}}$
@@ -515,7 +519,7 @@ $\cot x+\cot y+\cot z=\cot x\cot y\cot z$.
 
 \subsection{Identities without Variables}
 \begin{itemize}
-\item ${\displaystyle \cos20\textdegree\cdot\cos40\textdegree\cdot\cos80\textdegree=\frac{1}{8}}$
+\item \emph{Morrie's Law.} ${\displaystyle \cos20\textdegree\cdot\cos40\textdegree\cdot\cos80\textdegree=\frac{1}{8}}$
 \item ${\displaystyle \sin20\textdegree\cdot\sin40\textdegree\cdot\sin80\textdegree=\frac{\sqrt{3}}{8}}$
 \item ${\displaystyle \cos24^{\circ}+\cos48^{\circ}+\cos96^{\circ}+\cos168^{\circ}=\frac{1}{2}}$
 \item $\cos\frac{2\pi}{21}+\cos\left(2\cdot\frac{2\pi}{21}\right)+\cos\left(4\cdot\frac{2\pi}{21}\right)+\cos\left(5\cdot\frac{2\pi}{21}\right)+\cos\left(8\cdot\frac{2\pi}{21}\right)+\cos\left(10\cdot\frac{2\pi}{21}\right)=\frac{1}{2}$
@@ -523,7 +527,29 @@ $\cot x+\cot y+\cot z=\cot x\cot y\cot z$.
 \item ${\displaystyle \sin\frac{\pi}{10}=\sin18^{\circ}=\tfrac{1}{4}(\sqrt{5}-1)=\tfrac{1}{2}\varphi^{-1}}$
 \item $\sin^{2}18^{\circ}+\sin^{2}30^{\circ}=\sin^{2}36^{\circ}$
 \end{itemize}
-\end{multicols*}
+\end{multicols}
+
+
+\section{Graphs}
+
+\pgfkeys{/pgfplots/Axis Style/.style={ width=13.5cm, height=5cm, axis x line=center, axis y line=middle, samples=100, ymin=-1.5, ymax=1.5, xmin=-7.0, xmax=7.0, domain=-2*pi:2*pi }}
+
+
+\subsection{$y=\sin x$}
+
+\begin{tikzpicture} \begin{axis}[ Axis Style, xtick={ -6.28318, -4.7123889, -3.14159, -1.5708, 1.5708, 3.14159, 4.7123889, 6.28318 }, xticklabels={ $-2\pi$, $-\frac{3\pi}{2}$, $-\pi$, $\frac{\pi}{2}$, $\frac{\pi}{2}$, $\pi$, $\frac{3\pi}{2}$, $2\pi$ } ] \addplot [mark=none, ultra thick, blue] {sin(deg(x))}; \end{axis} \end{tikzpicture}
+
+
+\subsection{$y=\cos x$}
+
+\begin{tikzpicture} \begin{axis}[ Axis Style, xtick={ -6.28318, -4.7123889, -3.14159, -1.5708, 1.5708, 3.14159, 4.7123889, 6.28318 }, xticklabels={ $-2\pi$, $-\frac{3\pi}{2}$, $-\pi$, $\frac{\pi}{2}$, $\frac{\pi}{2}$, $\pi$, $\frac{3\pi}{2}$, $2\pi$ } ] \addplot [mark=none, ultra thick, blue] {cos(deg(x))}; \end{axis} \end{tikzpicture}
+
+
+\subsection{$y=\tan x$}
+
+\begin{tikzpicture} \begin{axis}[ Axis Style, xtick={ -6.28318, -4.7123889, -3.14159, -1.5708, 1.5708, 3.14159, 4.7123889, 6.28318 }, xticklabels={ $-2\pi$, $-\frac{3\pi}{2}$, $-\pi$, $\frac{\pi}{2}$, $\frac{\pi}{2}$, $\pi$, $\frac{3\pi}{2}$, $2\pi$ } ] \addplot [mark=none, ultra thick, blue] {tan(deg(x))}; \end{axis} \end{tikzpicture}
+
+\newpage{}
 
 
 \section{Tables }
@@ -533,6 +559,7 @@ $\cot x+\cot y+\cot z=\cot x\cot y\cot z$.
 
 \renewcommand{\arraystretch}{2}
 
+\noindent \begin{center}
 \begin{tabular}{|c|c||c|c|c|c|c|c|}
 \hline 
 $A\textdegree$ & $A$ rad & $\sin A$ & $\cos A$ & $\tan A$ & $\cot A$ & $\sec A$ & $\csc A$\tabularnewline
@@ -565,6 +592,7 @@ $345\textdegree$ & $23\pi/12$ & $-\frac{1}{4}\left(\sqrt{6}-\sqrt{2}\right)$ & $
 $360\textdegree$ & $2\pi$ & $0$ & $1$ & $0$ & $\mp\infty$ & $1$ & $\mp\infty$\tabularnewline
 \hline 
 \end{tabular}
+\par\end{center}
 
 \newpage{}
 
@@ -573,6 +601,7 @@ $360\textdegree$ & $2\pi$ & $0$ & $1$ & $0$ & $\mp\infty$ & $1$ & $\mp\infty$\ta
 
 \renewcommand{\arraystretch}{2.5}
 
+\noindent \begin{center}
 \begin{tabular}{|c||c|c|c|c|c|c|}
 \hline 
  & $\sin\theta=u$ & $\cos\theta=u$ & $\tan\theta=u$ & $\csc\theta=u$ & $\sec\theta=u$ & $\cot\theta=u$\tabularnewline
@@ -586,28 +615,10 @@ $\sec\theta$ & ${\displaystyle \frac{1}{\sqrt{1-u^{2}}}}$ & ${\displaystyle \fra
 $\cot\theta$ & ${\displaystyle \frac{\sqrt{1-u^{2}}}{u}}$ & ${\displaystyle \frac{u}{\sqrt{1-u^{2}}}}$ & ${\displaystyle \frac{1}{u}}$ & $\sqrt{u^{2}-1}$ & ${\displaystyle \frac{1}{\sqrt{u^{2}-1}}}$ & $u$\tabularnewline
 \hline 
 \end{tabular}
+\par\end{center}
 
+\bigskip{}
 
-\section{Graphs}
-
-\pgfkeys{/pgfplots/Axis Style/.style={     width=13.5cm, height=5cm,     axis x line=center,      axis y line=middle,      samples=100,     ymin=-1.5, ymax=1.5,     xmin=-7.0, xmax=7.0,     domain=-2*pi:2*pi }}
-
-
-\subsection{$y=\sin x$}
-
-\begin{tikzpicture} \begin{axis}[     Axis Style,     xtick={         -6.28318, -4.7123889, -3.14159, -1.5708,         1.5708, 3.14159, 4.7123889, 6.28318     },     xticklabels={         $-2\pi$, $-\frac{3\pi}{2}$, $-\pi$, $\frac{\pi}{2}$,         $\frac{\pi}{2}$, $\pi$, $\frac{3\pi}{2}$, $2\pi$     } ] \addplot [mark=none, ultra thick, blue] {sin(deg(x))}; \end{axis} \end{tikzpicture}
-
-
-\subsection{$y=\cos x$}
-
-\begin{tikzpicture} \begin{axis}[     Axis Style,     xtick={         -6.28318, -4.7123889, -3.14159, -1.5708,         1.5708, 3.14159, 4.7123889, 6.28318     },     xticklabels={         $-2\pi$, $-\frac{3\pi}{2}$, $-\pi$, $\frac{\pi}{2}$,         $\frac{\pi}{2}$, $\pi$, $\frac{3\pi}{2}$, $2\pi$     } ] \addplot [mark=none, ultra thick, blue] {cos(deg(x))}; \end{axis} \end{tikzpicture}
-
-
-\subsection{$y=\tan x$}
-
-\begin{tikzpicture} \begin{axis}[     Axis Style,     xtick={         -6.28318, -4.7123889, -3.14159, -1.5708,         1.5708, 3.14159, 4.7123889, 6.28318     },     xticklabels={         $-2\pi$, $-\frac{3\pi}{2}$, $-\pi$, $\frac{\pi}{2}$,         $\frac{\pi}{2}$, $\pi$, $\frac{3\pi}{2}$, $2\pi$     } ] \addplot [mark=none, ultra thick, blue] {tan(deg(x))}; \end{axis} \end{tikzpicture}
-
-\newpage{}
 
 \begin{multicols*}{2}
 
@@ -625,6 +636,11 @@ the \emph{principal branch} and the values for this branch are called
 
 
 \subsection{Principal Values}
+
+Since none of the six trigonometric functions are one-to-one, they
+are restricted in order to have inverse functions. Therefore the ranges
+of the inverse functions are proper subsets of the domains of the
+original functions.
 
 \renewcommand{\arraystretch}{1.5}
 
@@ -655,12 +671,21 @@ In all cases it is assumed that principal values are used.
 
 \subsubsection{Reciprocal Identities}
 \begin{lyxlist}{00.00.0000}
-\item [{${\displaystyle \csc^{-1}x=\sin^{-1}\left(\frac{1}{x}\right)}$}]~
-\item [{${\displaystyle \sec^{-1}x=\cos^{-1}\left(\frac{1}{x}\right)}$}]~
-\item [{${\displaystyle \cot^{-1}x=\tan^{-1}\left(\frac{1}{x}\right)}$}]~
+\item [{${\displaystyle \sin^{-1}\frac{1}{x}=\csc^{-1}x}$}]~
+\item [{${\displaystyle \cos^{-1}\frac{1}{x}=\sec^{-1}x}$}]~
+\item [{${\displaystyle \csc^{-1}\frac{1}{x}=\sin^{-1}x}$}]~
+\item [{${\displaystyle \sec^{-1}\frac{1}{x}=\cos^{-1}x}$}]~
+\item [{${\displaystyle \tan^{-1}\frac{1}{x}=\begin{cases}
+\frac{\pi}{2}-\tan^{-1}x=\cot^{-1}x & \text{if }x>0\\
+-\frac{\pi}{2}-\tan^{-1}x=\cot^{-1}x-\pi & \text{if }x<0
+\end{cases}}$}]~
+\item [{${\displaystyle \cot^{-1}\frac{1}{x}=\begin{cases}
+\frac{\pi}{2}-\cot^{-1}x=\tan^{-1}x & \text{if }x>0\\
+\frac{3\pi}{2}-\cot^{-1}x=\pi+\tan^{-1}x & \text{if }x<0
+\end{cases}}$}]~
 \end{lyxlist}
 
-\subsubsection{Parity Identities}
+\subsubsection{Negative Identities}
 \begin{lyxlist}{00.00.0000}
 \item [{${\displaystyle \sin^{-1}\left(-x\right)=-\sin^{-1}x}$}]~
 \item [{${\displaystyle \cos^{-1}\left(-x\right)=\pi-\cos^{-1}x}$}]~
@@ -670,7 +695,7 @@ In all cases it is assumed that principal values are used.
 \item [{${\displaystyle \cot^{-1}\left(-x\right)=\pi-\cot^{-1}x}$}]~
 \end{lyxlist}
 
-\subsubsection{Pythagorean Identities (sort of)}
+\subsubsection{Complementary Identities}
 \begin{lyxlist}{00.00.0000}
 \item [{${\displaystyle \sin^{-1}x+\cos^{-1}x=\frac{\pi}{2}}$}]~
 \item [{${\displaystyle \tan^{-1}x+\cot^{-1}x=\frac{\pi}{2}}$}]~
@@ -691,7 +716,9 @@ ${\displaystyle \tan^{-1}\alpha\pm\tan^{-1}\beta=\tan^{-1}\left(\frac{\alpha\pm\
 
 \subsection{Law of Sines}
 
+\noindent \begin{center}
 ${\displaystyle \frac{a}{\sin\alpha}=\frac{b}{\sin\beta}=\frac{c}{\sin\gamma}}$
+\par\end{center}
 
 
 \paragraph*{Extended Law of Sines}
@@ -700,16 +727,18 @@ ${\displaystyle \frac{a}{\sin\alpha}=\frac{b}{\sin\beta}=\frac{c}{\sin\gamma}}$
 \input{fig1.tikz}
 \par\end{center}
 
+\noindent \begin{center}
 ${\displaystyle \frac{a}{\sin\alpha}=\frac{b}{\sin\beta}=\frac{c}{\sin\gamma}=2R}$,
+\par\end{center}
 
 where $R$ is the circumradius of the triangle.
 
 
 \subsection{Law of Cosines}
 \begin{lyxlist}{00.00.0000}
-\item [{${\displaystyle \cos\alpha=\frac{b^{2}+c^{2}-a^{2}}{2bc}}$;}] ${\displaystyle a=\sqrt{b^{2}+c^{2}-2bc\cos\alpha}}$
-\item [{${\displaystyle \cos\beta=\frac{a^{2}+c^{2}-b^{2}}{2ac}}$;}] ${\displaystyle b=\sqrt{a^{2}+c^{2}-2ac\cos\beta}}$
-\item [{${\displaystyle \cos\gamma=\frac{a^{2}+b^{2}-c^{2}}{2ab}}$;}] ${\displaystyle c=\sqrt{a^{2}+b^{2}-2ab\cos\gamma}}$
+\item [{${\displaystyle \cos\alpha=\frac{b^{2}+c^{2}-a^{2}}{2bc}}$;$\quad{\displaystyle a=\sqrt{b^{2}+c^{2}-2bc\cos\alpha}}$}]~
+\item [{${\displaystyle \cos\beta=\frac{a^{2}+c^{2}-b^{2}}{2ac}}$;$\quad{\displaystyle b=\sqrt{a^{2}+c^{2}-2ac\cos\beta}}$}]~
+\item [{${\displaystyle \cos\gamma=\frac{a^{2}+b^{2}-c^{2}}{2ab}}$;${\displaystyle \quad c=\sqrt{a^{2}+b^{2}-2ab\cos\gamma}}$}]~
 \end{lyxlist}
 
 \subsection{Law of Tangents}
@@ -721,12 +750,18 @@ where $R$ is the circumradius of the triangle.
 
 \subsection{Law of Cotangents}
 
-Let $s$ be the semi-perimeter, that is, $s=\frac{(a+b+c)}{2}$, and
-$r$ be the radius of the inscribed circle, then
+Let $s$ be the semi-perimeter, that is, $s=\frac{a+b+c}{2}$, and
+$r$ be the radius of the inscribed circle, then:
 
-\noindent ${\displaystyle \frac{\cot\left(\frac{\alpha}{2}\right)}{s-a}=\frac{\cot\left(\frac{\beta}{2}\right)}{s-b}=\frac{\cot\left(\frac{\gamma}{2}\right)}{s-c}=\frac{1}{r}}$
+\noindent \begin{center}
+${\displaystyle \frac{\cot\frac{\alpha}{2}}{s-a}=\frac{\cot\frac{\beta}{2}}{s-b}=\frac{\cot\frac{\gamma}{2}}{s-c}=\frac{1}{r}}$
+\par\end{center}
 
-and furthermore that the inradius is given by $r=\sqrt{\frac{(s-a)(s-b)(s-c)}{s}}$.
+and furthermore that the inradius is given by:
+
+\noindent \begin{center}
+$r{\displaystyle =\sqrt{\frac{(s-a)(s-b)(s-c)}{s}}}$
+\par\end{center}
 
 
 \subsection{Mollweide's Formula}
@@ -734,8 +769,8 @@ and furthermore that the inradius is given by $r=\sqrt{\frac{(s-a)(s-b)(s-c)}{s}
 Each of these identities uses all six parts of the triangle\textemdash the
 three angles and the lengths of the three sides.
 \begin{lyxlist}{00.00.0000}
-\item [{${\displaystyle \frac{a+b}{c}=\frac{\cos\left(\frac{\alpha-\beta}{2}\right)}{\sin\left(\frac{\gamma}{2}\right)}}$}]~
-\item [{${\displaystyle \frac{a-b}{c}=\frac{\sin\left(\frac{\alpha-\beta}{2}\right)}{\cos\left(\frac{\gamma}{2}\right)}}$}]~
+\item [{${\displaystyle \frac{a+b}{c}=\frac{\cos\frac{\alpha-\beta}{2}}{\sin\frac{\gamma}{2}}}$}]~
+\item [{${\displaystyle \frac{a-b}{c}=\frac{\sin\frac{\alpha-\beta}{2}}{\cos\frac{\gamma}{2}}}$}]~
 \end{lyxlist}
 
 \subsection{Stewart's Theorem}
@@ -748,65 +783,160 @@ Let $D$ be a point in $\overline{BC}$ of $\triangle ABC$. If $\left|BD\right|=m$
 $\left|CD\right|=n$, and $\left|AD\right|=d$, then ${\displaystyle b^{2}m+c^{2}n=a\left(d^{2}+mn\right)}$.
 
 
+\subsection{Angles in Terms of Sides}
+
+Let $s=\frac{a+b+c}{2}$ be the semiperimeter of the triangle, then:
+\begin{lyxlist}{00.00.0000}
+\item [{${\displaystyle \alpha=\sin^{-1}\left(\frac{2}{bc}\sqrt{s\left(s-a\right)\left(s-b\right)\left(s-c\right)}\right)}$}]~
+\item [{${\displaystyle \beta=\sin^{-1}\left(\frac{2}{ac}\sqrt{s\left(s-a\right)\left(s-b\right)\left(s-c\right)}\right)}$}]~
+\item [{${\displaystyle \gamma=\sin^{-1}\left(\frac{2}{ab}\sqrt{s\left(s-a\right)\left(s-b\right)\left(s-c\right)}\right)}$}]~
+\end{lyxlist}
+\newpage{}
+
+
 \section{Solving Triangles}
 
+A general form triangle has six main characteristics: three linear
+(side lengths $a,b,c$) and three angular ($\alpha,\beta,\gamma$).
+The classical plane trigonometry problem is to specify three of the
+six characteristics and determine the other three. A triangle can
+be uniquely determined in this sense when given any of the following:
+\begin{itemize}
+\item Three sides (SSS)
+\item Two sides and the included angle (SAS)
+\item Two sides and an angle not included between them (SSA), if the side
+length adjacent to the angle is shorter than the other side length. 
+\item A side and the two angles adjacent to it (ASA)
+\item A side, the angle opposite to it and an angle adjacent to it (AAS).
+\end{itemize}
+For all cases in the plane, at least one of the side lengths must
+be specified. If only the angles are given, the side lengths cannot
+be determined, because any similar triangle is a solution.
 
-\subsection{AAA Triangle}
-\begin{enumerate}
-\item Write ``no solution'' as your answer.
-\end{enumerate}
+
+\subsubsection*{Notes}
+\begin{itemize}
+\item To find an unknown angle, the law of cosines is safer than the law
+of sines. The reason is that the value of sine for the angle of the
+triangle does not uniquely determine this angle. For example, if $\sin\beta=0.5$,
+the angle $\beta$ can be equal either $30^{\circ}$ or $150^{\circ}$.
+Using the law of cosines avoids this problem: within the interval
+from $0^{\circ}$ to $180^{\circ}$ the cosine value unambiguously
+determines its angle. On the other hand, if the angle is small (or
+close to $180{^\circ}$), then it is more robust numerically to determine
+it from its sine than its cosine because the arc-cosine function has
+a divergent derivative at $1$ (or $-1$).
+\item We assume that the relative position of specified characteristics
+is known. If not, the mirror reflection of the triangle will also
+be a solution. For example, three side lengths uniquely define either
+a triangle or its reflection. 
+\end{itemize}
 
 \subsection{AAS/ASA Triangle}
-\begin{enumerate}
-\item Solve for the missing angle.
-\item Use the Law of Sines twice for the other two sides.
-\end{enumerate}
+
+\noindent \begin{center}
+\includegraphics[scale=0.5]{Resolve_triangle_with_c_alpha_beta}
+\par\end{center}
+
+The known characteristics are the side c and the angles $\alpha,\beta$.
+The third angle $\gamma=180^{\circ}-\alpha-\beta$.
+
+\noindent Two unknown side can be calculated from the law of sines:
+
+\noindent \begin{center}
+${\displaystyle a=\frac{c\sin\alpha}{\sin\gamma}}$; ${\displaystyle \quad b=\frac{c\sin\beta}{\sin\gamma}}$. 
+\par\end{center}
+
+The procedure for solving an AAS triangle is same as that for an ASA
+triangle: First, find the third angle by using the angle sum property
+of a triangle, then find the other two sides using the law of sines.
+
 
 \subsection{SAS Triangle}
-\begin{enumerate}
-\item Use the Law of Cosines for the other non-included angle.
-\item Use the Law of Sines for the missing side.
-\item Solve for the missing angle.
-\end{enumerate}
+
+\noindent \begin{center}
+\includegraphics[scale=0.5]{Resolve_triangle_with_a_b_gamma}
+\par\end{center}
+
+Here the lengths of sides $a,b$ and the angle $\gamma$ between these
+sides are known. The third side can be determined from the law of
+cosines:
+
+\noindent \begin{center}
+$c=\sqrt{a^{2}+b^{2}-2ab\cos\gamma}$
+\par\end{center}
+
+Now we use law of cosines to find the second angle:
+
+\noindent \begin{center}
+${\displaystyle \alpha=\cos^{-1}\frac{b^{2}+c^{2}-a^{2}}{2bc}}$
+\par\end{center}
+
+Finally, $\beta=180^{\circ}-\alpha-\gamma.$
+
 
 \subsection{SSS Triangle}
-\begin{enumerate}
-\item Use the Law of Cosines twice for the two angles.
-\item Solve for the missing angle.
-\end{enumerate}
-\newpage{}
+
+\noindent \begin{center}
+\includegraphics[scale=0.5]{Resolve_triangle_with_a_b_c}
+\par\end{center}
+
+Let three side lengths $a,b,c$ be specified. To find the angles $\alpha,\beta$,
+the law of cosines can be used:
+
+\noindent \begin{center}
+${\displaystyle \alpha=\cos^{-1}\frac{b^{2}+c^{2}-a^{2}}{2bc}}$;${\displaystyle \quad\beta=\cos^{-1}\frac{a^{2}+c^{2}-b^{2}}{2ac}}.$
+\par\end{center}
+
+Then angle $\gamma=180^{\circ}-\alpha-\beta$.
 
 
 \subsection{SSA Triangle}
 
-This is the ambiguous case. There could be either only one solution,
-two solutions, or even none at all.
+\noindent \begin{center}
+\includegraphics[scale=0.5]{Resolve_triangle_with_b_c_beta}
+\par\end{center}
 
-When $\alpha$ is acute
+This case is not solvable in all cases; a solution is guaranteed to
+be unique only if the side length adjacent to the angle is shorter
+than the other side length. Assume that two sides $b$, $c$ and the
+angle $\beta$ are known. The equation for the angle $\gamma$ can
+be implied from the law of sines:
 
-\begin{tabular}{|c|c|c|c|}
-\hline 
-$0<a<h$ & $a=h$ & $a>b$ & $h<a<b$\tabularnewline
-\hline 
-\hline 
-\definecolor{qqqqff}{rgb}{0.3333333333333333,0.3333333333333333,0.3333333333333333} \definecolor{xdxdff}{rgb}{0.6588235294117647,0.6588235294117647,0.6588235294117647} \definecolor{uuuuuu}{rgb}{0.26666666666666666,0.26666666666666666,0.26666666666666666} \begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm,scale=0.25] \clip(-1.4108232491791761,-1.6585019652159858) rectangle (5.662326768433716,3.780768824782209); \draw (0.,0.)-- (4.537620935244387,0.); \draw (0.,0.)-- (3.4163664926017203,2.601018310969815); \draw (3.4163664926017203,2.601018310969815)-- (4.225202648247351,1.2846651060844072); \draw [dash pattern=on 3pt off 3pt] (3.4163664926017203,2.601018310969815)-- (3.4163664926017203,0.); \begin{scriptsize} \draw [fill=uuuuuu] (0.,0.) circle (1.5pt); \draw[color=uuuuuu] (-0.19864029563067692,-0.1310355104904654) node {$A$}; \draw [fill=xdxdff] (4.537620935244387,0.) circle (1.5pt); \draw[color=xdxdff] (4.700078444482846,-0.14345393695164854) node {$B$}; \draw [fill=qqqqff] (3.4163664926017203,2.601018310969815) circle (1.5pt); \draw[color=qqqqff] (3.500392222414228,2.774876281426378) node {$C$}; \draw[color=black] (1.5009151856331984,1.6820547528422662) node {$b$}; \draw [fill=qqqqff] (4.225202648247351,1.2846651060844072) circle (1.5pt); \draw[color=black] (4.125228796408299,2.054607546677759) node {$a$}; \draw[color=black] (3.212967398376955,1.259828253162041) node {$h$}; \end{scriptsize} \end{tikzpicture} & \input{ssa3.tikz} & \input{ssa2.tikz} & \input{ssa1.tikz}\tabularnewline
-\hline 
-0 & 1 & 1 & 2\tabularnewline
-\hline 
-\end{tabular}
+\noindent \begin{center}
+${\displaystyle \sin\gamma=\frac{c\sin\beta}{b}}$
+\par\end{center}
 
-When $\alpha$ is obtuse
+We denote further $D=\frac{c\sin\beta}{b}$ (equation's right side).
+There are four possible cases:
+\begin{enumerate}
+\item If $D>1$, no such triangle exists because the side $b$ does not
+reach line $BC$. For the same reason a solution does not exist if
+the angle $\beta\ge90^{\circ}$ and $b\le c$.
+\item If $D=1$, a unique solution exists: $\gamma=90^{\circ}$, i.e., the
+triangle is right-angled.
+\item If $D<1$, two alternatives are possible.\\
+\includegraphics[scale=0.75]{Resolve_triangle_with_b_c_beta_2_solutions}
 
-\begin{tabular}{|c|c|}
-\hline 
-$0<a\le b$ & $a>b$\tabularnewline
-\hline 
-\hline 
- & \tabularnewline
-\hline 
-0 & 1\tabularnewline
-\hline 
-\end{tabular}
+\begin{enumerate}
+\item If $b<c$, the angle $\gamma$ may be acute: $\gamma=\sin^{-1}D$
+or obtuse: $\gamma'=180^{\circ}-\gamma$. The picture above shows
+the point $C$, the side $b$ and the angle $\gamma$ as the first
+solution, and the point $C'$, side $b'$ and the angle $\gamma'$
+as the second solution.
+\item If $b\ge c$ then $\beta\ge\gamma$ (the larger side corresponds to
+a larger angle). Since no triangle can have two obtuse angles, $\gamma$
+is acute angle and the solution $\gamma=\sin^{-1}D$ is unique.
+\end{enumerate}
+\end{enumerate}
+Once $\gamma$ is obtained, the third angle $\alpha=180^{\circ}-\beta-\gamma$
+.
+
+The third side can then be found from the law of sines:
+
+\noindent \begin{center}
+${\displaystyle a=\frac{b\sin\alpha}{\sin\beta}}$
+\par\end{center}
 
 \end{multicols*}
 \end{document}
