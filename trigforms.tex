@@ -485,7 +485,7 @@ ${\displaystyle a\sin x+b\cos x=c\sin\left(x+\theta\right)}$
 \par\end{center}
 
 where $c=\pm\sqrt{a^{2}+b^{2}}$ and $\theta$ satisfies the equations
-$c\cos\theta=a$ and $c\sin\theta=b$, or $\theta=\tan^{-1}\left(y,x\right)$.
+$c\cos\theta=a$ and $c\sin\theta=b$, or $\theta=\tan^{-1}\left(b,a\right)$.
 
 
 \subsubsection{Arbitrary Phase Shift}
@@ -497,7 +497,7 @@ ${\displaystyle a\sin x+b\sin\left(x+\theta\right)=c\sin\left(x+\varphi\right)}$
 \par\end{center}
 
 where $c=\sqrt{a^{2}+b^{2}+2ab\cos\theta}$, and $\varphi$ satisfies
-the equations $c\sin\left(x+\theta\right)=a+b\cos\theta$ and $c\sin x=b\sin\theta$
+the equations $c\cos\varphi=a+b\cos\theta$ and $c\sin\varphi=b\sin\theta$
 or $\varphi=\tan^{-1}\left(b\sin\theta,a+b\cos\theta\right)$.
 
 
@@ -537,17 +537,17 @@ $\cot x+\cot y+\cot z=\cot x\cot y\cot z$.
 
 \subsection{$y=\sin x$}
 
-\begin{tikzpicture} \begin{axis}[ Axis Style, xtick={ -6.28318, -4.7123889, -3.14159, -1.5708, 1.5708, 3.14159, 4.7123889, 6.28318 }, xticklabels={ $-2\pi$, $-\frac{3\pi}{2}$, $-\pi$, $\frac{\pi}{2}$, $\frac{\pi}{2}$, $\pi$, $\frac{3\pi}{2}$, $2\pi$ } ] \addplot [mark=none, ultra thick, blue] {sin(deg(x))}; \end{axis} \end{tikzpicture}
+\begin{tikzpicture} \begin{axis}[ Axis Style, xtick={ -6.28318, -4.7123889, -3.14159, -1.5708, 1.5708, 3.14159, 4.7123889, 6.28318 }, xticklabels={ $-2\pi$, $-\frac{3\pi}{2}$, $-\pi$, $-\frac{\pi}{2}$, $\frac{\pi}{2}$, $\pi$, $\frac{3\pi}{2}$, $2\pi$ } ] \addplot [mark=none, ultra thick, blue] {sin(deg(x))}; \end{axis} \end{tikzpicture}
 
 
 \subsection{$y=\cos x$}
 
-\begin{tikzpicture} \begin{axis}[ Axis Style, xtick={ -6.28318, -4.7123889, -3.14159, -1.5708, 1.5708, 3.14159, 4.7123889, 6.28318 }, xticklabels={ $-2\pi$, $-\frac{3\pi}{2}$, $-\pi$, $\frac{\pi}{2}$, $\frac{\pi}{2}$, $\pi$, $\frac{3\pi}{2}$, $2\pi$ } ] \addplot [mark=none, ultra thick, blue] {cos(deg(x))}; \end{axis} \end{tikzpicture}
+\begin{tikzpicture} \begin{axis}[ Axis Style, xtick={ -6.28318, -4.7123889, -3.14159, -1.5708, 1.5708, 3.14159, 4.7123889, 6.28318 }, xticklabels={ $-2\pi$, $-\frac{3\pi}{2}$, $-\pi$, $-\frac{\pi}{2}$, $\frac{\pi}{2}$, $\pi$, $\frac{3\pi}{2}$, $2\pi$ } ] \addplot [mark=none, ultra thick, blue] {cos(deg(x))}; \end{axis} \end{tikzpicture}
 
 
 \subsection{$y=\tan x$}
 
-\begin{tikzpicture} \begin{axis}[ Axis Style, xtick={ -6.28318, -4.7123889, -3.14159, -1.5708, 1.5708, 3.14159, 4.7123889, 6.28318 }, xticklabels={ $-2\pi$, $-\frac{3\pi}{2}$, $-\pi$, $\frac{\pi}{2}$, $\frac{\pi}{2}$, $\pi$, $\frac{3\pi}{2}$, $2\pi$ } ] \addplot [mark=none, ultra thick, blue] {tan(deg(x))}; \end{axis} \end{tikzpicture}
+\begin{tikzpicture} \begin{axis}[ Axis Style, xtick={ -6.28318, -4.7123889, -3.14159, -1.5708, 1.5708, 3.14159, 4.7123889, 6.28318 }, xticklabels={ $-2\pi$, $-\frac{3\pi}{2}$, $-\pi$, $-\frac{\pi}{2}$, $\frac{\pi}{2}$, $\pi$, $\frac{3\pi}{2}$, $2\pi$ } ] \addplot [mark=none, ultra thick, blue] {tan(deg(x))}; \end{axis} \end{tikzpicture}
 
 \newpage{}
 
