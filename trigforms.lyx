@@ -10,6 +10,10 @@
 \usepackage{multicol}
 \usepackage{array}
 \usepackage{pgfplots}
+\usepgfplotslibrary{polar}
+\usepgflibrary{shapes.geometric}
+\usetikzlibrary{calc}
+\pgfplotsset{my style polar/.append style={xticklabels={,, $\frac{\pi}{6}$, $\frac{\pi}{3}$, $\frac{\pi}{2}$, $\frac{2\pi}{3}$, $\frac{5\pi}{6}$, $\pi$, $\frac{7\pi}{6}$, $\frac{4\pi}{3}$, $\frac{3\pi}{2}$, $\frac{5\pi}{3}$,$\frac{11\pi}{6}$,}, thick }}
 \end_preamble
 \use_default_options true
 \begin_modules
@@ -2669,7 +2673,7 @@ where
 \end_inset
 
 , or 
-\begin_inset Formula $\theta=\tan^{-1}\left(y,x\right)$
+\begin_inset Formula $\theta=\tan^{-1}\left(b,a\right)$
 \end_inset
 
 .
@@ -2702,11 +2706,11 @@ where
 \end_inset
 
  satisfies the equations 
-\begin_inset Formula $c\sin\left(x+\theta\right)=a+b\cos\theta$
+\begin_inset Formula $c\cos\varphi=a+b\cos\theta$
 \end_inset
 
  and 
-\begin_inset Formula $c\sin x=b\sin\theta$
+\begin_inset Formula $c\sin\varphi=b\sin\theta$
 \end_inset
 
  or 
@@ -7587,6 +7591,702 @@ The third side can then be found from the law of sines:
 \noindent
 \align center
 \begin_inset Formula ${\displaystyle a=\frac{b\sin\alpha}{\sin\beta}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace vfill
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Polar Coordinates
+\end_layout
+
+\begin_layout Standard
+A point 
+\begin_inset Formula $P$
+\end_inset
+
+ can be located by rectangular coordinates 
+\begin_inset Formula $\left(x,y\right)$
+\end_inset
+
+ or polar coordinates 
+\begin_inset Formula $\left(r,\theta\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+The angle 
+\begin_inset Formula $\theta$
+\end_inset
+
+ is a 
+\emph on
+directed angle
+\emph default
+, that is, it is positive if it is measured counterclockwise from the initial
+ side to the terminal side, and negative if it is measured clockwise.
+\end_layout
+
+\begin_layout Standard
+The value 
+\begin_inset Formula $r$
+\end_inset
+
+ is a 
+\emph on
+directed distance
+\emph default
+, it is positive if the point 
+\begin_inset Formula $P$
+\end_inset
+
+ lies on the terminal side of 
+\begin_inset Formula $\theta$
+\end_inset
+
+ and negative if 
+\begin_inset Formula $P$
+\end_inset
+
+ is on the extension of the terminal side.
+\end_layout
+
+\begin_layout Subsection
+Properties
+\end_layout
+
+\begin_layout Itemize
+Every ordered pair of polar coordinates 
+\begin_inset Formula $\left(r,\theta\right)$
+\end_inset
+
+ locates a unique point in the plane.
+\end_layout
+
+\begin_layout Itemize
+However, a point 
+\begin_inset Formula $P$
+\end_inset
+
+ on the plane may be specified by an infinite number of ordered pairs 
+\begin_inset Formula $\left(r,\theta\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+The pole 
+\begin_inset Formula $O$
+\end_inset
+
+ may be specified by the ordered pair 
+\begin_inset Formula $\left(0,\theta\right)$
+\end_inset
+
+ where 
+\begin_inset Formula $\theta\in\mathbb{R}.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Let 
+\begin_inset Formula $P\left(r,\theta\right)$
+\end_inset
+
+ be a point in the polar plane.
+ Then 
+\begin_inset Formula $\left(r,\theta+2k\pi\right)$
+\end_inset
+
+ are also coordinates of the point 
+\begin_inset Formula $P$
+\end_inset
+
+ for any 
+\begin_inset Formula $k\in\mathbb{Z}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+It can also be shown that 
+\begin_inset Formula $\left(\left(-1\right)^{n}r,\theta+n\pi\right)$
+\end_inset
+
+ are also coordinates of 
+\begin_inset Formula $P$
+\end_inset
+
+, where 
+\begin_inset Formula $n\in\mathbb{Z}.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Coordinate Transformation
+\end_layout
+
+\begin_layout Subsubsection*
+Polar to Rectangular
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{cases}
+x=r\cos\theta\\
+y=r\sin\theta
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Rectangular to Polar
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{cases}
+r=\pm\sqrt{x^{2}+y^{2}}\\
+\theta=\tan^{-1}\left(y,x\right)
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where 
+\begin_inset Formula $\tan^{-1}\left(y,x\right)$
+\end_inset
+
+ is the two-argument form of the arctangent function (see section 3.9).
+\end_layout
+
+\begin_layout Section
+Special Polar Graphs
+\end_layout
+
+\begin_layout Subsubsection*
+Theorem
+\end_layout
+
+\begin_layout Standard
+A polar graph is:
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+symmetric with respect to the polar axis
+\series default
+ if an equivalent equation is obtained when 
+\begin_inset Formula $\left(r,\theta\right)$
+\end_inset
+
+ is replaced by either 
+\begin_inset Formula $\left(r,-\theta\right)$
+\end_inset
+
+ or 
+\begin_inset Formula $\left(-r,\pi-\theta\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+symmetric with respect to the 
+\begin_inset Formula $\boldsymbol{\frac{\pi}{2}}$
+\end_inset
+
+-axis
+\series default
+ if an equivalent equation is obtained when 
+\begin_inset Formula $\left(r,\theta\right)$
+\end_inset
+
+ is replaced by either 
+\begin_inset Formula $\left(r,\pi-\theta\right)$
+\end_inset
+
+ or 
+\begin_inset Formula $\left(-r,-\theta\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+symmetric with respect to the pole
+\series default
+ if an equivalent equation is obtained when 
+\begin_inset Formula $\left(r,\theta\right)$
+\end_inset
+
+ is replaced by either 
+\begin_inset Formula $\left(-r,\theta\right)$
+\end_inset
+
+ or 
+\begin_inset Formula $\left(r,\pi+\theta\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Limaçon of Pascal
+\end_layout
+
+\begin_layout Standard
+A polar equation of the form 
+\begin_inset Formula $r=a+b\cos\theta$
+\end_inset
+
+ or 
+\begin_inset Formula $r=a+b\cos\theta$
+\end_inset
+
+ has a polar graph which is called a 
+\emph on
+limaçon
+\emph default
+.
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $OQ$
+\end_inset
+
+ be a line joining origin 
+\begin_inset Formula $O$
+\end_inset
+
+ to any point in 
+\begin_inset Formula $Q$
+\end_inset
+
+ on a circle of diameter 
+\begin_inset Formula $b$
+\end_inset
+
+ passing through 
+\begin_inset Formula $O$
+\end_inset
+
+.
+ Then the curve is the locus of all points in 
+\begin_inset Formula $P$
+\end_inset
+
+ such that 
+\begin_inset Formula $\left|PQ\right|=a$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection*
+Types of Limaçons
+\end_layout
+
+\begin_layout Itemize
+Looped limaçon if 
+\begin_inset Formula $0<\left|\frac{a}{b}\right|<1$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tikzpicture} 
+\backslash
+begin{polaraxis}[my style polar] 
+\backslash
+addplot[color=blue,domain=0:360, samples=100]{2+4*cos(x)}; 
+\backslash
+end{polaraxis} 
+\backslash
+end{tikzpicture}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Cardioid if 
+\begin_inset Formula $\left|\frac{a}{b}\right|=1$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tikzpicture} 
+\backslash
+begin{polaraxis}[my style polar] 
+\backslash
+addplot[color=blue,domain=0:360, samples=100]{2+2*cos(x)}; 
+\backslash
+end{polaraxis} 
+\backslash
+end{tikzpicture}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Dimpled limaçon if 
+\begin_inset Formula $1<\left|\frac{a}{b}\right|<2$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tikzpicture} 
+\backslash
+begin{polaraxis}[my style polar] 
+\backslash
+addplot[color=blue,domain=0:360, samples=100]{3+2*cos(x)}; 
+\backslash
+end{polaraxis} 
+\backslash
+end{tikzpicture}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Convex limaçon if 
+\begin_inset Formula $\left|\frac{a}{b}\right|\ge2$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tikzpicture} 
+\backslash
+begin{polaraxis}[my style polar] 
+\backslash
+addplot[color=blue,domain=0:360, samples=100]{4+2*cos(x)}; 
+\backslash
+end{polaraxis} 
+\backslash
+end{tikzpicture}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Roses
+\end_layout
+
+\begin_layout Standard
+A rose with 
+\begin_inset Formula $n$
+\end_inset
+
+ leaves has a polar equation 
+\begin_inset Formula $r=a\cos\left(n\theta\right)$
+\end_inset
+
+ or 
+\begin_inset Formula $r=a\sin\left(n\theta\right)$
+\end_inset
+
+ where 
+\begin_inset Formula $a$
+\end_inset
+
+ is a constant and 
+\begin_inset Formula $n$
+\end_inset
+
+ is an odd integer.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tikzpicture} 
+\backslash
+begin{polaraxis}[my style polar] 
+\backslash
+addplot[color=blue,domain=0:360, samples=100]{5*cos(3*x)}; 
+\backslash
+end{polaraxis} 
+\backslash
+end{tikzpicture}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+For an even integer 
+\begin_inset Formula $n$
+\end_inset
+
+, the polar graph of an equation 
+\begin_inset Formula $r=a\cos\left(n\theta\right)$
+\end_inset
+
+ or 
+\begin_inset Formula $r=a\sin\left(n\theta\right)$
+\end_inset
+
+ is a rose with 
+\begin_inset Formula $2n$
+\end_inset
+
+ leaves.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tikzpicture} 
+\backslash
+begin{polaraxis}[my style polar] 
+\backslash
+addplot[color=blue,domain=0:360, samples=200]{cos(4*x)}; 
+\backslash
+end{polaraxis} 
+\backslash
+end{tikzpicture}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Properties
+\end_layout
+
+\begin_layout Itemize
+The length of one leaf in the polar graph of a rose is 
+\begin_inset Formula $\left|a\right|$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+If 
+\begin_inset Formula $n$
+\end_inset
+
+ is odd, then the graph of the polar equation 
+\begin_inset Formula $r=a\cos\left(n\theta\right)$
+\end_inset
+
+ is symmetric with respect to the polar axis.
+\end_layout
+
+\begin_layout Itemize
+If 
+\begin_inset Formula $n$
+\end_inset
+
+ is odd, then the graph of the polar equation 
+\begin_inset Formula $r=a\sin\left(n\theta\right)$
+\end_inset
+
+ is symmetric with respect to the 
+\begin_inset Formula $\frac{\pi}{2}$
+\end_inset
+
+-axis.
+\end_layout
+
+\begin_layout Itemize
+A rose with an even number of leaves is symmetric with respect to the polar
+ axis, the 
+\begin_inset Formula $\frac{\pi}{2}$
+\end_inset
+
+-axis, and the pole.
+\end_layout
+
+\begin_layout Subsection
+Spiral of Archimedes
+\end_layout
+
+\begin_layout Standard
+The polar graph of the polar equation 
+\begin_inset Formula $r=\theta$
+\end_inset
+
+ where 
+\begin_inset Formula $\theta>0$
+\end_inset
+
+ is called a 
+\emph on
+spiral
+\emph default
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tikzpicture} 
+\backslash
+begin{polaraxis}[my style polar] 
+\backslash
+addplot[color=blue,domain=0:720, samples=100]{x/120}; 
+\backslash
+end{polaraxis} 
+\backslash
+end{tikzpicture}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Lemniscate of Bernoulli
+\end_layout
+
+\begin_layout Standard
+A polar equation 
+\begin_inset Formula $r^{2}=a\cos2\theta$
+\end_inset
+
+ or 
+\begin_inset Formula $r^{2}=a\sin2\theta$
+\end_inset
+
+ has a polar graph that is called a 
+\emph on
+lemniscate
+\emph default
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tikzpicture} 
+\backslash
+begin{polaraxis}[my style polar] 
+\backslash
+addplot[color=blue,domain=0:90, samples=100]{2*sqrt(sin(2*x))}; 
+\backslash
+addplot[color=blue,domain=180:270, samples=100]{2*sqrt(sin(2*x))}; 
+\backslash
+end{polaraxis} 
+\backslash
+end{tikzpicture}
+\end_layout
+
 \end_inset
 
 

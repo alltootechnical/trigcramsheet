@@ -42,6 +42,10 @@
 \usepackage{multicol}
 \usepackage{array}
 \usepackage{pgfplots}
+\usepgfplotslibrary{polar}
+\usepgflibrary{shapes.geometric}
+\usetikzlibrary{calc}
+\pgfplotsset{my style polar/.append style={xticklabels={,, $\frac{\pi}{6}$, $\frac{\pi}{3}$, $\frac{\pi}{2}$, $\frac{2\pi}{3}$, $\frac{5\pi}{6}$, $\pi$, $\frac{7\pi}{6}$, $\frac{4\pi}{3}$, $\frac{3\pi}{2}$, $\frac{5\pi}{3}$,$\frac{11\pi}{6}$,}, thick }}
 
 \makeatother
 
@@ -537,17 +541,17 @@ $\cot x+\cot y+\cot z=\cot x\cot y\cot z$.
 
 \subsection{$y=\sin x$}
 
-\begin{tikzpicture} \begin{axis}[ Axis Style, xtick={ -6.28318, -4.7123889, -3.14159, -1.5708, 1.5708, 3.14159, 4.7123889, 6.28318 }, xticklabels={ $-2\pi$, $-\frac{3\pi}{2}$, $-\pi$, $-\frac{\pi}{2}$, $\frac{\pi}{2}$, $\pi$, $\frac{3\pi}{2}$, $2\pi$ } ] \addplot [mark=none, ultra thick, blue] {sin(deg(x))}; \end{axis} \end{tikzpicture}
+\begin{tikzpicture} \begin{axis}[ Axis Style, xtick={ -6.28318, -4.7123889, -3.14159, -1.5708, 1.5708, 3.14159, 4.7123889, 6.28318 }, xticklabels={ $-2\pi$, $-\frac{3\pi}{2}$, $-\pi$, $\frac{\pi}{2}$, $\frac{\pi}{2}$, $\pi$, $\frac{3\pi}{2}$, $2\pi$ } ] \addplot [mark=none, ultra thick, blue] {sin(deg(x))}; \end{axis} \end{tikzpicture}
 
 
 \subsection{$y=\cos x$}
 
-\begin{tikzpicture} \begin{axis}[ Axis Style, xtick={ -6.28318, -4.7123889, -3.14159, -1.5708, 1.5708, 3.14159, 4.7123889, 6.28318 }, xticklabels={ $-2\pi$, $-\frac{3\pi}{2}$, $-\pi$, $-\frac{\pi}{2}$, $\frac{\pi}{2}$, $\pi$, $\frac{3\pi}{2}$, $2\pi$ } ] \addplot [mark=none, ultra thick, blue] {cos(deg(x))}; \end{axis} \end{tikzpicture}
+\begin{tikzpicture} \begin{axis}[ Axis Style, xtick={ -6.28318, -4.7123889, -3.14159, -1.5708, 1.5708, 3.14159, 4.7123889, 6.28318 }, xticklabels={ $-2\pi$, $-\frac{3\pi}{2}$, $-\pi$, $\frac{\pi}{2}$, $\frac{\pi}{2}$, $\pi$, $\frac{3\pi}{2}$, $2\pi$ } ] \addplot [mark=none, ultra thick, blue] {cos(deg(x))}; \end{axis} \end{tikzpicture}
 
 
 \subsection{$y=\tan x$}
 
-\begin{tikzpicture} \begin{axis}[ Axis Style, xtick={ -6.28318, -4.7123889, -3.14159, -1.5708, 1.5708, 3.14159, 4.7123889, 6.28318 }, xticklabels={ $-2\pi$, $-\frac{3\pi}{2}$, $-\pi$, $-\frac{\pi}{2}$, $\frac{\pi}{2}$, $\pi$, $\frac{3\pi}{2}$, $2\pi$ } ] \addplot [mark=none, ultra thick, blue] {tan(deg(x))}; \end{axis} \end{tikzpicture}
+\begin{tikzpicture} \begin{axis}[ Axis Style, xtick={ -6.28318, -4.7123889, -3.14159, -1.5708, 1.5708, 3.14159, 4.7123889, 6.28318 }, xticklabels={ $-2\pi$, $-\frac{3\pi}{2}$, $-\pi$, $\frac{\pi}{2}$, $\frac{\pi}{2}$, $\pi$, $\frac{3\pi}{2}$, $2\pi$ } ] \addplot [mark=none, ultra thick, blue] {tan(deg(x))}; \end{axis} \end{tikzpicture}
 
 \newpage{}
 
@@ -937,6 +941,149 @@ The third side can then be found from the law of sines:
 \noindent \begin{center}
 ${\displaystyle a=\frac{b\sin\alpha}{\sin\beta}}$
 \par\end{center}
+
+\vfill{}
+
+
+
+\section{Polar Coordinates}
+
+A point $P$ can be located by rectangular coordinates $\left(x,y\right)$
+or polar coordinates $\left(r,\theta\right)$.
+
+The angle $\theta$ is a \emph{directed angle}, that is, it is positive
+if it is measured counterclockwise from the initial side to the terminal
+side, and negative if it is measured clockwise.
+
+The value $r$ is a \emph{directed distance}, it is positive if the
+point $P$ lies on the terminal side of $\theta$ and negative if
+$P$ is on the extension of the terminal side.
+
+
+\subsection{Properties}
+\begin{itemize}
+\item Every ordered pair of polar coordinates $\left(r,\theta\right)$ locates
+a unique point in the plane.
+\item However, a point $P$ on the plane may be specified by an infinite
+number of ordered pairs $\left(r,\theta\right)$.
+\item The pole $O$ may be specified by the ordered pair $\left(0,\theta\right)$
+where $\theta\in\mathbb{R}.$
+\item Let $P\left(r,\theta\right)$ be a point in the polar plane. Then
+$\left(r,\theta+2k\pi\right)$ are also coordinates of the point $P$
+for any $k\in\mathbb{Z}$.
+\item It can also be shown that $\left(\left(-1\right)^{n}r,\theta+n\pi\right)$
+are also coordinates of $P$, where $n\in\mathbb{Z}.$
+\end{itemize}
+
+\subsection{Coordinate Transformation}
+
+
+\subsubsection*{Polar to Rectangular}
+
+\[
+\begin{cases}
+x=r\cos\theta\\
+y=r\sin\theta
+\end{cases}
+\]
+
+
+
+\subsubsection*{Rectangular to Polar}
+
+\[
+\begin{cases}
+r=\pm\sqrt{x^{2}+y^{2}}\\
+\theta=\tan^{-1}\left(y,x\right)
+\end{cases}
+\]
+
+
+where $\tan^{-1}\left(y,x\right)$ is the two-argument form of the
+arctangent function (see section 3.9).
+
+
+\section{Special Polar Graphs}
+
+
+\subsubsection*{Theorem}
+
+A polar graph is:
+\begin{enumerate}
+\item \textbf{symmetric with respect to the polar axis} if an equivalent
+equation is obtained when $\left(r,\theta\right)$ is replaced by
+either $\left(r,-\theta\right)$ or $\left(-r,\pi-\theta\right)$.
+\item \textbf{symmetric with respect to the $\boldsymbol{\frac{\pi}{2}}$-axis}
+if an equivalent equation is obtained when $\left(r,\theta\right)$
+is replaced by either $\left(r,\pi-\theta\right)$ or $\left(-r,-\theta\right)$.
+\item \textbf{symmetric with respect to the pole} if an equivalent equation
+is obtained when $\left(r,\theta\right)$ is replaced by either $\left(-r,\theta\right)$
+or $\left(r,\pi+\theta\right)$.
+\end{enumerate}
+
+\subsection{Limaçon of Pascal}
+
+A polar equation of the form $r=a+b\cos\theta$ or $r=a+b\cos\theta$
+has a polar graph which is called a \emph{limaçon}.
+
+Let $OQ$ be a line joining origin $O$ to any point in $Q$ on a
+circle of diameter $b$ passing through $O$. Then the curve is the
+locus of all points in $P$ such that $\left|PQ\right|=a$.
+
+
+\subsubsection*{Types of Limaçons}
+\begin{itemize}
+\item Looped limaçon if $0<\left|\frac{a}{b}\right|<1$\\
+\begin{tikzpicture} \begin{polaraxis}[my style polar] \addplot[color=blue,domain=0:360, samples=100]{2+4*cos(x)}; \end{polaraxis} \end{tikzpicture}
+\item Cardioid if $\left|\frac{a}{b}\right|=1$\\
+\begin{tikzpicture} \begin{polaraxis}[my style polar] \addplot[color=blue,domain=0:360, samples=100]{2+2*cos(x)}; \end{polaraxis} \end{tikzpicture}
+\item Dimpled limaçon if $1<\left|\frac{a}{b}\right|<2$\\
+\begin{tikzpicture} \begin{polaraxis}[my style polar] \addplot[color=blue,domain=0:360, samples=100]{3+2*cos(x)}; \end{polaraxis} \end{tikzpicture}
+\item Convex limaçon if $\left|\frac{a}{b}\right|\ge2$\\
+\begin{tikzpicture} \begin{polaraxis}[my style polar] \addplot[color=blue,domain=0:360, samples=100]{4+2*cos(x)}; \end{polaraxis} \end{tikzpicture}
+\end{itemize}
+\newpage{}
+
+
+\subsection{Roses}
+
+A rose with $n$ leaves has a polar equation $r=a\cos\left(n\theta\right)$
+or $r=a\sin\left(n\theta\right)$ where $a$ is a constant and $n$
+is an odd integer.
+
+\begin{tikzpicture} \begin{polaraxis}[my style polar] \addplot[color=blue,domain=0:360, samples=100]{5*cos(3*x)}; \end{polaraxis} \end{tikzpicture}
+
+For an even integer $n$, the polar graph of an equation $r=a\cos\left(n\theta\right)$
+or $r=a\sin\left(n\theta\right)$ is a rose with $2n$ leaves.
+
+\begin{tikzpicture} \begin{polaraxis}[my style polar] \addplot[color=blue,domain=0:360, samples=200]{cos(4*x)}; \end{polaraxis} \end{tikzpicture}
+
+
+\subsubsection*{Properties}
+\begin{itemize}
+\item The length of one leaf in the polar graph of a rose is $\left|a\right|$.
+\item If $n$ is odd, then the graph of the polar equation $r=a\cos\left(n\theta\right)$
+is symmetric with respect to the polar axis.
+\item If $n$ is odd, then the graph of the polar equation $r=a\sin\left(n\theta\right)$
+is symmetric with respect to the $\frac{\pi}{2}$-axis.
+\item A rose with an even number of leaves is symmetric with respect to
+the polar axis, the $\frac{\pi}{2}$-axis, and the pole.
+\end{itemize}
+
+\subsection{Spiral of Archimedes}
+
+The polar graph of the polar equation $r=\theta$ where $\theta>0$
+is called a \emph{spiral}.
+
+\begin{tikzpicture} \begin{polaraxis}[my style polar] \addplot[color=blue,domain=0:720, samples=100]{x/120}; \end{polaraxis} \end{tikzpicture}
+
+
+\subsection{Lemniscate of Bernoulli}
+
+A polar equation $r^{2}=a\cos2\theta$ or $r^{2}=a\sin2\theta$ has
+a polar graph that is called a \emph{lemniscate}.
+
+\begin{tikzpicture} \begin{polaraxis}[my style polar] \addplot[color=blue,domain=0:90, samples=100]{2*sqrt(sin(2*x))}; \addplot[color=blue,domain=180:270, samples=100]{2*sqrt(sin(2*x))}; \end{polaraxis} \end{tikzpicture}
 
 \end{multicols*}
 \end{document}
