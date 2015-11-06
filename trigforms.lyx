@@ -162,6 +162,24 @@ begin{multicols*}{2}
 \end_layout
 
 \begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+setlength{
+\backslash
+parskip}{0.01in}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset CommandInset toc
 LatexCommand tableofcontents
 
@@ -179,6 +197,24 @@ status open
 
 \backslash
 end{multicols*}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+setlength{
+\backslash
+smallskip}
 \end_layout
 
 \end_inset
@@ -2917,6 +2953,13 @@ end{multicols}
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 Graphs
 \end_layout
@@ -2929,9 +2972,25 @@ status open
 
 
 \backslash
-pgfkeys{/pgfplots/Axis Style/.style={ width=13.5cm, height=5cm, axis x line=center
-, axis y line=middle, samples=100, ymin=-1.5, ymax=1.5, xmin=-7.0, xmax=7.0,
- domain=-2*pi:2*pi }}
+begin{multicols}{2}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pgfkeys{/pgfplots/Axis Style/.style={ width=10cm, height=6cm, axis x line=center,
+ axis y line=middle, samples=100, ymin=-2.5, ymax=2.5, xmin=-7.0, xmax=7.0,
+ domain=-2*pi:2*pi, ytick={-2,-1,1,2} }}
 \end_layout
 
 \end_inset
@@ -2956,7 +3015,7 @@ status open
 \backslash
 begin{tikzpicture} 
 \backslash
-begin{axis}[ Axis Style, xtick={ -6.28318, -4.7123889, -3.14159, -1.5708, 1.5708,
+begin{axis}[ Axis Style, xtick={-6.28318, -4.7123889, -3.14159,-1.5708, 1.5708,
  3.14159, 4.7123889, 6.28318 }, xticklabels={ $-2
 \backslash
 pi$, $-
@@ -2965,7 +3024,7 @@ frac{3
 \backslash
 pi}{2}$, $-
 \backslash
-pi$, $
+pi$, $-
 \backslash
 frac{
 \backslash
@@ -2983,7 +3042,7 @@ pi}{2}$, $2
 \backslash
 pi$ } ] 
 \backslash
-addplot [mark=none, ultra thick, blue] {sin(deg(x))}; 
+addplot [mark=none, thick, blue] {sin(deg(x))}; 
 \backslash
 end{axis} 
 \backslash
@@ -3021,7 +3080,7 @@ frac{3
 \backslash
 pi}{2}$, $-
 \backslash
-pi$, $
+pi$, $-
 \backslash
 frac{
 \backslash
@@ -3039,7 +3098,7 @@ pi}{2}$, $2
 \backslash
 pi$ } ] 
 \backslash
-addplot [mark=none, ultra thick, blue] {cos(deg(x))}; 
+addplot [mark=none, thick, blue] {cos(deg(x))}; 
 \backslash
 end{axis} 
 \backslash
@@ -3077,7 +3136,7 @@ frac{3
 \backslash
 pi}{2}$, $-
 \backslash
-pi$, $
+pi$, $-
 \backslash
 frac{
 \backslash
@@ -3095,11 +3154,232 @@ pi}{2}$, $2
 \backslash
 pi$ } ] 
 \backslash
-addplot [mark=none, ultra thick, blue] {tan(deg(x))}; 
+addplot [domain=-2*pi:-3*pi/2-0.1,mark=none, thick, blue] {tan(deg(x))};
+ 
+\backslash
+addplot [domain=-3*pi/2+0.1:-pi/2-0.1,mark=none, thick, blue] {tan(deg(x))};
+ 
+\backslash
+addplot [domain=-pi/2+0.1:pi/2-0.1,mark=none, thick, blue] {tan(deg(x))};
+ 
+\backslash
+addplot [domain=pi/2+0.1:3*pi/2-0.1,mark=none, thick, blue] {tan(deg(x))};
+ 
+\backslash
+addplot [domain=3*pi/2+0.1:2*pi,mark=none, thick, blue] {tan(deg(x))}; 
 \backslash
 end{axis} 
 \backslash
 end{tikzpicture}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+\begin_inset Formula $y=\csc x$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tikzpicture} 
+\backslash
+begin{axis}[ Axis Style, xtick={ -6.28318, -4.7123889, -3.14159, -1.5708, 1.5708,
+ 3.14159, 4.7123889, 6.28318 }, xticklabels={ $-2
+\backslash
+pi$, $-
+\backslash
+frac{3
+\backslash
+pi}{2}$, $-
+\backslash
+pi$, $-
+\backslash
+frac{
+\backslash
+pi}{2}$, $
+\backslash
+frac{
+\backslash
+pi}{2}$, $
+\backslash
+pi$, $
+\backslash
+frac{3
+\backslash
+pi}{2}$, $2
+\backslash
+pi$ } ] 
+\backslash
+addplot [domain=-2*pi+0.1:-pi-0.1,mark=none, thick, blue] {cosec(deg(x))};
+ 
+\backslash
+addplot [domain=-pi+0.1:-0.1,mark=none, thick, blue] {cosec(deg(x))}; 
+\backslash
+addplot [domain=0.1:pi-0.1,mark=none, thick, blue] {cosec(deg(x))}; 
+\backslash
+addplot [domain=pi+0.1:2*pi-0.1,mark=none, thick, blue] {cosec(deg(x))}; 
+\backslash
+end{axis} 
+\backslash
+end{tikzpicture}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+\begin_inset Formula $y=\sec x$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tikzpicture} 
+\backslash
+begin{axis}[ Axis Style, xtick={ -6.28318, -4.7123889, -3.14159, -1.5708, 1.5708,
+ 3.14159, 4.7123889, 6.28318 }, xticklabels={ $-2
+\backslash
+pi$, $-
+\backslash
+frac{3
+\backslash
+pi}{2}$, $-
+\backslash
+pi$, $-
+\backslash
+frac{
+\backslash
+pi}{2}$, $
+\backslash
+frac{
+\backslash
+pi}{2}$, $
+\backslash
+pi$, $
+\backslash
+frac{3
+\backslash
+pi}{2}$, $2
+\backslash
+pi$ } ] 
+\backslash
+addplot [domain=-2*pi:-3*pi/2-0.1,mark=none, thick, blue] {sec(deg(x))};
+ 
+\backslash
+addplot [domain=-3*pi/2+0.1:-pi/2-0.1,mark=none, thick, blue] {sec(deg(x))};
+ 
+\backslash
+addplot [domain=-pi/2+0.1:pi/2-0.1,mark=none, thick, blue] {sec(deg(x))};
+ 
+\backslash
+addplot [domain=pi/2+0.1:3*pi/2-0.1,mark=none, thick, blue] {sec(deg(x))};
+ 
+\backslash
+addplot [domain=3*pi/2+0.1:2*pi,mark=none, thick, blue] {sec(deg(x))}; 
+\backslash
+end{axis} 
+\backslash
+end{tikzpicture}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+\begin_inset Formula $y=\cot x$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tikzpicture} 
+\backslash
+begin{axis}[ Axis Style, xtick={ -6.28318, -4.7123889, -3.14159, -1.5708, 1.5708,
+ 3.14159, 4.7123889, 6.28318 }, xticklabels={ $-2
+\backslash
+pi$, $-
+\backslash
+frac{3
+\backslash
+pi}{2}$, $-
+\backslash
+pi$, $-
+\backslash
+frac{
+\backslash
+pi}{2}$, $
+\backslash
+frac{
+\backslash
+pi}{2}$, $
+\backslash
+pi$, $
+\backslash
+frac{3
+\backslash
+pi}{2}$, $2
+\backslash
+pi$ } ] 
+\backslash
+addplot [domain=-2*pi+0.1:-pi-0.1,mark=none, thick, blue] {cot(deg(x))}; 
+\backslash
+addplot [domain=-pi+0.1:-0.1,mark=none, thick, blue] {cot(deg(x))}; 
+\backslash
+addplot [domain=0.1:pi-0.1,mark=none, thick, blue] {cot(deg(x))}; 
+\backslash
+addplot [domain=pi+0.1:2*pi-0.1,mark=none, thick, blue] {cot(deg(x))}; 
+\backslash
+end{axis} 
+\backslash
+end{tikzpicture}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{multicols}
 \end_layout
 
 \end_inset
@@ -7767,7 +8047,7 @@ Rectangular to Polar
 \begin_inset Formula 
 \[
 \begin{cases}
-r=\pm\sqrt{x^{2}+y^{2}}\\
+r=\sqrt{x^{2}+y^{2}}\\
 \theta=\tan^{-1}\left(y,x\right)
 \end{cases}
 \]
@@ -7871,7 +8151,7 @@ A polar equation of the form
 \end_inset
 
  or 
-\begin_inset Formula $r=a+b\cos\theta$
+\begin_inset Formula $r=a+b\sin\theta$
 \end_inset
 
  has a polar graph which is called a 
@@ -8058,7 +8338,7 @@ end{tikzpicture}
 \end_layout
 
 \begin_layout Subsection
-Roses
+Rose
 \end_layout
 
 \begin_layout Standard
@@ -8086,6 +8366,8 @@ A rose with
 \end_layout
 
 \begin_layout Standard
+\noindent
+\align center
 \begin_inset ERT
 status open
 
@@ -8130,6 +8412,8 @@ For an even integer
 \end_layout
 
 \begin_layout Standard
+\noindent
+\align center
 \begin_inset ERT
 status open
 
@@ -8207,12 +8491,16 @@ Spiral of Archimedes
 \end_layout
 
 \begin_layout Standard
-The polar graph of the polar equation 
-\begin_inset Formula $r=\theta$
+The polar graph of a polar equation 
+\begin_inset Formula $r=a\theta$
 \end_inset
 
  where 
 \begin_inset Formula $\theta>0$
+\end_inset
+
+ and 
+\begin_inset Formula $a\in\mathbb{R}$
 \end_inset
 
  is called a 
@@ -8223,6 +8511,8 @@ spiral
 \end_layout
 
 \begin_layout Standard
+\noindent
+\align center
 \begin_inset ERT
 status open
 
@@ -8267,6 +8557,8 @@ lemniscate
 \end_layout
 
 \begin_layout Standard
+\noindent
+\align center
 \begin_inset ERT
 status open
 
@@ -8281,6 +8573,277 @@ begin{polaraxis}[my style polar]
 addplot[color=blue,domain=0:90, samples=100]{2*sqrt(sin(2*x))}; 
 \backslash
 addplot[color=blue,domain=180:270, samples=100]{2*sqrt(sin(2*x))}; 
+\backslash
+end{polaraxis} 
+\backslash
+end{tikzpicture}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Folium of Descartes
+\end_layout
+
+\begin_layout Standard
+A 
+\emph on
+folium
+\emph default
+ is a plane curve proposed by Descartes to challenge Fermat's extremum-finding
+ techniques.
+ It has a polar equation 
+\begin_inset Formula $r=\frac{3a\sec\theta\tan\theta}{1+\tan^{3}\theta}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tikzpicture} 
+\backslash
+begin{polaraxis}[my style polar] 
+\backslash
+addplot[color=blue,domain=-35:89.9, samples=200]{(3*tan(x)*sec(x)/(1+(tan(x))^3)}
+;  
+\backslash
+addplot[color=blue,domain=90.1:125, samples=200]{(3*tan(x)*sec(x)/(1+(tan(x))^3)}
+;
+\backslash
+end{polaraxis} 
+\backslash
+end{tikzpicture}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Spiral of Fermat
+\end_layout
+
+\begin_layout Standard
+The 
+\emph on
+Fermat's spiral
+\emph default
+, also known as the parabolic spiral, has a polar equation 
+\begin_inset Formula $r^{2}=a^{2}\theta$
+\end_inset
+
+.
+ The resulting spiral is symmetric with respect to the origin.
+ 
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tikzpicture} 
+\backslash
+begin{polaraxis}[my style polar] 
+\backslash
+addplot[color=blue,domain=0:720, samples=100]{sqrt(x/120)}; 
+\backslash
+addplot[color=blue,domain=0:720, samples=100]{-sqrt(x/120)}; 
+\backslash
+end{polaraxis} 
+\backslash
+end{tikzpicture}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Cissoid of Diocles
+\end_layout
+
+\begin_layout Standard
+Given an origin 
+\begin_inset Formula $O$
+\end_inset
+
+ and a point 
+\begin_inset Formula $P$
+\end_inset
+
+ on the curve, let 
+\begin_inset Formula $S$
+\end_inset
+
+ be the point where the extension of the line 
+\begin_inset Formula $OP$
+\end_inset
+
+ intersects the line 
+\begin_inset Formula $x=2a$
+\end_inset
+
+ and 
+\begin_inset Formula $R$
+\end_inset
+
+ be the intersection of the circle of radius 
+\begin_inset Formula $a$
+\end_inset
+
+ and center 
+\begin_inset Formula $\left(a,0\right)$
+\end_inset
+
+ with the extension of 
+\begin_inset Formula $OP$
+\end_inset
+
+.
+ Then the 
+\emph on
+cissoid of Diocles
+\emph default
+ is the curve which satisfies 
+\begin_inset Formula $OP=RS$
+\end_inset
+
+.
+ It has a polar equation 
+\begin_inset Formula $r=2a\sin\theta\tan\theta$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tikzpicture} 
+\backslash
+begin{polaraxis}[my style polar]  
+\backslash
+addplot[color=blue,domain=110:170, samples=200]{2*sin(x)*tan(x)}; 
+\backslash
+addplot[color=blue,domain=190:250, samples=200]{2*sin(x)*tan(x)};  
+\backslash
+end{polaraxis} 
+\backslash
+end{tikzpicture}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Epispiral
+\end_layout
+
+\begin_layout Standard
+The 
+\emph on
+epispiral
+\emph default
+ is a plane curve with a polar equation 
+\begin_inset Formula $r=a\sec\left(n\theta\right)$
+\end_inset
+
+.
+ Then there are 
+\begin_inset Formula $n$
+\end_inset
+
+ sections if 
+\begin_inset Formula $n$
+\end_inset
+
+ is odd (blue), or 
+\begin_inset Formula $2n$
+\end_inset
+
+ sections if 
+\begin_inset Formula $n$
+\end_inset
+
+ is even (red).
+ A slightly more symmetric version considers instead 
+\begin_inset Formula $r=a\left|\sec\left(n\theta\right)\right|$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tikzpicture} 
+\backslash
+begin{polaraxis}[my style polar] 
+\backslash
+addplot[color=blue,domain=    0: 29-3, samples=100]{3/2*sec(3*x)}; 
+\backslash
+addplot[color=blue,domain=	31+3: 89-3, samples=100]{3/2*sec(3*x)}; 
+\backslash
+addplot[color=blue,domain= 91+3:149-3, samples=100]{3/2*sec(3*x)}; 
+\backslash
+addplot[color=blue,domain=151+3:209-3, samples=100]{3/2*sec(3*x)}; 
+\backslash
+addplot[color=blue,domain=211+3:269-3, samples=100]{3/2*sec(3*x)}; 
+\backslash
+addplot[color=blue,domain=271+3:329-3, samples=100]{3/2*sec(3*x)}; 
+\backslash
+addplot[color=red,domain=    0: 45-4, samples=100]{sec(2*x)}; 
+\backslash
+addplot[color=red,domain= 45+4:135-4, samples=100]{sec(2*x)}; 
+\backslash
+addplot[color=red,domain=135+4:225-4, samples=100]{sec(2*x)}; 
+\backslash
+addplot[color=red,domain=225+4:315-4, samples=100]{sec(2*x)}; 
+\backslash
+addplot[color=red,domain=315+4:360  , samples=100]{sec(2*x)}; 
 \backslash
 end{polaraxis} 
 \backslash
