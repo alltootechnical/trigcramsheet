@@ -66,7 +66,7 @@
 \date{\textsf{\today{}}}
 
 \maketitle
-\begin{multicols*}{2}
+\begin{multicols}{2}
 
 \setlength{\parskip}{0.0in}
 
@@ -74,7 +74,7 @@
 \tableofcontents{}
 \par\end{flushleft}
 
-\end{multicols*}
+\end{multicols}
 
 \setlength{\smallskip}\newpage{}
 
@@ -679,6 +679,7 @@ original functions.
 
 \renewcommand{\arraystretch}{1.5}
 
+\noindent \begin{center}
 \begin{tabular}{|c|c|}
 \hline 
 Principal values for $x\ge0$ & Principal values for $x<0$\tabularnewline
@@ -697,6 +698,7 @@ $0\le\sec^{-1}x<\frac{\pi}{2}$ & $\frac{\pi}{2}<\sec^{-1}x\le\pi$\tabularnewline
 $0<\csc^{-1}x\le\frac{\pi}{2}$ & $-\frac{\pi}{2}\le\csc^{-1}x<0$\tabularnewline
 \hline 
 \end{tabular}
+\par\end{center}
 
 
 \subsection{Identities}
@@ -785,7 +787,7 @@ where $R$ is the circumradius of the triangle.
 
 \subsection{Law of Cotangents}
 
-Let $s$ be the semi-perimeter, that is, $s=\frac{a+b+c}{2}$, and
+Let $s$ be the semiperimeter, that is, $s=\frac{a+b+c}{2}$, and
 $r$ be the radius of the inscribed circle, then:
 
 \noindent \begin{center}
@@ -803,10 +805,11 @@ $r{\displaystyle =\sqrt{\frac{(s-a)(s-b)(s-c)}{s}}}$
 
 Each of these identities uses all six parts of the triangle\textemdash the
 three angles and the lengths of the three sides.
-\begin{lyxlist}{00.00.0000}
-\item [{${\displaystyle \frac{a+b}{c}=\frac{\cos\frac{\alpha-\beta}{2}}{\sin\frac{\gamma}{2}}}$}]~
-\item [{${\displaystyle \frac{a-b}{c}=\frac{\sin\frac{\alpha-\beta}{2}}{\cos\frac{\gamma}{2}}}$}]~
-\end{lyxlist}
+
+\noindent \begin{center}
+${\displaystyle \frac{a+b}{c}=\frac{\cos\frac{\alpha-\beta}{2}}{\sin\frac{\gamma}{2}}}$;$\quad{\displaystyle \frac{a-b}{c}=\frac{\sin\frac{\alpha-\beta}{2}}{\cos\frac{\gamma}{2}}}$
+\par\end{center}
+
 
 \subsection{Stewart's Theorem}
 
@@ -1486,28 +1489,123 @@ An excenter, denoted $J_{i}$, is the center of an excircle of a triangle.
 An excircle is a circle tangent to the extensions of two sides and
 the third side. It is also known as an escribed circle. 
 
+\newpage{}
+
 
 \subsection{Area of the Triangle}
 
-Let $\Delta=\text{area of the triangle}$, $A,B,C=\text{angles}$,
-$a,b,c=\text{sides}$, $s=\text{semiperimeter}=\frac{1}{2}\left(a+b+c\right)$,
-$R=\text{circumradius}$, $r=\text{inradius}$, $r_{a},r_{b},r_{c}=\text{radii of excircles}$,
-$h_{a},h_{b},h_{c}=\text{perpendiculars}$, $m_{a},m_{b},m_{c}=\text{perpendiculars}$,
-$\beta_{a},\beta_{b},\beta_{c}=\text{internal bisectors}$, and $\sigma=\frac{1}{2}\left(m_{a}+m_{b}+m_{c}\right)$.
-Then:
+
+\subsubsection*{Base and Altitude}
+
+\[
+A_{\triangle}=\frac{1}{2}bh
+\]
+
+
+where $b$ is the base and $h$ is the altitude.
+
+
+\subsubsection*{SAS Triangle}
+
+\[
+A_{\triangle}=\frac{1}{2}ab\sin\gamma=\frac{1}{2}bc\sin\alpha=\frac{1}{2}ac\sin\beta
+\]
+
+
+
+\subsubsection*{SSS Triangle}
+
+Given three sides $a$, $b$, and $c$, the area of the triangle can
+be determined by Heron's formula:
 
 \begin{eqnarray*}
-\Delta & = & \frac{1}{2}\left(\text{base}\cdot\text{height}\right)\\
- & = & \sqrt{s\left(s-a\right)\left(s-b\right)\left(s-c\right)}\\
- & = & \frac{abc}{4R}\\
- & = & \sqrt{rr_{a}r_{b}r_{c}}\\
- & = & \frac{1}{2}\sqrt[3]{abch_{a}h_{b}h_{c}}\\
- & =\\
- & =\\
- & =\\
- & =
+A_{\triangle} & = & \sqrt{s\left(s-a\right)\left(s-b\right)\left(s-c\right)}\\
+ & = & \frac{1}{4}\sqrt{4a^{2}b^{2}-(a^{2}+b^{2}-c^{2})^{2}}
 \end{eqnarray*}
 
+
+where $s=\frac{a+b+c}{2}$ is the semiperimeter. The area can also
+be determined by:
+
+\[
+A_{\triangle}=\frac{abc}{4R}
+\]
+
+
+where $R$ is the circumradius.
+
+
+\subsubsection*{AAS Triangle}
+
+\[
+A_{\triangle}=\frac{a^{2}\sin\beta\sin\gamma}{2\sin\alpha}=\frac{b^{2}\sin\alpha\sin\gamma}{2\sin\beta}=\frac{c^{2}\sin\alpha\sin\beta}{2\sin\gamma}
+\]
+
+
+where the missing angle can be easily determined through $\alpha+\beta+\gamma=180^{\circ}$.
+
+
+\subsubsection*{ASA Triangle}
+
+\[
+A_{\triangle}=\frac{a^{2}}{2\left(\cot\beta+\cot\gamma\right)}=\frac{b^{2}}{2\left(\cot\alpha+\cot\gamma\right)}=\frac{c^{2}}{2\left(\cot\alpha+\cot\beta\right)}
+\]
+
+
+
+\subsubsection*{Three Vertices}
+
+Given the vertices of the triangle $\left(x_{i},y_{i}\right)\;\forall i\in\left\{ 1,2,3\right\} $,
+the shoelace formula can be applied for $n=3$ as follows:
+
+\begin{eqnarray*}
+A_{\triangle} & = & \frac{1}{2}\left|\sum_{i=1}^{2}x_{i}y_{i+1}+x_{n}y_{1}-\sum_{i=1}^{2}x_{i+1}y_{i}-x_{1}y_{n}\right|\\
+ & = & \frac{1}{2}\left|x_{1}y_{2}+x_{2}y_{3}+x_{3}y_{1}-x_{2}y_{1}-x_{3}y_{2}-x_{1}y_{3}\right|
+\end{eqnarray*}
+
+
+However, if one of the vertices is at the origin, then the area of
+the triangle can be simplified:
+
+\[
+A_{\triangle}=\frac{1}{2}\left\Vert \begin{array}{cc}
+x_{2} & x_{3}\\
+y_{2} & y_{3}
+\end{array}\right\Vert =\frac{1}{2}\left|x_{2}y_{3}-x_{3}y_{2}\right|
+\]
+
+
+where $\left\Vert \cdot\right\Vert $ denotes the absolute value of
+the determinant.
+
+
+\subsubsection*{Equilateral Triangle}
+
+\[
+A_{\triangle}=\frac{\sqrt{3}}{4}a^{2}
+\]
+
+
+
+\subsubsection*{Isosceles Triangle}
+
+These are special cases of the formulas given above.
+
+\[
+A_{\triangle}=\frac{b}{4}\sqrt{4a^{2}-b^{2}}=\frac{1}{2}a^{2}\sin\theta
+\]
+
+
+
+\subsubsection*{Pick's Theorem}
+
+\[
+A_{\triangle}=I+\frac{1}{2}B-1
+\]
+
+
+where $I$ is the number of internal lattice points and $B$ is the
+number of lattice points lying on the border of the triangle.
 
 \end{multicols*}
 \end{document}
